@@ -1,0 +1,445 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Raj Mata Bank | Trusting Tradition, Powering Progress</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d9dadb",
+                        "secondary": "#885200",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary": "#000a1d",
+                        "on-primary-container": "#708ab5",
+                        "secondary-container": "#fcaa46",
+                        "tertiary-container": "#052142",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-high": "#e7e8e9",
+                        "on-secondary-container": "#6d4100",
+                        "tertiary-fixed": "#d5e3ff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-container": "#7389b0",
+                        "on-surface-variant": "#44474e",
+                        "on-tertiary-fixed-variant": "#30476a",
+                        "outline-variant": "#c4c6cf",
+                        "on-tertiary-fixed": "#001b3c",
+                        "surface-container-highest": "#e1e3e4",
+                        "primary": "#000a1e",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#2b1700",
+                        "on-secondary-fixed-variant": "#673d00",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#aec7f6",
+                        "surface-tint": "#465f88",
+                        "inverse-on-surface": "#f0f1f2",
+                        "outline": "#74777f",
+                        "on-error": "#ffffff",
+                        "background": "#f8f9fa",
+                        "primary-fixed": "#d6e3ff",
+                        "on-primary-fixed": "#001b3d",
+                        "secondary-fixed-dim": "#ffb869",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "tertiary-fixed-dim": "#b0c7f1",
+                        "surface": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "surface-container": "#edeeef",
+                        "on-surface": "#191c1d",
+                        "secondary-fixed": "#ffdcbb",
+                        "inverse-primary": "#aec7f6",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#002147"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "container-max": "1200px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "headline-xl": ["\"Source Serif 4\""],
+                        "headline-lg-mobile": ["\"Source Serif 4\""],
+                        "headline-sm": ["\"Source Serif 4\""],
+                        "body-sm": ["Public Sans"],
+                        "headline-lg": ["\"Source Serif 4\""],
+                        "body-lg": ["Public Sans"],
+                        "headline-md": ["\"Source Serif 4\""]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; background-color: #f8f9fa; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .hero-gradient { background: linear-gradient(90deg, rgba(0, 10, 30, 0.85) 0%, rgba(0, 10, 30, 0.4) 50%, rgba(0, 10, 30, 0) 100%); }
+        
+        /* Dropdown styles */
+        .dropdown:hover .dropdown-menu { display: block; }
+        .dropdown-menu { display: none; }
+    </style>
+<link rel='stylesheet' href='css/styles.css'>
+</head>
+<body class="overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant h-20 flex items-center shadow-sm transition-all duration-300" id="main-header">
+    <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity duration-300 transform hover:scale-105">
+            <span class="material-symbols-outlined text-primary" style="font-size: 32px;">account_balance</span>
+            <span class="font-headline-md font-bold text-primary tracking-tight" style="font-size: 1.5rem; line-height: 1;">Rajmata Bank</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav class="hidden lg:flex gap-gutter h-full items-center">
+            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="index.html">Home</a>
+            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="about.html">About Us</a>
+            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="security.html">Security &amp; Compliance</a>
+            
+            <!-- Services Dropdown -->
+            <div class="dropdown relative h-full flex items-center group">
+                <a href="documentation.html" class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md flex items-center gap-1 relative hover:-translate-y-0.5">
+                    Services
+                    <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+                </a>
+                <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl border-t-2 border-secondary ring-1 ring-black ring-opacity-5 z-50 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#savings-account">Saving Account</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#current-account">Current Account</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#term-deposits">Term Deposit Rates</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#cumulative">Cumulative &amp; RD</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#yield-calculator">Yield Calculator</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#loan-calculator">Loan Calculator</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#bank-charges">Bank Charges</a>
+                </div>
+            </div>
+            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="contact.html">Contact Us</a>
+        </nav>
+
+        <!-- Right Buttons -->
+        <div class="flex items-center gap-4 z-50">
+            <a href="open-account.html" class="px-8 py-2.5 bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold rounded-sm hover:opacity-90 active:scale-95 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 shadow-sm inline-block">Open Account</a>
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-on-surface-variant hover:text-secondary transition-colors">
+                <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Navigation Menu (Hidden by default) -->
+    <div id="mobile-menu" class="fixed inset-0 bg-surface z-40 flex flex-col hidden lg:hidden pt-24 px-6 border-t border-outline-variant">
+        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="index.html">Home</a>
+        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="about.html">About Us</a>
+        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="security.html">Security &amp; Compliance</a>
+        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="documentation.html">Services</a>
+        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm" href="contact.html">Contact Us</a>
+    </div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full lg:h-[600px] flex items-center overflow-hidden bg-surface-container-lowest border-b border-outline-variant pb-16 lg:pb-0">
+<div class="relative w-full px-margin-desktop max-w-container-max mx-auto pt-12 lg:pt-0">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="max-w-2xl reveal active z-10">
+<h1 class="font-headline-xl text-headline-xl mb-stack-md leading-tight text-primary">Trusting Tradition,<br><span class="text-secondary">Powering Progress</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Experience a legacy of secure banking built on institutional trust, redefined for the modern digital era with cutting-edge fintech solutions.</p>
+<div class="flex flex-wrap gap-stack-md">
+<a href="documentation.html" class="flex items-center gap-2 px-8 py-3 bg-secondary text-white font-label-md text-label-md rounded-sm hover:brightness-110 transition-all shadow-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+                    Our Services
+                </a>
+<a href="documentation.html#loan-calculator" class="flex items-center gap-2 px-8 py-3 bg-surface border border-outline-variant text-primary font-label-md text-label-md rounded-sm hover:bg-surface-container-low transition-all shadow-sm">
+<span class="material-symbols-outlined">calculate</span>
+                    Loan Calculator
+                </a>
+</div>
+</div>
+<div class="relative reveal active lg:h-[500px] flex items-center justify-center">
+    <img src="images/hero.png" alt="Digital Banking Illustration" class="w-full max-w-lg h-auto max-h-[500px] object-contain drop-shadow-xl hover:-translate-y-2 transition-transform duration-700">
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Access Bento Grid -->
+<section class="py-stack-lg -mt-16 relative z-10">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-white p-stack-md border border-outline-variant shadow-sm hover:shadow-lg transition-all group reveal active">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center text-secondary-container mb-stack-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">add_card</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Apply Online</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Instant digital account opening with minimal documentation.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-stack-md border border-outline-variant shadow-sm hover:shadow-lg transition-all group reveal active" style="transition-delay: 100ms;">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center text-secondary-container mb-stack-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">payments</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Transfer Funds</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Seamless domestic and international transfers 24/7.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-stack-md border border-outline-variant shadow-sm hover:shadow-lg transition-all group reveal active" style="transition-delay: 200ms;">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center text-secondary-container mb-stack-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">trending_up</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Investments</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fixed deposits and mutual fund portfolios for wealth growth.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-stack-md border border-outline-variant shadow-sm hover:shadow-lg transition-all group reveal active" style="transition-delay: 300ms;">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center text-secondary-container mb-stack-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Support</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct access to dedicated wealth managers and bank assistance.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Services -->
+<section class="py-stack-lg bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-stack-lg reveal active">
+<div>
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-2">Our Offerings</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Financial Solutions Tailored for You</h2>
+</div>
+<a class="text-primary font-label-md text-label-md flex items-center gap-1 hover:underline group" href="documentation.html">View All Services <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Service 1 -->
+<div class="reveal active">
+<div class="relative h-64 mb-stack-md overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-500" data-alt="Close up of a premium matte black credit card with elegant gold accents, resting on a polished marble surface. Soft, professional studio lighting highlighting the card's texture and metallic elements, representing luxury banking and prestige." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXOV6xW2iNF8-QNQmdtsQaVRpgR7TB2yaRQHcWIyR_FWe72NET4fSQLbGwVh9Qjs49DBFMYDXAMDSYcTc5GCAiKSJOkk9ZfbzBZalUdBR4fZdrIUCf9KG2oJA_zjPc1y1O8JnopTlYJsesYoYSLLPYlSTPy8lpP7l1e31cLT7C-poM_HG5IA8MXIi-Lh3Og6_xkzwURdiy-IUb17dMprDRXdgRoGP1hWLFfsEP-jgr321RL0gun9uN7Q')"></div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Savings &amp; Deposits</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Higher interest rates with the safety of a premier national institution.</p>
+<button class="text-secondary font-label-sm text-label-sm hover:underline">LEARN MORE</button>
+</div>
+<!-- Service 2 -->
+<div class="reveal active" style="transition-delay: 100ms;">
+<div class="relative h-64 mb-stack-md overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-500" data-alt="A modern, architecturally impressive suburban home during the blue hour. Warm lights glow from within the windows, reflecting on a manicured lawn. The image evokes a sense of security, achievement, and the fulfillment of homeownership dreams through mortgage services." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjPMmwPKwKDbbZD_x56Ff1e_iIuSFjLOXNwdisubtCAgTMcYuXAPU1Q0eqtJHxEnEY6KzAeumJjxT6g74BtT6B6q_NdaPKMaB-DiCMWWz8QwAihbbH_oRCRD-n3XgHFNYnlrXI5Lq9MfIwQ_5LoGNnGD7vF6c0U4ZDT4r4--8Vwp7AO-Ux44sZi00L70womCKs1F0MdC7gJMDlpIyPKABe9zMYnHW5JnKY7CRDZLoHXSuUeyCwKlzs4A')"></div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Loans &amp; Credit</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Flexible repayment options for home, auto, and personal needs.</p>
+<button class="text-secondary font-label-sm text-label-sm hover:underline">LEARN MORE</button>
+</div>
+<!-- Service 3 -->
+<div class="reveal active" style="transition-delay: 200ms;">
+<div class="relative h-64 mb-stack-md overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-500" data-alt="A bustling international airport terminal with out-of-focus aircraft in the background through large glass panels. A businessman walks with a carry-on bag, symbolizing global mobility and NRI banking services that bridge continents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAp3glkyKMgT331ZKJV13lC1def4O9lzHFTBkahTBNKI_xCUEckAbncTsPBo3c6AVliTFslM7_UxpeaIbPPPLS7Mg-eQoHBdYFx4HPXDcHicfx1lF_rzg3BCOo8GzZZXolotHtwOgq9urOHRtrbv84uvOqtqc1hH8YRnQKWafBOCyiOuJryK3P5wUxle41BsQ3xSDj477yzrlO-_Kkhx7-0Ii8F9E6an5wJ5nZHCY-4J-KEfOlLX6-mYg')"></div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">NRI Banking</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Exclusive services for non-resident Indians to manage wealth back home.</p>
+<button class="text-secondary font-label-sm text-label-sm hover:underline">LEARN MORE</button>
+</div>
+<!-- Service 4 -->
+<div class="reveal active" style="transition-delay: 300ms;">
+<div class="relative h-64 mb-stack-md overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-500" data-alt="A top-down view of a modern desk with a tablet displaying financial growth charts, a luxury pen, and a cup of coffee. The setting is clean and organized, representing business banking and commercial financial planning tools." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCu6QIX9NtJ-1NE0bi1SFfLFBoHmUJ0vfmWhbGjMQAjoFyYUxWIbKj3BuW9vMKVkc2Zeq2aomQ2lm5-kGNWA269xtiwNUPGMuMDe5W9u7Gza3EFkwLREse49PviJTXdbSqa7qdlkW7o3s_xsggjxWluXKVtwhXTuk3PScJg0mFDyiwvyzZbOHSqq6FkYk5AzwL5gPubYGReDt0fK8GIyIHHzNIdOAdOtwTvhJTwaNdVbYRjc0gN9HJVhw')"></div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Cards &amp; Payments</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Experience global acceptability and rewarding transaction perks.</p>
+<button class="text-secondary font-label-sm text-label-sm hover:underline">LEARN MORE</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 bg-primary text-white overflow-hidden relative">
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10">
+<span class="material-symbols-outlined text-[400px] absolute -right-20 -top-20">verified_user</span>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="reveal active">
+<h2 class="font-headline-lg text-headline-lg mb-stack-md">A Tradition of Integrity, <br>A Future of Innovation.</h2>
+<p class="font-body-lg text-body-lg opacity-80 mb-stack-lg">For over five decades, Raj Mata Bank has been the cornerstone of financial security for millions. We combine the personal touch of traditional banking with state-of-the-art digital infrastructure.</p>
+<ul class="space-y-stack-md">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-container mt-1">security</span>
+<div>
+<h5 class="font-headline-sm text-headline-sm mb-1">State-of-the-Art Security</h5>
+<p class="font-body-sm text-body-sm opacity-70">Multi-factor authentication and advanced encryption for every transaction.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-container mt-1">rocket_launch</span>
+<div>
+<h5 class="font-headline-sm text-headline-sm mb-1">Instant Digital Solutions</h5>
+<p class="font-body-sm text-body-sm opacity-70">Our mobile app provides 99% of bank services without visiting a branch.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-container mt-1">history_edu</span>
+<div>
+<h5 class="font-headline-sm text-headline-sm mb-1">Legacy of Trust</h5>
+<p class="font-body-sm text-body-sm opacity-70">Voted most trusted bank for five consecutive years by industry bodies.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="relative reveal active" style="transition-delay: 200ms;">
+<div class="bg-secondary-container/20 p-8 rounded-lg border border-white/10 backdrop-blur-sm">
+<div class="grid grid-cols-2 gap-stack-md">
+<div class="text-center p-stack-md bg-white/5 rounded">
+<span class="block font-headline-xl text-headline-xl text-secondary-container">50+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest opacity-60">Years Legacy</span>
+</div>
+<div class="text-center p-stack-md bg-white/5 rounded">
+<span class="block font-headline-xl text-headline-xl text-secondary-container">12M+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest opacity-60">Customers</span>
+</div>
+<div class="text-center p-stack-md bg-white/5 rounded">
+<span class="block font-headline-xl text-headline-xl text-secondary-container">1500+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest opacity-60">Branches</span>
+</div>
+<div class="text-center p-stack-md bg-white/5 rounded">
+<span class="block font-headline-xl text-headline-xl text-secondary-container">A+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest opacity-60">Credit Rating</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-tertiary-container text-on-tertiary-container py-stack-lg border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg">
+<div class="lg:col-span-2">
+<img alt="Raj Mata Bank Logo" class="h-12 w-auto mb-stack-md brightness-0 invert opacity-80" src="https://lh3.googleusercontent.com/aida/AP1WRLswyItJKxTWex9hp0RqO6p-lM1Td-l_sZl4jE1gSkCHOIOF9R_JUCmFNa3QN1Ve-0dRa3X10A3cnEnxmtO1JOeNoeZedOhSbJ_hHbycAGqntsu7S8OtujfuY11ATyZIIulnHBEjRM5KRg4i0X9KIW1Wm0a6ltEw4EPqCGozE7g0QV9VAA7eFgvQZp-VTbtSiC0dokM1Xru0xh43463a_U67YK6nOqhXVV9OH3ZIpq3SYOmfByQPRuUtHg3D">
+<p class="font-body-sm text-body-sm opacity-80 max-w-sm mb-stack-md">Empowering financial growth through secure, innovative, and accessible banking solutions for over half a century.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-container transition-colors">face_nod</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-container transition-colors">alternate_email</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-container transition-colors">campaign</span>
+</div>
+</div>
+<div>
+<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Quick Links</h6>
+<ul class="space-y-2">
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Home</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Services</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Security &amp; Compliance</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Regulatory</h6>
+<ul class="space-y-2">
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Basel III Reports</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Unclaimed Deposits</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Contact</h6>
+<p class="font-body-sm text-body-sm opacity-80">Helpline: 1800-RAJ-MATA</p>
+<p class="font-body-sm text-body-sm opacity-80">Email: help@rajmata.bank</p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-sm text-body-sm opacity-60">Â© 2024 Raj Mata Bank. All Rights Reserved. Member DICGC.</p>
+<div class="flex items-center gap-4 grayscale opacity-50">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span class="font-label-sm text-label-sm">RBI Regulated</span>
+</div>
+</div>
+</footer>
+<script>
+    // Simple Intersection Observer for scroll animations
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+
+<script src='js/main.js'></script>
+
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.js"></script>
+<script>
+    function initNav() {
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        const navLinks = document.querySelectorAll('nav a.nav-link');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('text-secondary', 'font-bold', 'border-b-2', 'border-secondary');
+                link.classList.remove('text-on-surface-variant');
+            } else {
+                link.classList.remove('text-secondary', 'font-bold', 'border-b-2', 'border-secondary');
+                link.classList.add('text-on-surface-variant');
+            }
+        });
+
+        // Mobile menu toggle logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            // Remove existing listener if any
+            const newBtn = mobileMenuBtn.cloneNode(true);
+            mobileMenuBtn.parentNode.replaceChild(newBtn, mobileMenuBtn);
+            newBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = newBtn.querySelector('span');
+                if(mobileMenu.classList.contains('hidden')) {
+                    icon.textContent = 'menu';
+                } else {
+                    icon.textContent = 'close';
+                }
+            });
+        }
+    }
+    document.addEventListener("turbo:load", initNav);
+    document.addEventListener("DOMContentLoaded", initNav);
+</script>
+</body></html>
+

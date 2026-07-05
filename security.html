@@ -1,0 +1,499 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Security &amp; Compliance | Raj Mata Bank</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d9dadb",
+                    "secondary": "#885200",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f3f4f5",
+                    "tertiary": "#000a1d",
+                    "on-primary-container": "#708ab5",
+                    "secondary-container": "#fcaa46",
+                    "tertiary-container": "#052142",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "surface-bright": "#f8f9fa",
+                    "surface-container-high": "#e7e8e9",
+                    "on-secondary-container": "#6d4100",
+                    "tertiary-fixed": "#d5e3ff",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e4",
+                    "on-tertiary-container": "#7389b0",
+                    "on-surface-variant": "#44474e",
+                    "on-tertiary-fixed-variant": "#30476a",
+                    "outline-variant": "#c4c6cf",
+                    "on-tertiary-fixed": "#001b3c",
+                    "surface-container-highest": "#e1e3e4",
+                    "primary": "#000a1e",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#2b1700",
+                    "on-secondary-fixed-variant": "#673d00",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#aec7f6",
+                    "surface-tint": "#465f88",
+                    "inverse-on-surface": "#f0f1f2",
+                    "outline": "#74777f",
+                    "on-error": "#ffffff",
+                    "background": "#f8f9fa",
+                    "primary-fixed": "#d6e3ff",
+                    "on-primary-fixed": "#001b3d",
+                    "secondary-fixed-dim": "#ffb869",
+                    "on-primary-fixed-variant": "#2d476f",
+                    "tertiary-fixed-dim": "#b0c7f1",
+                    "surface": "#f8f9fa",
+                    "on-background": "#191c1d",
+                    "surface-container": "#edeeef",
+                    "on-surface": "#191c1d",
+                    "secondary-fixed": "#ffdcbb",
+                    "inverse-primary": "#aec7f6",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#002147"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-md": "16px",
+                    "stack-lg": "32px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "container-max": "1200px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "label-md": ["Public Sans"],
+                    "label-sm": ["Public Sans"],
+                    "body-md": ["Public Sans"],
+                    "headline-xl": ["\"Source Serif 4\""],
+                    "headline-lg-mobile": ["\"Source Serif 4\""],
+                    "headline-sm": ["\"Source Serif 4\""],
+                    "body-sm": ["Public Sans"],
+                    "headline-lg": ["\"Source Serif 4\""],
+                    "body-lg": ["Public Sans"],
+                    "headline-md": ["\"Source Serif 4\""]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .security-pattern {
+            background-image: radial-gradient(rgba(0, 33, 71, 0.05) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+        .nav-dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+<link rel='stylesheet' href='css/styles.css'>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant h-20 flex items-center shadow-sm transition-all duration-300" id="main-header">
+    <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity duration-300 transform hover:scale-105">
+            <span class="material-symbols-outlined text-primary" style="font-size: 32px;">account_balance</span>
+            <span class="font-headline-md font-bold text-primary tracking-tight" style="font-size: 1.5rem; line-height: 1;">Rajmata Bank</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav class="hidden lg:flex gap-gutter h-full items-center">
+            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="index.html">Home</a>
+            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="about.html">About Us</a>
+            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="security.html">Security &amp; Compliance</a>
+            
+            <!-- Services Dropdown -->
+            <div class="dropdown relative h-full flex items-center group">
+                <a href="documentation.html" class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md flex items-center gap-1 relative hover:-translate-y-0.5">
+                    Services
+                    <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+                </a>
+                <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl border-t-2 border-secondary ring-1 ring-black ring-opacity-5 z-50 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#savings-account">Saving Account</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#current-account">Current Account</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#term-deposits">Term Deposit Rates</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#cumulative">Cumulative &amp; RD</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#yield-calculator">Yield Calculator</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#loan-calculator">Loan Calculator</a>
+                    <a class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#bank-charges">Bank Charges</a>
+                </div>
+            </div>
+            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="contact.html">Contact Us</a>
+        </nav>
+
+        <!-- Right Buttons -->
+        <div class="flex items-center gap-4 z-50">
+            <a href="open-account.html" class="px-8 py-2.5 bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold rounded-sm hover:opacity-90 active:scale-95 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 shadow-sm inline-block">Open Account</a>
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-on-surface-variant hover:text-secondary transition-colors">
+                <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Navigation Menu (Hidden by default) -->
+    <div id="mobile-menu" class="fixed inset-0 bg-surface z-40 flex flex-col hidden lg:hidden pt-24 px-6 border-t border-outline-variant">
+        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="index.html">Home</a>
+        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="about.html">About Us</a>
+        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="security.html">Security &amp; Compliance</a>
+        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="documentation.html">Services</a>
+        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm" href="contact.html">Contact Us</a>
+    </div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section: Security Identity -->
+<section class="relative py-20 overflow-hidden bg-primary-container text-white">
+<div class="absolute inset-0 opacity-10"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="max-w-2xl">
+<span class="inline-block px-3 py-1 bg-secondary text-on-primary text-label-sm font-label-sm rounded-sm mb-4">RBI COMPLIANT</span>
+<h1 class="font-headline-xl text-headline-xl mb-6">Security &amp; Strategic Compliance</h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed mb-8">
+                        Our commitment to your financial safety goes beyond standard banking. We operate with radical transparency, adhering to the highest global security standards and RBI mandatory disclosures.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="flex items-center gap-2 px-8 py-3 bg-white text-primary font-label-md text-label-md rounded-sm hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">description</span>
+                            View Basel III Pillar 3
+                        </button>
+<button class="flex items-center gap-2 px-8 py-3 border border-primary-fixed-dim text-primary-fixed font-label-md text-label-md rounded-sm hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">verified_user</span>
+                            KYC Guidelines
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Compliance & Reports: Bento Grid -->
+<section class="py-stack-lg px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-end justify-between mb-stack-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Statutory Disclosures</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Mandatory regulatory reporting and audited financial records.</p>
+</div>
+<button class="text-secondary font-label-md text-label-md underline">Download All Reports (PDF)</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Financials Card -->
+<div class="md:col-span-8 bg-white border border-outline-variant p-stack-lg rounded-sm hover:shadow-lg transition-shadow">
+<div class="flex items-start justify-between mb-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-surface-container rounded-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-size: 32px;">account_balance</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Audited Financial Statements</h3>
+<p class="text-body-sm text-on-surface-variant">Annual and Quarterly Review - FY 2023-24</p>
+</div>
+</div>
+<span class="px-2 py-1 bg-green-100 text-green-800 text-label-sm rounded-sm">Verified</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-sm hover:bg-surface-container transition-colors group cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">picture_as_pdf</span>
+<span class="font-label-md text-label-md">Annual Report 2023-24</span>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">download</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-sm hover:bg-surface-container transition-colors group cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">picture_as_pdf</span>
+<span class="font-label-md text-label-md">Q3 Unaudited Financial Results</span>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">download</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-sm hover:bg-surface-container transition-colors group cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">picture_as_pdf</span>
+<span class="font-label-md text-label-md">Balance Sheet &amp; Cash Flow</span>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">download</span>
+</div>
+</div>
+</div>
+<!-- KYC Card -->
+<div class="md:col-span-4 bg-surface-container-high p-stack-lg border border-outline-variant flex flex-col rounded-sm">
+<span class="material-symbols-outlined text-secondary mb-4" style="font-size: 40px;">person_check</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">KYC Norms</h3>
+<p class="text-body-sm text-on-surface-variant mb-6">Learn about the mandatory Know Your Customer process as per RBI guidelines to keep your account active and secure.</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-2 text-body-sm">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            Aadhar-based e-KYC
+                        </li>
+<li class="flex items-center gap-2 text-body-sm">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            Video KYC Process
+                        </li>
+<li class="flex items-center gap-2 text-body-sm">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            Periodic Updation
+                        </li>
+</ul>
+<div class="relative group/tooltip">
+<button class="w-full py-3 bg-primary text-white font-label-md text-label-md hover:bg-primary-container transition-colors">Complete Your KYC</button>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2 bg-inverse-surface text-inverse-on-surface text-[10px] rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity pointer-events-none text-center">
+                            This action redirects to the Secure KYC Portal
+                        </div>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-2 text-center">Redirects to our Secure KYC Portal</p>
+</div>
+<!-- Basel III Mini Card -->
+<div class="md:col-span-4 bg-white border border-outline-variant p-stack-md rounded-sm">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<h4 class="font-label-md text-label-md">Basel III Pillar 3</h4>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-4">Capital adequacy and market discipline disclosures.</p>
+<a class="text-secondary font-label-sm text-label-sm flex items-center gap-1 group" href="#">
+                        Explore Reports
+                        <span class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Fraud Prevention Mini Card -->
+<div class="md:col-span-4 bg-secondary-container p-stack-md rounded-sm border border-secondary">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-on-secondary-container">gpp_maybe</span>
+<h4 class="font-label-md text-label-md text-on-secondary-container">Fraud Prevention</h4>
+</div>
+<p class="text-body-sm text-on-secondary-container/80 mb-4">Stay alert against phishing, vishing, and online scams.</p>
+<a class="text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1 group" href="#">
+                        Security Tips
+                        <span class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Unclaimed Deposits Mini Card -->
+<div class="md:col-span-4 bg-white border border-outline-variant p-stack-md rounded-sm">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">savings</span>
+<h4 class="font-label-md text-label-md">Unclaimed Deposits</h4>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-4">Search for funds in accounts inactive for 10+ years.</p>
+<a class="text-secondary font-label-sm text-label-sm flex items-center gap-1 group" href="#">
+                        Search Portal
+                        <span class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Security UX: Visual Trust Section -->
+<section class="bg-surface-bright py-20 security-pattern border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="relative rounded-sm overflow-hidden shadow-2xl h-[400px]">
+<div class="bg-cover bg-center w-full h-full" data-alt="A sophisticated close-up of a high-tech biometric security interface with glowing navy blue circuit lines on a clean white glass surface. The lighting is bright and professional, suggesting a corporate modern banking environment. Abstract symbols of data encryption and protection float in a shallow depth of field, emphasizing high-level digital security and trust." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpZzbiL_s3RQFReU62GhlbeCv1wYTbTGRQjM0ZZfn1SYpG2K5VNH2MoaZsBUau_DA3EPRu9FZ5G17a__-Qy3kvZ0Ltzxjo4m3-St5fhBvrHFEK9uI8e_Z0RdUbmTRwnjI5xeAiRgU5Vm3LUwkIn4XGxLr5RNPfsQtZR2g2c09UlV2cc9Vlq7oQnjjzdh1Xabvd4ZEQFDU0HOiybH3g8OIxCnYN09owZyYj0gpjB1_VUjdtvZBQVPAerQ')"></div>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+<div class="bg-white/90 backdrop-blur-md p-6 rounded-sm border border-white/40 max-w-xs text-center">
+<span class="material-symbols-outlined text-primary mb-2" style="font-size: 48px;">lock</span>
+<p class="font-headline-sm text-headline-sm text-primary">AES-256 Bit Encryption</p>
+<p class="text-body-sm text-on-surface-variant">Bank-grade encryption for every transaction.</p>
+</div>
+</div>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">How We Protect Your Data</h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">shield_lock</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Multi-Factor Authentication</h4>
+<p class="text-body-sm text-on-surface-variant">Your account access is layered with OTP, biometric, and hardware-token support to prevent unauthorized entry.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">radar</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Real-time Fraud Monitoring</h4>
+<p class="text-body-sm text-on-surface-variant">Our AI engines scan 24/7 for unusual transaction patterns, instantly flagging and halting suspicious activity.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">encrypted</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Zero-Trust Architecture</h4>
+<p class="text-body-sm text-on-surface-variant">Internal systems operate on a 'never trust, always verify' protocol, ensuring even internal data access is strictly gated.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Redressal & Support -->
+<section class="py-20 max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Grievance Redressal</h2>
+<p class="max-w-2xl mx-auto text-body-md text-on-surface-variant mb-12">We value your feedback. If you have any concerns regarding our services or security, our nodal officers are here to help.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
+<span class="material-symbols-outlined text-secondary mb-4">support_agent</span>
+<h4 class="font-label-md text-label-md text-primary mb-2">Banking Ombudsman</h4>
+<p class="text-body-sm text-on-surface-variant">Resolution for complaints not settled within 30 days.</p>
+</div>
+<div class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
+<span class="material-symbols-outlined text-secondary mb-4">record_voice_over</span>
+<h4 class="font-label-md text-label-md text-primary mb-2">Nodal Officers</h4>
+<div class="text-body-sm text-on-surface-variant">
+<p class="font-bold">Prane</p>
+<p class="">Phone: 1234567890</p>
+<p class="mt-2 text-[12px]">Direct contact details for our regional compliance leads.</p>
+</div>
+</div>
+<div class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
+<span class="material-symbols-outlined text-secondary mb-4">live_help</span>
+<h4 class="font-label-md text-label-md text-primary mb-2">Internal Ombudsman</h4>
+<p class="text-body-sm text-on-surface-variant">Independent oversight for all internal banking grievances.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-tertiary-container dark:bg-tertiary border-t border-outline-variant full-width">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div class="lg:col-span-2">
+<div class="flex items-center gap-4 mb-6">
+<img alt="Raj Mata Bank Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLswyItJKxTWex9hp0RqO6p-lM1Td-l_sZl4jE1gSkCHOIOF9R_JUCmFNa3QN1Ve-0dRa3X10A3cnEnxmtO1JOeNoeZedOhSbJ_hHbycAGqntsu7S8OtujfuY11ATyZIIulnHBEjRM5KRg4i0X9KIW1Wm0a6ltEw4EPqCGozE7g0QV9VAA7eFgvQZp-VTbtSiC0dokM1Xru0xh43463a_U67YK6nOqhXVV9OH3ZIpq3SYOmfByQPRuUtHg3D">
+<span class="font-headline-sm text-headline-sm text-on-tertiary">Raj Mata Bank</span>
+</div>
+<p class="text-on-tertiary-container/80 text-body-sm max-w-xs mb-6">
+                    Empowering your financial journey with trust, transparency, and top-tier digital security.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-on-tertiary-container/30 flex items-center justify-center text-on-tertiary hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-on-tertiary-container/30 flex items-center justify-center text-on-tertiary hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined">notifications</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="text-on-tertiary font-label-md text-label-md mb-6 uppercase tracking-wider">Quick Links</h5>
+<ul class="space-y-4">
+<li class=""><a class="text-on-tertiary-container/80 hover:text-secondary-container underline font-body-sm text-body-sm" href="#">Home</a></li>
+<li class=""><a class="text-on-tertiary-container/80 hover:text-secondary-container underline font-body-sm text-body-sm" href="#">About Us</a></li>
+<li class=""><a class="text-on-tertiary-container/80 hover:text-secondary-container underline font-body-sm text-body-sm" href="#">Interest Rates</a></li>
+<li class=""><a class="text-on-tertiary-container/80 hover:text-secondary-container underline font-body-sm text-body-sm" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-on-tertiary font-label-md text-label-md mb-6 uppercase tracking-wider">Security</h5>
+<ul class="space-y-4">
+<li class=""><a class="text-on-tertiary-container/80 hover:text-secondary-container underline font-body-sm text-body-sm" href="#">Security &amp; Compliance</a></li>
+<li class=""><a class="text-on-tertiary-container/80 hover:text-secondary-container underline font-body-sm text-body-sm" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-on-tertiary-container/80 hover:text-secondary-container underline font-body-sm text-body-sm" href="#">Security Tips</a></li>
+<li class=""><a class="text-on-tertiary-container/80 hover:text-secondary-container underline font-body-sm text-body-sm" href="#">Report Fraud</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-on-tertiary font-label-md text-label-md mb-6 uppercase tracking-wider">Regulatory</h5>
+<div class="mb-6">
+<img alt="Official DICGC logo emblem representing deposit insurance for Indian banks. The logo is displayed in a clean white monochrome style to fit the footer of a professional banking website. The lighting is soft, emphasizing a sense of governmental trust and financial stability for depositors." class="h-16 w-auto opacity-80 mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXFvhIPmDsU-f9lODA7qIbA3jdQUwBqUyrfjabxLk60O9OU1pK5R7QNFHNRlmvYq-OgXFgMcg0ADqlQA-ZyhD5eto2p73aHrUCoicOgtqcPy7U5QP4EowTcUTrqrPC1l_GfPgcHpu5G4efgj2zd_9M_hyEwjaj3M2bXWgD-C-QDagwp8eJOXHeoC9-eYb6AN8m8E5rEbdIHvGKowZBs_8Uv4cirjoIsu6tZd-K-_TKrnRoYdaIPojCvQ">
+<p class="text-on-tertiary-container/60 text-[10px] leading-tight">Member DICGC. Deposits insured up to â¹5 Lakh per customer.</p>
+</div>
+</div>
+</div>
+<div class="border-t border-on-tertiary-container/10 px-margin-desktop py-8 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-sm text-body-sm text-on-tertiary-container/60">Â© 2024 Raj Mata Bank. All Rights Reserved. Member DICGC.</p>
+<div class="flex gap-6">
+<a class="text-on-tertiary-container/60 hover:text-on-tertiary text-xs" href="#">Terms &amp; Conditions</a>
+<a class="text-on-tertiary-container/60 hover:text-on-tertiary text-xs" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for document rows
+        document.querySelectorAll('.group.cursor-pointer').forEach(row => {
+            row.addEventListener('click', () => {
+                const label = row.querySelector('.font-label-md').innerText;
+                alert(`Starting download for: ${label}`);
+            });
+        });
+
+        // Simple parallax-like scroll effect for the pattern
+        window.addEventListener('scroll', () => {
+            const pattern = document.querySelector('.security-pattern');
+            if (pattern) {
+                const scrolled = window.pageYOffset;
+                pattern.style.backgroundPosition = `0 ${scrolled * 0.1}px`;
+            }
+        });
+    </script>
+
+
+<script src='js/main.js'></script>
+
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.js"></script>
+<script>
+    function initNav() {
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        const navLinks = document.querySelectorAll('nav a.nav-link');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('text-secondary', 'font-bold', 'border-b-2', 'border-secondary');
+                link.classList.remove('text-on-surface-variant');
+            } else {
+                link.classList.remove('text-secondary', 'font-bold', 'border-b-2', 'border-secondary');
+                link.classList.add('text-on-surface-variant');
+            }
+        });
+
+        // Mobile menu toggle logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            // Remove existing listener if any
+            const newBtn = mobileMenuBtn.cloneNode(true);
+            mobileMenuBtn.parentNode.replaceChild(newBtn, mobileMenuBtn);
+            newBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = newBtn.querySelector('span');
+                if(mobileMenu.classList.contains('hidden')) {
+                    icon.textContent = 'menu';
+                } else {
+                    icon.textContent = 'close';
+                }
+            });
+        }
+    }
+    document.addEventListener("turbo:load", initNav);
+    document.addEventListener("DOMContentLoaded", initNav);
+</script>
+</body></html>
+

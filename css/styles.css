@@ -1,0 +1,71 @@
+﻿/* Rajmata Bank - Exact Design System Variables */
+:root {
+  /* Colors */
+  --surface: #f8f9fa;
+  --surface-dim: #d9dadb;
+  --surface-bright: #f8f9fa;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f3f4f5;
+  --surface-container: #edeeef;
+  --surface-container-high: #e7e8e9;
+  --surface-container-highest: #e1e3e4;
+  --on-surface: #191c1d;
+  --on-surface-variant: #44474e;
+  --inverse-surface: #2e3132;
+  --inverse-on-surface: #f0f1f2;
+  --outline: #74777f;
+  --outline-variant: #c4c6cf;
+  --surface-tint: #465f88;
+  --primary: #000a1e;
+  --on-primary: #ffffff;
+  --primary-container: #002147;
+  --on-primary-container: #708ab5;
+  --inverse-primary: #aec7f6;
+  --secondary: #885200;
+  --on-secondary: #ffffff;
+  --secondary-container: #fcaa46;
+  --on-secondary-container: #6d4100;
+  --tertiary: #000a1d;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #052142;
+  --on-tertiary-container: #7389b0;
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #93000a;
+  --primary-fixed: #d6e3ff;
+  --primary-fixed-dim: #aec7f6;
+  --on-primary-fixed: #001b3d;
+  --on-primary-fixed-variant: #2d476f;
+  --secondary-fixed: #ffdcbb;
+  --secondary-fixed-dim: #ffb869;
+  --on-secondary-fixed: #2b1700;
+  --on-secondary-fixed-variant: #673d00;
+  --tertiary-fixed: #d5e3ff;
+  --tertiary-fixed-dim: #b0c7f1;
+  --on-tertiary-fixed: #001b3c;
+  --on-tertiary-fixed-variant: #30476a;
+  --background: #f8f9fa;
+  --on-background: #191c1d;
+
+  /* Typography */
+  --font-headline: 'Source Serif 4', serif;
+  --font-body: 'Public Sans', sans-serif;
+  
+  --spacing-unit: 8px;
+  --border-radius-sm: 0.125rem;
+  --border-radius-DEFAULT: 0.25rem;
+  --border-radius-md: 0.375rem;
+  --border-radius-lg: 0.5rem;
+  --border-radius-xl: 0.75rem;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--on-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+}
