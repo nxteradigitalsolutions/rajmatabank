@@ -54,7 +54,7 @@
                     "on-tertiary-container": "#7389b0",
                     "on-secondary-fixed-variant": "#673d00",
                     "on-primary-fixed": "#001b3d",
-                    "secondary": "#885200",
+                    "secondary": "#e31837",
                     "primary": "#000a1e",
                     "surface-container-high": "#e7e8e9",
                     "on-tertiary-fixed-variant": "#30476a",
@@ -64,9 +64,9 @@
                     "surface-container-low": "#f3f4f5",
                     "on-secondary": "#ffffff",
                     "background": "#f8f9fa",
-                    "on-secondary-container": "#6d4100",
+                    "on-secondary-container": "#e31837",
                     "tertiary-fixed": "#d5e3ff",
-                    "secondary-container": "#fcaa46",
+                    "secondary-container": "#ffffff",
                     "on-background": "#191c1d",
                     "secondary-fixed-dim": "#ffb869",
                     "on-surface": "#191c1d",
@@ -145,7 +145,7 @@
     <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
         <!-- Logo -->
         <a href="index.html" class="flex items-center gap-1 md:gap-2 hover:opacity-80 transition-opacity duration-300 transform hover:scale-105">
-            <span class="material-symbols-outlined text-primary text-[24px] md:text-[32px]">account_balance</span>
+            <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
             <span class="font-headline-md font-bold text-primary tracking-tight text-lg md:text-2xl whitespace-nowrap" style="line-height: 1;">Rajmata Bank</span>
         </a>
 
@@ -214,7 +214,7 @@
 <input checked="" class="hidden" id="tab1" name="tabs" type="radio"/>
 <label class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all" for="tab1">Savings Account</label>
 <input class="hidden" id="tab2" name="tabs" type="radio"/>
-<label class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all" for="tab2">Current Account</label>
+<label class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all" for="tab2">Current &amp; Business Account</label>
 <input class="hidden" id="tab3" name="tabs" type="radio"/>
 <label class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all" for="tab3">Term Deposits</label>
 <input class="hidden" id="tab4" name="tabs" type="radio"/>
@@ -268,7 +268,7 @@
 <li>â€¢ Resident Individuals</li>
 <li>â€¢ Minors (through Guardians)</li>
 <li>â€¢ Hindu Undivided Families</li>
-<li>â€¢ Minimum Balance: â‚¹5,000</li>
+<li>â€¢ Minimum Balance: ₹5,000</li>
 </ul>
 </div>
 </div>
@@ -294,28 +294,43 @@
 </div>
 </div>
 <div class="tab-content w-full p-stack-lg" id="content3">
+
 <div class="flex items-center gap-3 mb-stack-md text-secondary">
-<span class="material-symbols-outlined">calendar_today</span>
-<h2 class="font-headline-lg text-primary">Term Deposits (Fixed Deposits)</h2>
+
+<div class="mb-stack-lg bg-surface-container-low p-6 rounded-lg border border-outline-variant">
+    <h3 class="font-headline-sm text-primary mb-4">Products &amp; Services Overview</h3>
+    <ul class="space-y-3 text-body-md text-on-surface-variant">
+        <li><strong>1. Account Types:</strong> Savings, Current, or Business accounts.</li>
+        <li><strong>2. Deposits:</strong> Schemes for Fixed Deposits (FD) and Recurring Deposits (RD).</li>
+        <li><strong>3. Loans Offered:</strong> Gold, Term, Home, Vehicle, Business, Ware House Receipt, Machinery, Clean loan, Staff loan, Nominal member, Household purchases, Personal loan.</li>
+        <li><strong>4. Required Documents:</strong> Check List provided per product for hassle-free processing.</li>
+        <li><strong>5. Terms &amp; Conditions:</strong> Standard banking terms and conditions apply to all products.</li>
+    </ul>
 </div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
-<div class="space-y-4">
-<h3 class="font-headline-sm text-primary">Documentation</h3>
-<ul class="space-y-3">
-<li class="flex gap-2 text-body-md"><span class="text-secondary font-bold">â€¢</span> Existing customers: Only Deposit Application Form required.</li>
-<li class="flex gap-2 text-body-md"><span class="text-secondary font-bold">â€¢</span> New customers: Full KYC (ID, Address, PAN, Photos) as per savings account.</li>
-<li class="flex gap-2 text-body-md"><span class="text-secondary font-bold">â€¢</span> Form 15G/15H: For TDS exemption if applicable.</li>
-</ul>
+
+    <span class="material-symbols-outlined">account_balance</span>
+    <h2 class="font-headline-lg text-primary">Fixed Deposit (FD) Rates</h2>
 </div>
-<div class="bg-surface-container rounded-lg p-6">
-<h3 class="font-label-md text-primary mb-4">Tenure &amp; Payouts</h3>
-<div class="space-y-3 text-body-sm">
-<p><strong>Tenure:</strong> Minimum 7 days to Maximum 10 years.</p>
-<p><strong>Interest Payout:</strong> Choice of Monthly, Quarterly, or On Maturity (Cumulative).</p>
-<p><strong>Premature Withdrawal:</strong> Allowed with applicable 1% penalty on interest rate.</p>
+<div class="overflow-x-auto border border-outline-variant rounded-lg">
+    <table class="w-full text-left border-collapse">
+        <thead>
+            <tr class="bg-surface-container-high border-b border-outline-variant">
+                <th class="p-4 font-label-md text-primary">Tenure</th>
+                <th class="p-4 font-label-md text-primary">Interest Rate (%)</th>
+            </tr>
+        </thead>
+        <tbody class="text-body-sm divide-y divide-outline-variant">
+            <tr><td class="p-4">30 days to 90 days</td><td class="p-4">5.50%</td></tr>
+            <tr><td class="p-4">91 days to 180 days</td><td class="p-4">6.00%</td></tr>
+            <tr><td class="p-4">181 days to 12 months</td><td class="p-4">6.50%</td></tr>
+            <tr><td class="p-4">13 months and above</td><td class="p-4">9.00%</td></tr>
+            <tr><td class="p-4">Institutional Depositor (13 months+)</td><td class="p-4">8.00%</td></tr>
+            <tr><td class="p-4">Dam Duppat Deposit (DDD)</td><td class="p-4">8 Years</td></tr>
+            <tr><td class="p-4">Institutional Dam Duppat Deposit</td><td class="p-4">9 Years</td></tr>
+        </tbody>
+    </table>
 </div>
-</div>
-</div>
+
 </div>
 <div class="tab-content w-full p-stack-lg" id="content4">
 <div class="flex items-center gap-3 mb-stack-md text-secondary">
@@ -326,9 +341,9 @@
 <div class="border border-outline-variant p-6 rounded-lg">
 <h3 class="font-label-md text-secondary mb-3 uppercase tracking-wider">RD Installment Rules</h3>
 <ul class="space-y-2 text-body-md">
-<li>Minimum monthly installment: â‚¹500</li>
+<li>Minimum monthly installment: ₹500</li>
 <li>Standing Instruction (SI) from Savings Account is mandatory</li>
-<li>Late payment penalty: â‚¹1.50 per â‚¹100 per month</li>
+<li>Late payment penalty: ₹1.50 per ₹100 per month</li>
 </ul>
 </div>
 <div class="border border-outline-variant p-6 rounded-lg">
@@ -355,7 +370,7 @@
 </div>
 <div class="space-y-6">
 <div>
-<label class="block text-label-md mb-2">Deposit Amount (â‚¹)</label>
+<label class="block text-label-md mb-2">Deposit Amount (₹)</label>
 <input id="yield-deposit" class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary" placeholder="e.g. 100,000" type="number"/>
 </div>
 <div class="grid grid-cols-2 gap-4">
@@ -371,7 +386,7 @@
 <button type="button" id="yield-btn" class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:bg-primary/90 transition-all">Calculate Maturity Value</button>
 <div id="yield-result" class="mt-6 p-4 bg-surface-container-high rounded text-center hidden">
     <p class="text-label-md text-on-surface-variant">Estimated Maturity Value</p>
-    <h3 class="font-headline-lg text-primary" id="yield-total">â‚¹0</h3>
+    <h3 class="font-headline-lg text-primary" id="yield-total">₹0</h3>
 </div>
 </div>
 </div>
@@ -384,6 +399,26 @@
 <h2 class="font-headline-lg text-primary">Loan Calculator</h2>
 </div>
 <p class="text-body-lg text-on-surface-variant mb-8">Plan your borrowing with our EMI calculator.</p>
+
+<div class="mb-stack-lg p-6 bg-surface-container-low border border-outline-variant rounded-lg">
+    <h3 class="font-label-lg text-primary mb-3">Reference Loan Rates</h3>
+    <p class="text-body-sm mb-4">Use these rates to manually enter your interest percentage below.</p>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-body-sm text-on-surface-variant">
+        <div><strong>Gold Loan:</strong> 10.50%</div>
+        <div><strong>Term Loan:</strong> 14.00%</div>
+        <div><strong>Vehicle Loan:</strong> 13.00%</div>
+        <div><strong>Home Loan:</strong> 13.00%</div>
+        <div><strong>CCHY:</strong> 15.00%</div>
+        <div><strong>Warehouse Receipt:</strong> 12.00%</div>
+        <div><strong>Machinery Loan:</strong> 15.00%</div>
+        <div><strong>Clean Loan:</strong> 16.00%</div>
+        <div><strong>Staff Loan:</strong> 11.00%</div>
+        <div><strong>Nominal Member:</strong> 16.00%</div>
+        <div><strong>Household Purchases:</strong> 15.00%</div>
+        <div><strong>Personal Loan:</strong> 15.00%</div>
+    </div>
+</div>
+
 <div class="bg-surface-container rounded-xl p-8 border border-outline-variant">
 <div class="flex items-center justify-between mb-6">
 <h4 class="font-headline-sm">Calculate Your EMI</h4>
@@ -391,13 +426,13 @@
 </div>
 <div class="space-y-6">
 <div>
-<label class="block text-label-md mb-2">Loan Amount (â‚¹)</label>
+<label class="block text-label-md mb-2">Loan Amount (₹)</label>
 <input id="loan-amount" class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary" placeholder="e.g. 500000" type="number"/>
 </div>
 <div class="grid grid-cols-2 gap-4">
 <div>
 <label class="block text-label-md mb-2">Interest Rate (%)</label>
-<input id="loan-rate" class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary" type="number" step="0.1" value="9.5"/>
+<input id="loan-rate" class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary" type="number" step="0.1" value="10.5"/>
 </div>
 <div>
 <label class="block text-label-md mb-2">Tenure (Years)</label>
@@ -409,65 +444,56 @@
 <div id="loan-result" class="mt-6 p-4 bg-surface-container-high rounded text-center hidden grid grid-cols-3 gap-4">
     <div>
         <p class="text-label-md text-on-surface-variant">Monthly EMI</p>
-        <h3 class="font-headline-md text-primary" id="loan-emi">â‚¹0</h3>
+        <h3 class="font-headline-md text-primary" id="loan-emi">₹0</h3>
     </div>
     <div>
         <p class="text-label-md text-on-surface-variant">Total Interest</p>
-        <h3 class="font-headline-md text-primary" id="loan-total-interest">â‚¹0</h3>
+        <h3 class="font-headline-md text-primary" id="loan-total-interest">₹0</h3>
     </div>
     <div>
         <p class="text-label-md text-on-surface-variant">Total Payment</p>
-        <h3 class="font-headline-md text-primary" id="loan-total-payment">â‚¹0</h3>
+        <h3 class="font-headline-md text-primary" id="loan-total-payment">₹0</h3>
     </div>
 </div>
 
 </div>
 </div>
+
+
+
 </div>
 </div>
 <div class="tab-content w-full p-stack-lg" id="content7">
+
 <div class="flex items-center gap-3 mb-stack-md text-secondary">
-<span class="material-symbols-outlined">receipt_long</span>
-<h2 class="font-headline-lg text-primary">Schedule of Bank Charges</h2>
+    <span class="material-symbols-outlined">payments</span>
+    <h2 class="font-headline-lg text-primary">Bank Charges</h2>
 </div>
 <div class="overflow-x-auto border border-outline-variant rounded-lg">
-<table class="w-full text-left border-collapse">
-<thead>
-<tr class="bg-surface-container-high border-b border-outline-variant">
-<th class="p-4 font-label-md text-primary">Service Category</th>
-<th class="p-4 font-label-md text-primary">Charge / Fee</th>
-<th class="p-4 font-label-md text-primary">Remarks</th>
-</tr>
-</thead>
-<tbody class="text-body-sm divide-y divide-outline-variant">
-<tr>
-<td class="p-4 font-medium">Minimum Balance Shortfall</td>
-<td class="p-4">â‚¹200 - â‚¹500 per month</td>
-<td class="p-4">Depends on shortfall %</td>
-</tr>
-<tr>
-<td class="p-4 font-medium">Debit Card Annual Fee</td>
-<td class="p-4">â‚¹250 + GST</td>
-<td class="p-4">Classic Contactless Card</td>
-</tr>
-<tr>
-<td class="p-4 font-medium">RTGS / NEFT (Branch)</td>
-<td class="p-4">â‚¹2 - â‚¹25 per txn</td>
-<td class="p-4">Free via Internet Banking</td>
-</tr>
-<tr>
-<td class="p-4 font-medium">Duplicate Statement</td>
-<td class="p-4">â‚¹100 per page</td>
-<td class="p-4">Available free on Email</td>
-</tr>
-</tbody>
-</table>
+    <table class="w-full text-left border-collapse mb-8">
+        <thead>
+            <tr class="bg-surface-container-high border-b border-outline-variant">
+                <th class="p-4 font-label-md text-primary">Loan Type</th>
+                <th class="p-4 font-label-md text-primary">Interest Rate (%)</th>
+            </tr>
+        </thead>
+        <tbody class="text-body-sm divide-y divide-outline-variant">
+            <tr><td class="p-4">Gold Loan</td><td class="p-4">10.50%</td></tr>
+            <tr><td class="p-4">Term Loan</td><td class="p-4">14.00%</td></tr>
+            <tr><td class="p-4">Vehicle Loan</td><td class="p-4">13.00%</td></tr>
+            <tr><td class="p-4">Home Loan</td><td class="p-4">13.00%</td></tr>
+            <tr><td class="p-4">CCHY</td><td class="p-4">15.00%</td></tr>
+            <tr><td class="p-4">Warehouse Receipt</td><td class="p-4">12.00%</td></tr>
+            <tr><td class="p-4">Machinery Loan</td><td class="p-4">15.00%</td></tr>
+            <tr><td class="p-4">Clean Loan</td><td class="p-4">16.00%</td></tr>
+            <tr><td class="p-4">Staff Loan</td><td class="p-4">11.00%</td></tr>
+            <tr><td class="p-4">Nominal Member</td><td class="p-4">16.00%</td></tr>
+            <tr><td class="p-4">Household Purchases</td><td class="p-4">15.00%</td></tr>
+            <tr><td class="p-4">Personal Loan</td><td class="p-4">15.00%</td></tr>
+        </tbody>
+    </table>
 </div>
-<div class="mt-6 p-4 bg-error-container rounded-lg flex gap-3">
-<span class="material-symbols-outlined text-error">info</span>
-<p class="text-body-sm text-on-error-container">All charges are exclusive of 18% GST (Goods and Service Tax). Schedule of charges is subject to revision with 30 days notice.</p>
-</div>
-</div>
+
 </div>
 </section>
 <!-- Interest Rates Summary Card -->
@@ -484,11 +510,11 @@
 </div>
 <div class="flex justify-between items-center border-b border-outline/30 pb-2">
 <span class="text-body-md">Fixed (1 yr)</span>
-<span class="font-headline-sm text-secondary-container">7.15%</span>
+<span class="font-headline-sm text-secondary-container">9.00%</span>
 </div>
 <div class="flex justify-between items-center border-b border-outline/30 pb-2">
-<span class="text-body-md">Sr. Citizen</span>
-<span class="font-headline-sm text-secondary-container">7.65%</span>
+<span class="text-body-md">Inst. Depositor</span>
+<span class="font-headline-sm text-secondary-container">8.00%</span>
 </div>
 </div>
 <p class="mt-6 text-[12px] opacity-60 italic">*Rates effective Oct 2024</p>
@@ -509,31 +535,53 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-tertiary-container dark:bg-tertiary border-t border-outline-variant mt-stack-lg">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg px-margin-desktop py-stack-lg max-w-container-max mx-auto text-on-tertiary-container">
+<footer class="bg-tertiary-container text-on-tertiary-container py-stack-lg border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg">
 <div class="lg:col-span-2">
-<span class="font-headline-sm text-headline-sm text-on-tertiary block mb-4">Raj Mata Bank</span>
-<p class="font-body-sm text-body-sm text-on-tertiary-container/80 mb-6 max-w-xs">Building bridges to your financial future with integrity, security, and the promise of growth.</p>
+<div class="flex items-center gap-2 mb-stack-md opacity-80">
+    <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
+    <span class="font-headline-md font-bold tracking-tight text-white" style="line-height: 1; font-size: 1.5rem;">Rajmata Bank</span>
 </div>
-<div class="flex flex-col gap-2">
-<h4 class="font-label-md text-on-tertiary mb-2">Legal</h4>
-<a class="font-body-sm text-body-sm text-on-tertiary-container/80 hover:text-secondary-container underline transition-colors" href="#">DICGC Logo</a>
-<a class="font-body-sm text-body-sm text-on-tertiary-container/80 hover:text-secondary-container underline transition-colors" href="#">Banking Ombudsman</a>
-<a class="font-body-sm text-body-sm text-on-tertiary-container/80 hover:text-secondary-container underline transition-colors" href="#">Basel III Reports</a>
-</div>
-<div class="flex flex-col gap-2">
-<h4 class="font-label-md text-on-tertiary mb-2">Support</h4>
-<a class="font-body-sm text-body-sm text-on-tertiary-container/80 hover:text-secondary-container underline transition-colors" href="#">Grievance Redressal</a>
-<a class="font-body-sm text-body-sm text-on-tertiary-container/80 hover:text-secondary-container underline transition-colors" href="#">Unclaimed Deposits</a>
-</div>
-<div class="flex flex-col gap-2">
-<h4 class="font-label-md text-on-tertiary mb-2">Contact</h4>
-<p class="font-body-sm text-body-sm text-on-tertiary-container/80">Toll Free: 1800-RAJ-MATA</p>
-<p class="font-body-sm text-body-sm text-on-tertiary-container/80">Email: care@rajmatabank.com</p>
+<p class="font-body-sm text-body-sm opacity-80 max-w-sm mb-stack-md">Empowering financial growth through secure, innovative, and accessible banking solutions since 1996.</p>
+<div class="flex gap-4 mt-2">
+    <a href="https://www.facebook.com/share/1NdZTVKQKG/" target="_blank" class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm">thumb_up</span> Facebook
+    </a>
+    <a href="https://www.instagram.com/rajmatabank_mangalwedha?igsh=d2VuM3ZkNGloczM1" target="_blank" class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm">photo_camera</span> Instagram
+    </a>
 </div>
 </div>
-<div class="px-margin-desktop py-4 border-t border-outline-variant/20 max-w-container-max mx-auto">
-<p class="font-body-sm text-body-sm text-center text-on-tertiary-container/60">Â© 2024 Raj Mata Bank. All Rights Reserved. Member DICGC.</p>
+<div>
+<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Quick Links</h6>
+<ul class="space-y-2">
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="index.html">Home</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="documentation.html">Services</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="about.html">About Us</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Regulatory</h6>
+<ul class="space-y-2">
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Compliance</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Privacy Policy</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Terms &amp; Conditions</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Contact</h6>
+<p class="font-body-sm text-body-sm mb-2"><a href="https://share.google/PEMGoE1Nk0lGnpYa0" target="_blank" class="hover:text-secondary opacity-80 hover:opacity-100 hover:underline transition-colors flex items-start gap-1"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>NEAR ST STAND DAMAJI CHOWK, MANGALWEDHA, TAL- MANGALWEDHA, DIST-SOLAPUR. PIN-413305</span></a></p>
+<p class="font-body-sm text-body-sm opacity-80">Helpline: 02188-220244</p>
+<p class="font-body-sm text-body-sm opacity-80">Email: helpdesk@rajmata.bank.in</p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-sm text-body-sm opacity-60">© 2024 Rajmata Urban Co-Op Bank Ltd., Mangalwedha. All Rights Reserved. Member DICGC.</p>
+<div class="flex items-center gap-4 grayscale opacity-50">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span class="font-label-sm text-label-sm">RBI Regulated (Lic: U.B.D.MAH.1310)</span>
+</div>
 </div>
 </footer>
 <script>
@@ -577,7 +625,7 @@
             const T = parseFloat(document.getElementById('yield-tenure').value) || 0;
             if(P > 0 && T > 0) {
                 const A = P * Math.pow((1 + (R / 100) / 12), T);
-                document.getElementById('yield-total').textContent = 'â‚¹' + Math.round(A).toLocaleString('en-IN');
+                document.getElementById('yield-total').textContent = '₹' + Math.round(A).toLocaleString('en-IN');
                 document.getElementById('yield-result').classList.remove('hidden');
             }
         });
@@ -597,9 +645,9 @@
                 const totalPayment = EMI * N;
                 const totalInterest = totalPayment - P;
                 
-                document.getElementById('loan-emi').textContent = 'â‚¹' + Math.round(EMI).toLocaleString('en-IN');
-                document.getElementById('loan-total-interest').textContent = 'â‚¹' + Math.round(totalInterest).toLocaleString('en-IN');
-                document.getElementById('loan-total-payment').textContent = 'â‚¹' + Math.round(totalPayment).toLocaleString('en-IN');
+                document.getElementById('loan-emi').textContent = '₹' + Math.round(EMI).toLocaleString('en-IN');
+                document.getElementById('loan-total-interest').textContent = '₹' + Math.round(totalInterest).toLocaleString('en-IN');
+                document.getElementById('loan-total-payment').textContent = '₹' + Math.round(totalPayment).toLocaleString('en-IN');
                 document.getElementById('loan-result').classList.remove('hidden');
             }
         });
@@ -654,10 +702,10 @@
         const navLinks = document.querySelectorAll('nav a.nav-link');
         navLinks.forEach(link => {
             if (link.getAttribute('href') === currentPath) {
-                link.classList.add('text-secondary', 'font-bold', 'border-b-2', 'border-secondary');
+                link.classList.add('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
                 link.classList.remove('text-on-surface-variant');
             } else {
-                link.classList.remove('text-secondary', 'font-bold', 'border-b-2', 'border-secondary');
+                link.classList.remove('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
                 link.classList.add('text-on-surface-variant');
             }
         });
@@ -683,4 +731,30 @@
     document.addEventListener("turbo:load", initNav);
     document.addEventListener("DOMContentLoaded", initNav);
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const rdBtn = document.getElementById('rd-btn');
+        if (rdBtn) {
+            rdBtn.addEventListener('click', () => {
+                const P = parseFloat(document.getElementById('rd-amount').value);
+                const r = parseFloat(document.getElementById('rd-rate').value);
+                const n = parseFloat(document.getElementById('rd-tenure').value);
+                
+                if (P && r && n) {
+                    // Formula for RD maturity: M = P * n + P * n * (n+1) * r / (2400)
+                    const totalInvestment = P * n;
+                    const interest = (P * n * (n + 1) * r) / 2400;
+                    const maturity = totalInvestment + interest;
+                    
+                    document.getElementById('rd-total-investment').innerText = '₹' + Math.round(totalInvestment).toLocaleString('en-IN');
+                    document.getElementById('rd-total-interest').innerText = '₹' + Math.round(interest).toLocaleString('en-IN');
+                    document.getElementById('rd-maturity-value').innerText = '₹' + Math.round(maturity).toLocaleString('en-IN');
+                    document.getElementById('rd-result').classList.remove('hidden');
+                }
+            });
+        }
+    });
+</script>
+
 </body></html>

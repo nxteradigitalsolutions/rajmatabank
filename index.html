@@ -12,19 +12,19 @@
                 extend: {
                     "colors": {
                         "surface-dim": "#d9dadb",
-                        "secondary": "#885200",
+                        "secondary": "#e31837",
                         "on-error-container": "#93000a",
                         "surface-container-low": "#f3f4f5",
                         "tertiary": "#000a1d",
                         "on-primary-container": "#708ab5",
-                        "secondary-container": "#fcaa46",
+                        "secondary-container": "#ffffff",
                         "tertiary-container": "#052142",
                         "on-tertiary": "#ffffff",
                         "on-primary": "#ffffff",
                         "inverse-surface": "#2e3132",
                         "surface-bright": "#f8f9fa",
                         "surface-container-high": "#e7e8e9",
-                        "on-secondary-container": "#6d4100",
+                        "on-secondary-container": "#e31837",
                         "tertiary-fixed": "#d5e3ff",
                         "error-container": "#ffdad6",
                         "surface-variant": "#e1e3e4",
@@ -122,7 +122,7 @@
     <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
         <!-- Logo -->
         <a href="index.html" class="flex items-center gap-1 md:gap-2 hover:opacity-80 transition-opacity duration-300 transform hover:scale-105">
-            <span class="material-symbols-outlined text-primary text-[24px] md:text-[32px]">account_balance</span>
+            <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
             <span class="font-headline-md font-bold text-primary tracking-tight text-lg md:text-2xl whitespace-nowrap" style="line-height: 1;">Rajmata Bank</span>
         </a>
 
@@ -179,7 +179,6 @@
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Experience a legacy of secure banking built on institutional trust, redefined for the modern digital era with cutting-edge fintech solutions.</p>
 <div class="flex flex-wrap gap-stack-md">
 <a href="documentation.html" class="flex items-center gap-2 px-8 py-3 bg-secondary text-white font-label-md text-label-md rounded-sm hover:brightness-110 transition-all shadow-md">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_balance</span>
                     Our Services
                 </a>
 <a data-turbo="false" href="documentation.html#loan-calculator" class="flex items-center gap-2 px-8 py-3 bg-surface border border-outline-variant text-primary font-label-md text-label-md rounded-sm hover:bg-surface-container-low transition-all shadow-sm">
@@ -344,46 +343,51 @@
 </section>
 <!-- Footer -->
 <footer class="bg-tertiary-container text-on-tertiary-container py-stack-lg border-t border-outline-variant">
-<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg">
 <div class="lg:col-span-2">
 <div class="flex items-center gap-2 mb-stack-md opacity-80">
-    <span class="material-symbols-outlined text-white" style="font-size: 32px;">account_balance</span>
+    <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
     <span class="font-headline-md font-bold tracking-tight text-white" style="line-height: 1; font-size: 1.5rem;">Rajmata Bank</span>
 </div>
-<p class="font-body-sm text-body-sm opacity-80 max-w-sm mb-stack-md">Empowering financial growth through secure, innovative, and accessible banking solutions for over half a century.</p>
-<div class="flex gap-4">
-<span class="material-symbols-outlined cursor-pointer hover:text-secondary-container transition-colors">face_nod</span>
-<span class="material-symbols-outlined cursor-pointer hover:text-secondary-container transition-colors">alternate_email</span>
-<span class="material-symbols-outlined cursor-pointer hover:text-secondary-container transition-colors">campaign</span>
+<p class="font-body-sm text-body-sm opacity-80 max-w-sm mb-stack-md">Empowering financial growth through secure, innovative, and accessible banking solutions since 1996.</p>
+<div class="flex gap-4 mt-2">
+    <a href="https://www.facebook.com/share/1NdZTVKQKG/" target="_blank" class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm">thumb_up</span> Facebook
+    </a>
+    <a href="https://www.instagram.com/rajmatabank_mangalwedha?igsh=d2VuM3ZkNGloczM1" target="_blank" class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm">photo_camera</span> Instagram
+    </a>
 </div>
 </div>
 <div>
 <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Quick Links</h6>
 <ul class="space-y-2">
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Home</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Services</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Security &amp; Compliance</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="index.html">Home</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="documentation.html">Services</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="about.html">About Us</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="contact.html">Contact Us</a></li>
 </ul>
 </div>
 <div>
 <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Regulatory</h6>
 <ul class="space-y-2">
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Basel III Reports</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Unclaimed Deposits</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary-container underline decoration-transparent hover:decoration-secondary-container transition-all" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Compliance</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Privacy Policy</a></li>
+<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Terms &amp; Conditions</a></li>
 </ul>
 </div>
 <div>
 <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Contact</h6>
-<p class="font-body-sm text-body-sm opacity-80">Helpline: 1800-RAJ-MATA</p>
-<p class="font-body-sm text-body-sm opacity-80">Email: help@rajmata.bank</p>
+<p class="font-body-sm text-body-sm mb-2"><a href="https://share.google/PEMGoE1Nk0lGnpYa0" target="_blank" class="hover:text-secondary opacity-80 hover:opacity-100 hover:underline transition-colors flex items-start gap-1"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>NEAR ST STAND DAMAJI CHOWK, MANGALWEDHA, TAL- MANGALWEDHA, DIST-SOLAPUR. PIN-413305</span></a></p>
+<p class="font-body-sm text-body-sm opacity-80">Helpline: 02188-220244</p>
+<p class="font-body-sm text-body-sm opacity-80">Email: helpdesk@rajmata.bank.in</p>
 </div>
 </div>
-<div class="max-w-container-max mx-auto px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-body-sm text-body-sm opacity-60">Â© 2024 Raj Mata Bank. All Rights Reserved. Member DICGC.</p>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-sm text-body-sm opacity-60">© 2024 Rajmata Urban Co-Op Bank Ltd., Mangalwedha. All Rights Reserved. Member DICGC.</p>
 <div class="flex items-center gap-4 grayscale opacity-50">
 <span class="material-symbols-outlined text-sm">verified</span>
-<span class="font-label-sm text-label-sm">RBI Regulated</span>
+<span class="font-label-sm text-label-sm">RBI Regulated (Lic: U.B.D.MAH.1310)</span>
 </div>
 </div>
 </footer>
@@ -417,10 +421,10 @@
         const navLinks = document.querySelectorAll('nav a.nav-link');
         navLinks.forEach(link => {
             if (link.getAttribute('href') === currentPath) {
-                link.classList.add('text-secondary', 'font-bold', 'border-b-2', 'border-secondary');
+                link.classList.add('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
                 link.classList.remove('text-on-surface-variant');
             } else {
-                link.classList.remove('text-secondary', 'font-bold', 'border-b-2', 'border-secondary');
+                link.classList.remove('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
                 link.classList.add('text-on-surface-variant');
             }
         });

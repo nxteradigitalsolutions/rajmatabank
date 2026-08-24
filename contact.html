@@ -1,396 +1,503 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact Us | Raj Mata Bank</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap" rel="stylesheet"/>
-<style>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Us | Raj Mata Bank</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap"
+        rel="stylesheet" />
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .fill-icon {
             font-variation-settings: 'FILL' 1;
         }
+
         /* Custom Scrollbar for a more institutional feel */
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: #f8f9fa;
         }
+
         ::-webkit-scrollbar-thumb {
             background: #d9dadb;
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: #74777f;
         }
+
         /* Dropdown display on hover */
         .dropdown:hover .dropdown-menu {
             display: block;
         }
     </style>
-<script id="tailwind-config">
+    <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "surface-dim": "#d9dadb",
-                      "secondary": "#885200",
-                      "on-error-container": "#93000a",
-                      "surface-container-low": "#f3f4f5",
-                      "tertiary": "#000a1d",
-                      "on-primary-container": "#708ab5",
-                      "secondary-container": "#fcaa46",
-                      "tertiary-container": "#052142",
-                      "on-tertiary": "#ffffff",
-                      "on-primary": "#ffffff",
-                      "inverse-surface": "#2e3132",
-                      "surface-bright": "#f8f9fa",
-                      "surface-container-high": "#e7e8e9",
-                      "on-secondary-container": "#6d4100",
-                      "tertiary-fixed": "#d5e3ff",
-                      "error-container": "#ffdad6",
-                      "surface-variant": "#e1e3e4",
-                      "on-tertiary-container": "#7389b0",
-                      "on-surface-variant": "#44474e",
-                      "on-tertiary-fixed-variant": "#30476a",
-                      "outline-variant": "#c4c6cf",
-                      "on-tertiary-fixed": "#001b3c",
-                      "surface-container-highest": "#e1e3e4",
-                      "primary": "#000a1e",
-                      "error": "#ba1a1a",
-                      "on-secondary-fixed": "#2b1700",
-                      "on-secondary-fixed-variant": "#673d00",
-                      "on-secondary": "#ffffff",
-                      "primary-fixed-dim": "#aec7f6",
-                      "surface-tint": "#465f88",
-                      "inverse-on-surface": "#f0f1f2",
-                      "outline": "#74777f",
-                      "on-error": "#ffffff",
-                      "background": "#f8f9fa",
-                      "primary-fixed": "#d6e3ff",
-                      "on-primary-fixed": "#001b3d",
-                      "secondary-fixed-dim": "#ffb869",
-                      "on-primary-fixed-variant": "#2d476f",
-                      "tertiary-fixed-dim": "#b0c7f1",
-                      "surface": "#f8f9fa",
-                      "on-background": "#191c1d",
-                      "surface-container": "#edeeef",
-                      "on-surface": "#191c1d",
-                      "secondary-fixed": "#ffdcbb",
-                      "inverse-primary": "#aec7f6",
-                      "surface-container-lowest": "#ffffff",
-                      "primary-container": "#002147"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "spacing": {
-                      "stack-md": "16px",
-                      "stack-lg": "32px",
-                      "margin-mobile": "20px",
-                      "margin-desktop": "64px",
-                      "gutter": "24px",
-                      "stack-sm": "8px",
-                      "container-max": "1200px",
-                      "unit": "8px"
-              },
-              "fontFamily": {
-                      "label-md": ["Public Sans"],
-                      "label-sm": ["Public Sans"],
-                      "body-md": ["Public Sans"],
-                      "headline-xl": ["\"Source Serif 4\""],
-                      "headline-lg-mobile": ["\"Source Serif 4\""],
-                      "headline-sm": ["\"Source Serif 4\""],
-                      "body-sm": ["Public Sans"],
-                      "headline-lg": ["\"Source Serif 4\""],
-                      "body-lg": ["Public Sans"],
-                      "headline-md": ["\"Source Serif 4\""]
-              },
-              "fontSize": {
-                      "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
-                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                      "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
-                      "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
-                      "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
-                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
-              }
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d9dadb",
+                        "secondary": "#885200",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary": "#000a1d",
+                        "on-primary-container": "#708ab5",
+                        "secondary-container": "#fcaa46",
+                        "tertiary-container": "#052142",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-high": "#e7e8e9",
+                        "on-secondary-container": "#6d4100",
+                        "tertiary-fixed": "#d5e3ff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-container": "#7389b0",
+                        "on-surface-variant": "#44474e",
+                        "on-tertiary-fixed-variant": "#30476a",
+                        "outline-variant": "#c4c6cf",
+                        "on-tertiary-fixed": "#001b3c",
+                        "surface-container-highest": "#e1e3e4",
+                        "primary": "#000a1e",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#2b1700",
+                        "on-secondary-fixed-variant": "#673d00",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#aec7f6",
+                        "surface-tint": "#465f88",
+                        "inverse-on-surface": "#f0f1f2",
+                        "outline": "#74777f",
+                        "on-error": "#ffffff",
+                        "background": "#f8f9fa",
+                        "primary-fixed": "#d6e3ff",
+                        "on-primary-fixed": "#001b3d",
+                        "secondary-fixed-dim": "#ffb869",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "tertiary-fixed-dim": "#b0c7f1",
+                        "surface": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "surface-container": "#edeeef",
+                        "on-surface": "#191c1d",
+                        "secondary-fixed": "#ffdcbb",
+                        "inverse-primary": "#aec7f6",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#002147"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "container-max": "1200px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "headline-xl": ["\"Source Serif 4\""],
+                        "headline-lg-mobile": ["\"Source Serif 4\""],
+                        "headline-sm": ["\"Source Serif 4\""],
+                        "body-sm": ["Public Sans"],
+                        "headline-lg": ["\"Source Serif 4\""],
+                        "body-lg": ["Public Sans"],
+                        "headline-md": ["\"Source Serif 4\""]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                },
             },
-          },
         }
-      </script>
-<link rel="stylesheet" href="css/styles.css">
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
-<!-- TopNavBar -->
-<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant h-20 flex items-center shadow-sm transition-all duration-300" id="main-header">
-    <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center gap-1 md:gap-2 hover:opacity-80 transition-opacity duration-300 transform hover:scale-105">
-            <span class="material-symbols-outlined text-primary text-[24px] md:text-[32px]">account_balance</span>
-            <span class="font-headline-md font-bold text-primary tracking-tight text-lg md:text-2xl whitespace-nowrap" style="line-height: 1;">Rajmata Bank</span>
-        </a>
 
-        <!-- Navigation Links -->
-        <nav class="hidden lg:flex gap-gutter h-full items-center">
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="index.html">Home</a>
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="about.html">About Us</a>
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="security.html">Security &amp; Compliance</a>
-            
-            <!-- Services Dropdown -->
-            <div class="dropdown relative h-full flex items-center group">
-                <a href="documentation.html" class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md flex items-center gap-1 relative hover:-translate-y-0.5">
-                    Services
-                    <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">expand_more</span>
-                </a>
-                <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl border-t-2 border-secondary ring-1 ring-black ring-opacity-5 z-50 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#savings-account">Saving Account</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#current-account">Current Account</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#term-deposits">Term Deposit Rates</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#cumulative">Cumulative &amp; RD</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#yield-calculator">Yield Calculator</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#loan-calculator">Loan Calculator</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#bank-charges">Bank Charges</a>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+    <!-- TopNavBar -->
+    <header
+        class="bg-surface sticky top-0 z-50 border-b border-outline-variant h-20 flex items-center shadow-sm transition-all duration-300"
+        id="main-header">
+        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-full">
+            <!-- Logo -->
+            <a href="index.html"
+                class="flex items-center gap-1 md:gap-2 hover:opacity-80 transition-opacity duration-300 transform hover:scale-105">
+                <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
+                <span
+                    class="font-headline-md font-bold text-primary tracking-tight text-lg md:text-2xl whitespace-nowrap"
+                    style="line-height: 1;">Rajmata Bank</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex gap-gutter h-full items-center">
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="index.html">Home</a>
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="about.html">About Us</a>
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="security.html">Security &amp; Compliance</a>
+
+                <!-- Services Dropdown -->
+                <div class="dropdown relative h-full flex items-center group">
+                    <a href="documentation.html"
+                        class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md flex items-center gap-1 relative hover:-translate-y-0.5">
+                        Services
+                        <span
+                            class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+                    </a>
+                    <div
+                        class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl border-t-2 border-secondary ring-1 ring-black ring-opacity-5 z-50 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#savings-account">Saving Account</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#current-account">Current Account</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#term-deposits">Term Deposit Rates</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#cumulative">Cumulative &amp; RD</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#yield-calculator">Yield Calculator</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#loan-calculator">Loan Calculator</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#bank-charges">Bank Charges</a>
+                    </div>
+                </div>
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="contact.html">Contact Us</a>
+            </nav>
+
+            <!-- Right Buttons -->
+            <div class="flex items-center gap-2 md:gap-4 z-50">
+                <a href="open-account.html"
+                    class="px-4 py-2 md:px-8 md:py-2.5 bg-secondary-container text-on-secondary-container font-label-md text-sm md:text-label-md font-bold rounded-sm hover:opacity-90 active:scale-95 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 shadow-sm inline-block whitespace-nowrap">Open
+                    Account</a>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-btn"
+                    class="lg:hidden p-2 text-on-surface-variant hover:text-secondary transition-colors">
+                    <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-surface z-40 flex flex-col hidden lg:hidden pt-24 px-6 border-t border-outline-variant">
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="index.html">Home</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="about.html">About Us</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="security.html">Security &amp; Compliance</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="documentation.html">Services</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm"
+                href="contact.html">Contact Us</a>
+        </div>
+    </header>
+    <main class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="bg-primary-container py-stack-lg relative overflow-hidden">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 py-12">
+                <h1 class="font-headline-xl text-headline-xl text-on-tertiary-container mb-4">Support &amp; Assistance
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-tertiary-container/80 max-w-2xl">We're here to help you
+                    manage your prosperity. Reach out to our dedicated teams for any inquiries, technical support, or
+                    grievance redressal.</p>
+            </div>
+        </section>
+        <!-- Main Content Grid -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
+            <div class="flex flex-col gap-stack-lg w-full max-w-4xl mx-auto">
+                <!-- Contact Form Column -->
+                <div class="w-full">
+                    <div class="bg-surface-container-lowest border border-outline-variant p-stack-lg shadow-sm">
+                        <h2 class="font-headline-lg text-headline-lg mb-stack-md text-primary">Get in Touch</h2>
+                        <form class="space-y-stack-md">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+                                <div class="space-y-1">
+                                    <label class="font-label-sm text-label-sm text-on-surface-variant">Full Name</label>
+                                    <input
+                                        class="w-full border-outline focus:border-primary focus:ring-0 px-4 py-3 bg-surface-bright border-b-2 transition-all"
+                                        placeholder="e.g. Rahul Sharma" type="text" />
+                                </div>
+                                <div class="space-y-1">
+                                    <label class="font-label-sm text-label-sm text-on-surface-variant">Email
+                                        Address</label>
+                                    <input
+                                        class="w-full border-outline focus:border-primary focus:ring-0 px-4 py-3 bg-surface-bright border-b-2 transition-all"
+                                        placeholder="name@domain.com" type="email" />
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+                                <div class="space-y-1">
+                                    <label class="font-label-sm text-label-sm text-on-surface-variant">Mobile
+                                        Number</label>
+                                    <input
+                                        class="w-full border-outline focus:border-primary focus:ring-0 px-4 py-3 bg-surface-bright border-b-2 transition-all"
+                                        placeholder="+91 00000 00000" type="tel" />
+                                </div>
+                                <div class="space-y-1">
+                                    <label class="font-label-sm text-label-sm text-on-surface-variant">Subject</label>
+                                    <select
+                                        class="w-full border-outline focus:border-primary focus:ring-0 px-4 py-3 bg-surface-bright border-b-2 transition-all">
+                                        <option>General Inquiry</option>
+                                        <option>Account Opening</option>
+                                        <option>Net Banking Support</option>
+                                        <option>Credit Card Services</option>
+                                        <option>Grievance</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <label class="font-label-sm text-label-sm text-on-surface-variant">Your Message</label>
+                                <textarea
+                                    class="w-full border-outline focus:border-primary focus:ring-0 px-4 py-3 bg-surface-bright border-b-2 transition-all resize-none"
+                                    placeholder="How can we assist you today?" rows="5"></textarea>
+                            </div>
+                            <button
+                                class="bg-primary text-on-primary w-full md:w-auto px-10 py-4 font-bold transition-transform active:scale-95 shadow-lg"
+                                type="submit">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Sidebar Info Column -->
+                    <div class="w-full">
+
+                        <!-- HQ Location Info -->
+                        <div
+                            class="bg-surface-container-lowest border border-outline-variant p-6 shadow-sm flex flex-col justify-center">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-2xl">location_on</span>
+                                <h3 class="font-headline-sm text-headline-sm text-primary">Headquarters</h3>
+                            </div>
+                            <p class="text-body-sm text-on-surface-variant font-medium">
+                                NEAR ST STAND DAMAJI CHOWK,<br />MANGALWEDHA, TAL- MANGALWEDHA,<br />DIST-SOLAPUR.
+                                PIN-413305
+                            </p>
+                            <div class="pt-4 mt-4 border-t border-outline-variant flex gap-4">
+                                <a href="https://share.google/PEMGoE1Nk0lGnpYa0" target="_blank"
+                                    class="text-secondary font-bold text-label-md flex items-center gap-1 hover:underline"><span
+                                        class="material-symbols-outlined text-sm">directions</span> Directions</a>
+                                <a href="https://share.google/PEMGoE1Nk0lGnpYa0" target="_blank"
+                                    class="text-secondary font-bold text-label-md flex items-center gap-1 hover:underline"><span
+                                        class="material-symbols-outlined text-sm">share</span> Share</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="contact.html">Contact Us</a>
-        </nav>
+            </div>
 
-        <!-- Right Buttons -->
-        <div class="flex items-center gap-2 md:gap-4 z-50">
-            <a href="open-account.html" class="px-4 py-2 md:px-8 md:py-2.5 bg-secondary-container text-on-secondary-container font-label-md text-sm md:text-label-md font-bold rounded-sm hover:opacity-90 active:scale-95 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 shadow-sm inline-block whitespace-nowrap">Open Account</a>
-            <!-- Mobile Menu Toggle -->
-            <button id="mobile-menu-btn" class="lg:hidden p-2 text-on-surface-variant hover:text-secondary transition-colors">
-                <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
-            </button>
-        </div>
-    </div>
-    
-    <!-- Mobile Navigation Menu (Hidden by default) -->
-    <div id="mobile-menu" class="fixed inset-0 bg-surface z-40 flex flex-col hidden lg:hidden pt-24 px-6 border-t border-outline-variant">
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="index.html">Home</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="about.html">About Us</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="security.html">Security &amp; Compliance</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="documentation.html">Services</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm" href="contact.html">Contact Us</a>
-    </div>
-</header>
-<main class="min-h-screen">
-<!-- Hero Section -->
-<section class="bg-primary-container py-stack-lg relative overflow-hidden">
-<div class="max-w-container-max mx-auto px-margin-desktop relative z-10 py-12">
-<h1 class="font-headline-xl text-headline-xl text-on-tertiary-container mb-4">Support &amp; Assistance</h1>
-<p class="font-body-lg text-body-lg text-on-tertiary-container/80 max-w-2xl">We're here to help you manage your prosperity. Reach out to our dedicated teams for any inquiries, technical support, or grievance redressal.</p>
-</div>
-</section>
-<!-- Main Content Grid -->
-<section class="max-w-container-max mx-auto px-margin-desktop py-stack-lg">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg">
-<!-- Contact Form Column -->
-<div class="lg:col-span-7">
-<div class="bg-surface-container-lowest border border-outline-variant p-stack-lg shadow-sm">
-<h2 class="font-headline-lg text-headline-lg mb-stack-md text-primary">Get in Touch</h2>
-<form class="space-y-stack-md">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
-<div class="space-y-1">
-<label class="font-label-sm text-label-sm text-on-surface-variant">Full Name</label>
-<input class="w-full border-outline focus:border-primary focus:ring-0 px-4 py-3 bg-surface-bright border-b-2 transition-all" placeholder="e.g. Rahul Sharma" type="text"/>
-</div>
-<div class="space-y-1">
-<label class="font-label-sm text-label-sm text-on-surface-variant">Email Address</label>
-<input class="w-full border-outline focus:border-primary focus:ring-0 px-4 py-3 bg-surface-bright border-b-2 transition-all" placeholder="name@domain.com" type="email"/>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
-<div class="space-y-1">
-<label class="font-label-sm text-label-sm text-on-surface-variant">Mobile Number</label>
-<input class="w-full border-outline focus:border-primary focus:ring-0 px-4 py-3 bg-surface-bright border-b-2 transition-all" placeholder="+91 00000 00000" type="tel"/>
-</div>
-<div class="space-y-1">
-<label class="font-label-sm text-label-sm text-on-surface-variant">Subject</label>
-<select class="w-full border-outline focus:border-primary focus:ring-0 px-4 py-3 bg-surface-bright border-b-2 transition-all">
-<option>General Inquiry</option>
-<option>Account Opening</option>
-<option>Net Banking Support</option>
-<option>Credit Card Services</option>
-<option>Grievance</option>
-</select>
-</div>
-</div>
-<div class="space-y-1">
-<label class="font-label-sm text-label-sm text-on-surface-variant">Your Message</label>
-<textarea class="w-full border-outline focus:border-primary focus:ring-0 px-4 py-3 bg-surface-bright border-b-2 transition-all resize-none" placeholder="How can we assist you today?" rows="5"></textarea>
-</div>
-<button class="bg-primary text-on-primary w-full md:w-auto px-10 py-4 font-bold transition-transform active:scale-95 shadow-lg" type="submit">Send Message</button>
-</form>
-</div>
-<!-- Branch Locator -->
-<div class="mt-stack-lg bg-surface-container-low p-stack-lg border border-outline-variant">
-<div class="flex items-center gap-stack-sm mb-4">
-<span class="material-symbols-outlined text-secondary text-3xl">location_on</span>
-<h3 class="font-headline-sm text-headline-sm text-primary">Find a Branch or ATM</h3>
-</div>
-<div class="relative group">
-<input class="w-full bg-surface-container-lowest border border-outline px-12 py-4 focus:ring-2 focus:ring-secondary transition-all" placeholder="Enter City, ZIP Code or Locality" type="text"/>
-<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
-<button class="absolute right-4 top-1/2 -translate-y-1/2 text-secondary font-bold hover:underline">Near Me</button>
-</div>
-<div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-stack-sm">
-<button class="bg-surface-container-highest py-2 px-3 text-label-sm flex items-center justify-center gap-2 hover:bg-secondary-container transition-colors">
-<span class="material-symbols-outlined text-sm">account_balance</span> Branches
-                            </button>
-<button class="bg-surface-container-highest py-2 px-3 text-label-sm flex items-center justify-center gap-2 hover:bg-secondary-container transition-colors">
-<span class="material-symbols-outlined text-sm">atm</span> ATMs
-                            </button>
-<button class="bg-surface-container-highest py-2 px-3 text-label-sm flex items-center justify-center gap-2 hover:bg-secondary-container transition-colors">
-<span class="material-symbols-outlined text-sm">currency_exchange</span> Forex
-                            </button>
-<button class="bg-surface-container-highest py-2 px-3 text-label-sm flex items-center justify-center gap-2 hover:bg-secondary-container transition-colors">
-<span class="material-symbols-outlined text-sm">lock</span> Lockers
-                            </button>
-</div>
-</div>
-</div>
-<!-- Sidebar Info Column -->
-<div class="lg:col-span-5 space-y-stack-lg">
-<!-- HQ Location -->
-<div class="bg-surface-container-lowest border border-outline-variant overflow-hidden">
-<div class="h-64 bg-surface-dim relative">
-<img alt="Headquarters Map Location" class="w-full h-full object-cover grayscale opacity-80 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKgbfuiMseLq3DwKmeFxj9dptyoIYMC5jQBNf3WZm5-BVACGIXstTlD_EImh742xjmSEK6ejmLAU1wSyQzSB0doiWn3DmWVbUUQo52FklLxPU3v-jqnPIH_NcK5T0CVRpjYmetxUp0LbBct2hby7BUeGBQi6IJktcfEbEnx7RXWKmhVOojk0wDpvCa8gNAXhGMgpbSP9YmBwUjsjZt-yn32soMstTobbsJ0yzNimWc7dZMpmsFQ3jfvw"/>
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="bg-primary text-on-primary p-4 shadow-xl flex items-center gap-3">
-<span class="material-symbols-outlined fill-icon text-secondary-container">account_balance</span>
-<div class="text-left">
-<div class="font-label-md">Corporate Headquarters</div>
-<div class="text-[10px] opacity-70">Raj Mata Towers, BKC, Mumbai</div>
-</div>
-</div>
-</div>
-</div>
-<div class="p-stack-md space-y-2">
-<h4 class="font-bold text-primary">Headquarters Address</h4>
-<p class="text-body-sm text-on-surface-variant">
-                                Raj Mata Towers, Plot C-12, G-Block,<br/>
-                                Bandra Kurla Complex, Bandra (East),<br/>
-                                Mumbai - 400051, Maharashtra, India.
-                            </p>
-<div class="pt-4 border-t border-outline-variant flex gap-4">
-<button class="text-secondary font-bold text-label-md flex items-center gap-1 hover:underline">
-<span class="material-symbols-outlined text-sm">directions</span> Directions
-                                </button>
-<button class="text-secondary font-bold text-label-md flex items-center gap-1 hover:underline">
-<span class="material-symbols-outlined text-sm">share</span> Share
-                                </button>
-</div>
-</div>
-</div>
-<!-- Nodal Officer Section -->
-<div class="bg-tertiary-container text-on-tertiary-container p-stack-lg relative overflow-hidden border-l-4 border-secondary">
-<div class="relative z-10">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-secondary-container">gavel</span>
-<h3 class="font-headline-sm text-headline-sm">Grievance Redressal</h3>
-</div>
-<p class="text-body-sm mb-6 opacity-90">In accordance with RBI norms, if your query hasn't been resolved at the branch level, please contact our Principal Nodal Officer.</p>
-<div class="space-y-4">
-<div class="bg-white/5 p-4">
-<div class="font-label-md text-secondary-container">Principal Nodal Officer</div>
-<div class="text-body-md font-bold mb-1">Ms. Ananya Deshmukh</div>
-<div class="flex items-center gap-2 text-sm opacity-80">
-<span class="material-symbols-outlined text-sm">mail</span> pno@rajmatabank.com
-                                    </div>
-<div class="flex items-center gap-2 text-sm opacity-80">
-<span class="material-symbols-outlined text-sm">call</span> +91 (22) 6789 0000
-                                    </div>
-</div>
-<a class="inline-flex items-center gap-2 text-secondary-container font-bold hover:underline" href="#">
-                                    RBI Ombudsman Portal <span class="material-symbols-outlined text-sm">open_in_new</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Direct Support Cards -->
-<div class="grid grid-cols-1 gap-4">
-<div class="p-4 border border-outline-variant flex items-start gap-4 hover:bg-surface-container-low transition-colors group cursor-pointer">
-<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">headset_mic</span>
-</div>
-<div>
-<h5 class="font-bold">24/7 Toll Free</h5>
-<p class="text-body-sm text-on-surface-variant">1800-456-7890</p>
-</div>
-</div>
-<div class="p-4 border border-outline-variant flex items-start gap-4 hover:bg-surface-container-low transition-colors group cursor-pointer">
-<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">chat</span>
-</div>
-<div>
-<h5 class="font-bold">WhatsApp Banking</h5>
-<p class="text-body-sm text-on-surface-variant">+91 98765 43210</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-tertiary-container dark:bg-tertiary border-t border-outline-variant">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg px-margin-desktop py-stack-lg max-w-container-max mx-auto">
-<div class="lg:col-span-2">
-<div class="font-headline-sm text-headline-sm text-on-tertiary mb-4">Raj Mata Bank</div>
-<p class="text-on-tertiary-container/80 text-body-sm max-w-xs mb-6">
-                    A legacy of trust, a future of prosperity. Dedicated to serving our customers with excellence and integrity since 1978.
-                </p>
-<div class="flex gap-4">
-<a class="w-8 h-8 rounded-full border border-on-tertiary-container/30 flex items-center justify-center text-on-tertiary hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#">
-<img alt="Social Media" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8LZulDmVhGNUrMKG8tV3ZlG0qY_MkvuSvb9hqeH_2qfiHpyCj5sswCIj0DQV5yBMbTeQGLfLf1mvkOPFvcWAJBxEgP8o3nNVOMSjoQycapPqCr6jaFT28W4TL57ODqemypNExsZGP8pS2fErIbGvUbuSIzv7wtqEEd9Hg_5C5TSBU6JZcgi6GL_gHX4E-4Lcclzz8xuv0UKOCncCt3vXcuX5FaEX_ODoanxjGxHebOB7rgqBg6xLFUg"/>
-</a>
-</div>
-</div>
-<div class="space-y-4">
-<h6 class="font-bold text-on-tertiary">Quick Links</h6>
-<ul class="space-y-2 text-body-sm">
-<li><a class="text-on-tertiary-container/80 hover:text-secondary-container underline" href="#">Banking Ombudsman</a></li>
-<li><a class="text-on-tertiary-container/80 hover:text-secondary-container underline" href="#">Grievance Redressal</a></li>
-<li><a class="text-on-tertiary-container/80 hover:text-secondary-container underline" href="#">Unclaimed Deposits</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h6 class="font-bold text-on-tertiary">Compliance</h6>
-<ul class="space-y-2 text-body-sm">
-<li><a class="text-on-tertiary-container/80 hover:text-secondary-container underline" href="#">Basel III Reports</a></li>
-<li><a class="text-on-tertiary-container/80 hover:text-secondary-container underline" href="#">DICGC Logo</a></li>
-<li><a class="text-on-tertiary-container/80 hover:text-secondary-container underline" href="#">Privacy Policy</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h6 class="font-bold text-on-tertiary">Our Presence</h6>
-<div class="text-on-tertiary-container/80 text-body-sm">
-                    Available in over 450+ cities nationwide with 1200+ branches.
+            </div>
+            <!-- Nodal Officer Section -->
+            <div
+                class="bg-tertiary-container text-on-tertiary-container p-stack-lg relative overflow-hidden border-l-4 border-secondary">
+                <div class="relative z-10">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="material-symbols-outlined text-secondary-container">gavel</span>
+                        <h3 class="font-headline-sm text-headline-sm">Grievance Redressal</h3>
+                    </div>
+                    <p class="text-body-sm mb-6 opacity-90">In accordance with RBI norms, if your query hasn't been
+                        resolved at the branch level, please contact our Principal Nodal Officer.</p>
+                    <div class="space-y-4">
+                        <div class="bg-white/5 p-4">
+                            <div class="font-label-md text-secondary-container">Principal Nodal Officer</div>
+                            <div class="text-body-md font-bold mb-1">Ms. Ananya Deshmukh</div>
+                            <div class="flex items-center gap-2 text-sm opacity-80">
+                                <span class="material-symbols-outlined text-sm">mail</span> pno@rajmatabank.com
+                            </div>
+                            <div class="flex items-center gap-2 text-sm opacity-80">
+                                <span class="material-symbols-outlined text-sm">call</span> +91 (22) 6789 0000
+                            </div>
+                        </div>
+                        <a class="inline-flex items-center gap-2 text-secondary-container font-bold hover:underline"
+                            href="#">
+                            RBI Ombudsman Portal <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </a>
+                    </div>
                 </div>
-<button class="bg-secondary-container text-on-secondary-container px-4 py-2 font-bold text-label-sm w-full hover:brightness-110">Find Nearest ATM</button>
-</div>
-</div>
-<div class="bg-tertiary px-margin-desktop py-4 text-center">
-<p class="font-body-sm text-body-sm text-on-tertiary-container/60">
-                Â© 2024 Raj Mata Bank. All Rights Reserved. Member DICGC.
-            </p>
-</div>
-</footer>
-<script>
+            </div>
+
+
+            <!-- Banking Hours Section -->
+            <div
+                class="bg-surface-container-lowest border border-outline-variant p-6 shadow-sm flex flex-col justify-center">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-secondary-container text-2xl">schedule</span>
+                    <h3 class="font-headline-sm text-headline-sm">Banking Hours</h3>
+                </div>
+                <ul class="space-y-3 text-body-sm text-on-surface-variant">
+                    <li class="flex justify-between border-b border-outline-variant pb-2">
+                        <span>Mon - Fri</span>
+                        <span class="font-bold text-on-surface">10:00 AM - 4:00 PM</span>
+                    </li>
+                    <li class="flex justify-between border-b border-outline-variant pb-2">
+                        <span>1st & 3rd Sat</span>
+                        <span class="font-bold text-on-surface">10:00 AM - 1:00 PM</span>
+                    </li>
+                    <li class="flex justify-between border-b border-outline-variant pb-2">
+                        <span>2nd & 4th Sat</span>
+                        <span class="font-bold text-primary">Closed</span>
+                    </li>
+                    <li class="flex justify-between pb-1">
+                        <span>Sun & Holidays</span>
+                        <span class="font-bold text-primary">Closed</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Direct Support Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div
+                    class="p-4 border border-outline-variant flex items-start gap-4 hover:bg-surface-container-low transition-colors group cursor-pointer">
+                    <div
+                        class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">call</span>
+                    </div>
+                    <div>
+                        <h5 class="font-bold">Helpline</h5>
+                        <p class="text-body-sm text-on-surface-variant">02188-220244</p>
+                    </div>
+                </div>
+                <div
+                    class="p-4 border border-outline-variant flex items-start gap-4 hover:bg-surface-container-low transition-colors group cursor-pointer">
+                    <div
+                        class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <div>
+                        <h5 class="font-bold">Email Support</h5>
+                        <p class="text-body-sm text-on-surface-variant">helpdesk@rajmata.bank.in</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        </section>
+
+        </section>
+
+
+    </main>
+    <!-- Footer -->
+    <footer class="bg-tertiary-container text-on-tertiary-container py-stack-lg border-t border-outline-variant">
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg">
+            <div class="lg:col-span-2">
+                <div class="flex items-center gap-2 mb-stack-md opacity-80">
+                    <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
+                    <span class="font-headline-md font-bold tracking-tight text-white"
+                        style="line-height: 1; font-size: 1.5rem;">Rajmata Bank</span>
+                </div>
+                <p class="font-body-sm text-body-sm opacity-80 max-w-sm mb-stack-md">Empowering financial growth through
+                    secure, innovative, and accessible banking solutions since 1996.</p>
+                <div class="flex gap-4 mt-2">
+                    <a href="https://www.facebook.com/share/1NdZTVKQKG/" target="_blank"
+                        class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
+                        <span class="material-symbols-outlined text-sm">thumb_up</span> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/rajmatabank_mangalwedha?igsh=d2VuM3ZkNGloczM1" target="_blank"
+                        class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
+                        <span class="material-symbols-outlined text-sm">photo_camera</span> Instagram
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Quick Links</h6>
+                <ul class="space-y-2">
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="index.html">Home</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="documentation.html">Services</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="about.html">About Us</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Regulatory</h6>
+                <ul class="space-y-2">
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="security.html">Compliance</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="security.html">Privacy Policy</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="security.html">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Contact</h6>
+                <p class="font-body-sm text-body-sm mb-2"><a href="https://share.google/PEMGoE1Nk0lGnpYa0"
+                        target="_blank"
+                        class="hover:text-secondary opacity-80 hover:opacity-100 hover:underline transition-colors flex items-start gap-1"><span
+                            class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>NEAR ST STAND
+                            DAMAJI CHOWK, MANGALWEDHA, TAL- MANGALWEDHA, DIST-SOLAPUR. PIN-413305</span></a></p>
+                <p class="font-body-sm text-body-sm opacity-80">Helpline: 02188-220244</p>
+                <p class="font-body-sm text-body-sm opacity-80">Email: helpdesk@rajmata.bank.in</p>
+            </div>
+        </div>
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-body-sm text-body-sm opacity-60">© 2024 Rajmata Urban Co-Op Bank Ltd., Mangalwedha. All
+                Rights Reserved. Member DICGC.</p>
+            <div class="flex items-center gap-4 grayscale opacity-50">
+                <span class="material-symbols-outlined text-sm">verified</span>
+                <span class="font-label-sm text-label-sm">RBI Regulated (Lic: U.B.D.MAH.1310)</span>
+            </div>
+        </div>
+    </footer>
+    <script>
         // Micro-interaction for form focus
         const inputs = document.querySelectorAll('input, select, textarea');
         inputs.forEach(input => {
@@ -421,45 +528,44 @@
             });
         }
     </script>
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
-
-
-
-<script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.js"></script>
-<script>
-    function initNav() {
-        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-        const navLinks = document.querySelectorAll('nav a.nav-link');
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPath) {
-                link.classList.add('text-secondary', 'font-bold', 'border-b-2', 'border-secondary');
-                link.classList.remove('text-on-surface-variant');
-            } else {
-                link.classList.remove('text-secondary', 'font-bold', 'border-b-2', 'border-secondary');
-                link.classList.add('text-on-surface-variant');
-            }
-        });
-
-        // Mobile menu toggle logic
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        if (mobileMenuBtn && mobileMenu) {
-            // Remove existing listener if any
-            const newBtn = mobileMenuBtn.cloneNode(true);
-            mobileMenuBtn.parentNode.replaceChild(newBtn, mobileMenuBtn);
-            newBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                const icon = newBtn.querySelector('span');
-                if(mobileMenu.classList.contains('hidden')) {
-                    icon.textContent = 'menu';
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.js"></script>
+    <script>
+        function initNav() {
+            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('nav a.nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
+                    link.classList.remove('text-on-surface-variant');
                 } else {
-                    icon.textContent = 'close';
+                    link.classList.remove('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
+                    link.classList.add('text-on-surface-variant');
                 }
             });
+
+            // Mobile menu toggle logic
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuBtn && mobileMenu) {
+                // Remove existing listener if any
+                const newBtn = mobileMenuBtn.cloneNode(true);
+                mobileMenuBtn.parentNode.replaceChild(newBtn, mobileMenuBtn);
+                newBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = newBtn.querySelector('span');
+                    if (mobileMenu.classList.contains('hidden')) {
+                        icon.textContent = 'menu';
+                    } else {
+                        icon.textContent = 'close';
+                    }
+                });
+            }
         }
-    }
-    document.addEventListener("turbo:load", initNav);
-    document.addEventListener("DOMContentLoaded", initNav);
-</script>
-</body></html>
+        document.addEventListener("turbo:load", initNav);
+        document.addEventListener("DOMContentLoaded", initNav);
+    </script>
+</body>
+
+</html>
