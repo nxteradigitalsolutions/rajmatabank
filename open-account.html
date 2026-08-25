@@ -182,7 +182,7 @@
 
         <!-- Right Buttons -->
         <div class="flex items-center gap-2 md:gap-4 z-50">
-            <a href="open-account.html" class="px-4 py-2 md:px-8 md:py-2.5 bg-secondary-container text-on-secondary-container font-label-md text-sm md:text-label-md font-bold rounded-sm hover:opacity-90 active:scale-95 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 shadow-sm inline-block whitespace-nowrap">Open Account</a>
+            <a href="open-account.html" class="hidden md:inline-block px-4 py-2 md:px-8 md:py-2.5 bg-secondary-container text-on-secondary-container font-label-md text-sm md:text-label-md font-bold rounded-sm hover:opacity-90 active:scale-95 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 shadow-sm whitespace-nowrap">Open Account</a>
             <!-- Mobile Menu Toggle -->
             <button id="mobile-menu-btn" class="lg:hidden p-2 text-on-surface-variant hover:text-secondary transition-colors">
                 <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
@@ -197,18 +197,19 @@
         <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="security.html">Security &amp; Compliance</a>
         <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="documentation.html">Services</a>
         <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm" href="contact.html">Contact Us</a>
+        <a href="open-account.html" class="mt-8 block w-full text-center py-4 bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm font-bold rounded-sm hover:opacity-90 active:scale-95 shadow-md border border-secondary-container">Open Account</a>
     </div>
 </header>
-<main class="max-w-container-max mx-auto px-margin-desktop py-stack-lg">
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-md md:py-stack-lg">
 <!-- Hero Section -->
 <section class="mb-stack-lg">
-<div class="relative rounded-xl overflow-hidden h-[300px] flex items-center px-stack-lg">
+<div class="relative rounded-xl overflow-hidden h-[300px] flex items-center px-4 md:px-stack-lg">
 <div class="absolute inset-0 z-0">
 <div class="w-full h-full bg-cover bg-center" data-alt="A luxurious, high-end bank interior with polished marble floors, warm mahogany accents, and sophisticated architectural lighting. The atmosphere is calm and secure, reflecting institutional trust and modern prosperity. Soft golden hour light streams through large windows, highlighting the deep navy and saffron gold corporate color palette of Raj Mata Bank." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFlEzeDufVeH-o2mDYnzCjPvSq4yMUVv5TCMH-jGWFjm1NtC33vLBZ8_cbB11RceLgmMFl0YBrYQ4oaYyFSshs06sV3InKy1PtM9Pw8TKL2huWLI_00JTHgJCICbK2gX6AetctYrk1s7-AS67qmQHFNvqbZrJnsPgy4NnMtqcdzHvv5HZYjCNlSZupynxQFGXlJlGwHO2CC8ZLVsQuGs8SdNSym64phJjBdSs18gByvsCDLWqnVn4FbQ");'></div>
 <div class="absolute inset-0 bg-primary/60 backdrop-blur-[2px]"></div>
 </div>
 <div class="relative z-10 max-w-2xl">
-<h1 class="font-headline-xl text-headline-xl text-on-primary mb-4">Documentation &amp; Eligibility Guide</h1>
+<h1 class="text-4xl md:text-headline-xl font-headline-xl break-words text-on-primary mb-4">Documentation &amp; Eligibility Guide</h1>
 <p class="font-body-lg text-body-lg text-primary-fixed">Your journey to prosperity begins with the right paperwork. Explore our comprehensive guide for opening accounts and availing banking facilities.</p>
 </div>
 </div>
@@ -216,10 +217,10 @@
 <!-- Bento Documentation Sections -->
 <div class="bento-grid">
 <!-- Section 1: Savings Account -->
-<div class="col-span-12 lg:col-span-8 bg-surface-container-lowest border border-outline-variant p-stack-lg doc-card rounded-lg">
+<div class="col-span-12 lg:col-span-8 bg-surface-container-lowest border border-outline-variant p-6 md:p-stack-lg doc-card rounded-lg">
 <div class="flex items-center gap-3 mb-stack-md text-secondary">
 <span class="material-symbols-outlined">person</span>
-<h2 class="font-headline-lg text-headline-lg text-primary">1. Savings Account Requirements</h2>
+<h2 class="text-2xl md:text-headline-lg font-headline-lg break-words leading-tight text-primary">1. Savings Account Requirements</h2>
 </div>
 <p class="text-on-surface-variant mb-stack-lg">Designed for individuals seeking safety, liquidity, and moderate growth for their personal wealth.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
@@ -261,7 +262,7 @@
 </div>
 </div>
 <!-- Section 4: Interest Rates Sidebar -->
-<div class="col-span-12 lg:col-span-4 bg-tertiary-container text-on-tertiary border border-outline-variant p-stack-lg doc-card rounded-lg flex flex-col justify-between">
+<div class="col-span-12 lg:col-span-4 bg-tertiary-container text-on-tertiary border border-outline-variant p-6 md:p-stack-lg doc-card rounded-lg flex flex-col justify-between">
 <div>
 <div class="flex items-center gap-3 mb-stack-md">
 <span class="material-symbols-outlined text-secondary-container">trending_up</span>
@@ -291,7 +292,7 @@
 </div>
 </div>
 <!-- Section 2: Current Account -->
-<div class="col-span-12 md:col-span-6 bg-surface-container-lowest border border-outline-variant p-stack-lg doc-card rounded-lg">
+<div class="col-span-12 md:col-span-6 bg-surface-container-lowest border border-outline-variant p-6 md:p-stack-lg doc-card rounded-lg">
 <div class="flex items-center gap-3 mb-stack-md text-secondary">
 <span class="material-symbols-outlined">business</span>
 <h2 class="font-headline-md text-headline-md text-primary">2. Current Account Requirements</h2>
@@ -312,7 +313,7 @@
 </div>
 </div>
 <!-- Section 3: Locker Facility -->
-<div class="col-span-12 md:col-span-6 bg-surface-container-lowest border border-outline-variant p-stack-lg doc-card rounded-lg">
+<div class="col-span-12 md:col-span-6 bg-surface-container-lowest border border-outline-variant p-6 md:p-stack-lg doc-card rounded-lg">
 <div class="flex items-center gap-3 mb-stack-md text-secondary">
 <span class="material-symbols-outlined">key</span>
 <h2 class="font-headline-md text-headline-md text-primary">3. Locker Facility Details</h2>
@@ -470,5 +471,9 @@
     document.addEventListener("DOMContentLoaded", initNav);
 </script>
 </body></html>
+
+
+
+
 
 
