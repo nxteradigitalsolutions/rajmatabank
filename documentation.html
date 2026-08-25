@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
@@ -265,10 +265,10 @@
 <div class="lg:w-80 bg-primary-container p-6 rounded-lg text-on-primary">
 <h4 class="font-headline-sm mb-4">Quick Eligibility</h4>
 <ul class="space-y-2 text-body-sm opacity-90">
-<li>â€¢ Resident Individuals</li>
-<li>â€¢ Minors (through Guardians)</li>
-<li>â€¢ Hindu Undivided Families</li>
-<li>â€¢ Minimum Balance: ₹5,000</li>
+<li>Ã¢â‚¬Â¢ Resident Individuals</li>
+<li>Ã¢â‚¬Â¢ Minors (through Guardians)</li>
+<li>Ã¢â‚¬Â¢ Hindu Undivided Families</li>
+<li>Ã¢â‚¬Â¢ Minimum Balance: â‚¹5,000</li>
 </ul>
 </div>
 </div>
@@ -341,9 +341,9 @@
 <div class="border border-outline-variant p-6 rounded-lg">
 <h3 class="font-label-md text-secondary mb-3 uppercase tracking-wider">RD Installment Rules</h3>
 <ul class="space-y-2 text-body-md">
-<li>Minimum monthly installment: ₹500</li>
+<li>Minimum monthly installment: â‚¹500</li>
 <li>Standing Instruction (SI) from Savings Account is mandatory</li>
-<li>Late payment penalty: ₹1.50 per ₹100 per month</li>
+<li>Late payment penalty: â‚¹1.50 per â‚¹100 per month</li>
 </ul>
 </div>
 <div class="border border-outline-variant p-6 rounded-lg">
@@ -370,7 +370,7 @@
 </div>
 <div class="space-y-6">
 <div>
-<label class="block text-label-md mb-2">Deposit Amount (₹)</label>
+<label class="block text-label-md mb-2">Deposit Amount (â‚¹)</label>
 <input id="yield-deposit" class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary" placeholder="e.g. 100,000" type="number"/>
 </div>
 <div class="grid grid-cols-2 gap-4">
@@ -386,7 +386,7 @@
 <button type="button" id="yield-btn" class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:bg-primary/90 transition-all">Calculate Maturity Value</button>
 <div id="yield-result" class="mt-6 p-4 bg-surface-container-high rounded text-center hidden">
     <p class="text-label-md text-on-surface-variant">Estimated Maturity Value</p>
-    <h3 class="font-headline-lg text-primary" id="yield-total">₹0</h3>
+    <h3 class="font-headline-lg text-primary" id="yield-total">â‚¹0</h3>
 </div>
 </div>
 </div>
@@ -426,7 +426,7 @@
 </div>
 <div class="space-y-6">
 <div>
-<label class="block text-label-md mb-2">Loan Amount (₹)</label>
+<label class="block text-label-md mb-2">Loan Amount (â‚¹)</label>
 <input id="loan-amount" class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary" placeholder="e.g. 500000" type="number"/>
 </div>
 <div class="grid grid-cols-2 gap-4">
@@ -444,15 +444,15 @@
 <div id="loan-result" class="mt-6 p-4 bg-surface-container-high rounded text-center hidden grid grid-cols-3 gap-4">
     <div>
         <p class="text-label-md text-on-surface-variant">Monthly EMI</p>
-        <h3 class="font-headline-md text-primary" id="loan-emi">₹0</h3>
+        <h3 class="font-headline-md text-primary" id="loan-emi">â‚¹0</h3>
     </div>
     <div>
         <p class="text-label-md text-on-surface-variant">Total Interest</p>
-        <h3 class="font-headline-md text-primary" id="loan-total-interest">₹0</h3>
+        <h3 class="font-headline-md text-primary" id="loan-total-interest">â‚¹0</h3>
     </div>
     <div>
         <p class="text-label-md text-on-surface-variant">Total Payment</p>
-        <h3 class="font-headline-md text-primary" id="loan-total-payment">₹0</h3>
+        <h3 class="font-headline-md text-primary" id="loan-total-payment">â‚¹0</h3>
     </div>
 </div>
 
@@ -577,7 +577,7 @@
 </div>
 </div>
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-body-sm text-body-sm opacity-60">© 2024 Rajmata Urban Co-Op Bank Ltd., Mangalwedha. All Rights Reserved. Member DICGC.</p>
+<p class="font-body-sm text-body-sm opacity-60">Â© 2024 Rajmata Urban Co-Op Bank Ltd., Mangalwedha. All Rights Reserved. Member DICGC.</p>
 <div class="flex items-center gap-4 grayscale opacity-50">
 <span class="material-symbols-outlined text-sm">verified</span>
 <span class="font-label-sm text-label-sm">RBI Regulated (Lic: U.B.D.MAH.1310)</span>
@@ -625,7 +625,7 @@
             const T = parseFloat(document.getElementById('yield-tenure').value) || 0;
             if(P > 0 && T > 0) {
                 const A = P * Math.pow((1 + (R / 100) / 12), T);
-                document.getElementById('yield-total').textContent = '₹' + Math.round(A).toLocaleString('en-IN');
+                document.getElementById('yield-total').textContent = 'â‚¹' + Math.round(A).toLocaleString('en-IN');
                 document.getElementById('yield-result').classList.remove('hidden');
             }
         });
@@ -645,9 +645,9 @@
                 const totalPayment = EMI * N;
                 const totalInterest = totalPayment - P;
                 
-                document.getElementById('loan-emi').textContent = '₹' + Math.round(EMI).toLocaleString('en-IN');
-                document.getElementById('loan-total-interest').textContent = '₹' + Math.round(totalInterest).toLocaleString('en-IN');
-                document.getElementById('loan-total-payment').textContent = '₹' + Math.round(totalPayment).toLocaleString('en-IN');
+                document.getElementById('loan-emi').textContent = 'â‚¹' + Math.round(EMI).toLocaleString('en-IN');
+                document.getElementById('loan-total-interest').textContent = 'â‚¹' + Math.round(totalInterest).toLocaleString('en-IN');
+                document.getElementById('loan-total-payment').textContent = 'â‚¹' + Math.round(totalPayment).toLocaleString('en-IN');
                 document.getElementById('loan-result').classList.remove('hidden');
             }
         });
@@ -747,9 +747,9 @@
                     const interest = (P * n * (n + 1) * r) / 2400;
                     const maturity = totalInvestment + interest;
                     
-                    document.getElementById('rd-total-investment').innerText = '₹' + Math.round(totalInvestment).toLocaleString('en-IN');
-                    document.getElementById('rd-total-interest').innerText = '₹' + Math.round(interest).toLocaleString('en-IN');
-                    document.getElementById('rd-maturity-value').innerText = '₹' + Math.round(maturity).toLocaleString('en-IN');
+                    document.getElementById('rd-total-investment').innerText = 'â‚¹' + Math.round(totalInvestment).toLocaleString('en-IN');
+                    document.getElementById('rd-total-interest').innerText = 'â‚¹' + Math.round(interest).toLocaleString('en-IN');
+                    document.getElementById('rd-maturity-value').innerText = 'â‚¹' + Math.round(maturity).toLocaleString('en-IN');
                     document.getElementById('rd-result').classList.remove('hidden');
                 }
             });
@@ -758,3 +758,5 @@
 </script>
 
 </body></html>
+
+
