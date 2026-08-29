@@ -1,766 +1,957 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Documentation &amp; Eligibility Guide | Raj Mata Bank</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&amp;family=Source+Serif+4:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
-<style>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Documentation &amp; Eligibility Guide | Raj Mata Bank</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&amp;family=Source+Serif+4:wght@600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .doc-card {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         /* Dropdown Styles */
         .dropdown:hover .dropdown-menu {
             display: block;
         }
+
         .dropdown-menu {
             display: none;
         }
+
         /* Tab functionality via CSS peer-checked */
         .tab-content {
             display: none;
         }
-        input:checked + label {
+
+        input:checked+label {
             border-bottom-color: #885200;
             color: #885200;
             background-color: #ffffff;
         }
-        #tab1:checked ~ #content1,
-        #tab2:checked ~ #content2,
-        #tab3:checked ~ #content3,
-        #tab4:checked ~ #content4,
-        #tab5:checked ~ #content5,
-        #tab6:checked ~ #content6 {
+
+        #tab1:checked~#content1,
+        #tab2:checked~#content2,
+        #tab3:checked~#content3,
+        #tab4:checked~#content4,
+        #tab5:checked~#content5,
+        #tab6:checked~#content6 {
             display: block;
         }
     </style>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "primary-fixed": "#d6e3ff",
-                    "on-secondary-fixed": "#2b1700",
-                    "on-primary-container": "#708ab5",
-                    "inverse-surface": "#2e3132",
-                    "surface-tint": "#465f88",
-                    "surface-container": "#edeeef",
-                    "on-tertiary-container": "#7389b0",
-                    "on-secondary-fixed-variant": "#673d00",
-                    "on-primary-fixed": "#001b3d",
-                    "secondary": "#e31837",
-                    "primary": "#000a1e",
-                    "surface-container-high": "#e7e8e9",
-                    "on-tertiary-fixed-variant": "#30476a",
-                    "surface": "#f8f9fa",
-                    "tertiary-fixed-dim": "#b0c7f1",
-                    "tertiary": "#000a1d",
-                    "surface-container-low": "#f3f4f5",
-                    "on-secondary": "#ffffff",
-                    "background": "#f8f9fa",
-                    "on-secondary-container": "#e31837",
-                    "tertiary-fixed": "#d5e3ff",
-                    "secondary-container": "#ffffff",
-                    "on-background": "#191c1d",
-                    "secondary-fixed-dim": "#ffb869",
-                    "on-surface": "#191c1d",
-                    "surface-bright": "#f8f9fa",
-                    "on-error": "#ffffff",
-                    "tertiary-container": "#052142",
-                    "inverse-primary": "#aec7f6",
-                    "on-tertiary": "#ffffff",
-                    "on-surface-variant": "#44474e",
-                    "on-error-container": "#93000a",
-                    "primary-fixed-dim": "#aec7f6",
-                    "inverse-on-surface": "#f0f1f2",
-                    "error-container": "#ffdad6",
-                    "error": "#ba1a1a",
-                    "on-tertiary-fixed": "#001b3c",
-                    "surface-container-lowest": "#ffffff",
-                    "surface-variant": "#e1e3e4",
-                    "secondary-fixed": "#ffdcbb",
-                    "outline": "#74777f",
-                    "surface-dim": "#d9dadb",
-                    "primary-container": "#002147",
-                    "on-primary": "#ffffff",
-                    "outline-variant": "#c4c6cf",
-                    "on-primary-fixed-variant": "#2d476f",
-                    "surface-container-highest": "#e1e3e4"
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#d6e3ff",
+                        "on-secondary-fixed": "#2b1700",
+                        "on-primary-container": "#708ab5",
+                        "inverse-surface": "#2e3132",
+                        "surface-tint": "#465f88",
+                        "surface-container": "#edeeef",
+                        "on-tertiary-container": "#7389b0",
+                        "on-secondary-fixed-variant": "#673d00",
+                        "on-primary-fixed": "#001b3d",
+                        "secondary": "#e31837",
+                        "primary": "#000a1e",
+                        "surface-container-high": "#e7e8e9",
+                        "on-tertiary-fixed-variant": "#30476a",
+                        "surface": "#f8f9fa",
+                        "tertiary-fixed-dim": "#b0c7f1",
+                        "tertiary": "#000a1d",
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary": "#ffffff",
+                        "background": "#f8f9fa",
+                        "on-secondary-container": "#e31837",
+                        "tertiary-fixed": "#d5e3ff",
+                        "secondary-container": "#ffffff",
+                        "on-background": "#191c1d",
+                        "secondary-fixed-dim": "#ffb869",
+                        "on-surface": "#191c1d",
+                        "surface-bright": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#052142",
+                        "inverse-primary": "#aec7f6",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#44474e",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#aec7f6",
+                        "inverse-on-surface": "#f0f1f2",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#001b3c",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "secondary-fixed": "#ffdcbb",
+                        "outline": "#74777f",
+                        "surface-dim": "#d9dadb",
+                        "primary-container": "#002147",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c4c6cf",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "surface-container-highest": "#e1e3e4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px",
+                        "stack-sm": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["\"Source Serif 4\""],
+                        "body-lg": ["Public Sans"],
+                        "headline-md": ["\"Source Serif 4\""],
+                        "label-md": ["Public Sans"],
+                        "headline-lg": ["\"Source Serif 4\""],
+                        "body-md": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "headline-lg-mobile": ["\"Source Serif 4\""],
+                        "body-sm": ["Public Sans"],
+                        "headline-xl": ["\"Source Serif 4\""]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "stack-md": "16px",
-                    "unit": "8px",
-                    "margin-mobile": "20px",
-                    "container-max": "1200px",
-                    "stack-sm": "8px",
-                    "gutter": "24px",
-                    "margin-desktop": "64px",
-                    "stack-lg": "32px"
-            },
-            "fontFamily": {
-                    "headline-sm": ["\"Source Serif 4\""],
-                    "body-lg": ["Public Sans"],
-                    "headline-md": ["\"Source Serif 4\""],
-                    "label-md": ["Public Sans"],
-                    "headline-lg": ["\"Source Serif 4\""],
-                    "body-md": ["Public Sans"],
-                    "label-sm": ["Public Sans"],
-                    "headline-lg-mobile": ["\"Source Serif 4\""],
-                    "body-sm": ["Public Sans"],
-                    "headline-xl": ["\"Source Serif 4\""]
-            },
-            "fontSize": {
-                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                    "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
-                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
-                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
-                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
-            }
-          },
-        },
-      }
+        }
     </script>
-<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container/30">
-<!-- TopNavBar -->
-<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant h-20 flex items-center shadow-sm transition-all duration-300" id="main-header">
-    <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center gap-1 md:gap-2 hover:opacity-80 transition-opacity duration-300 transform hover:scale-105">
-            <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
-            <span class="font-headline-md font-bold text-primary tracking-tight text-lg md:text-2xl whitespace-nowrap" style="line-height: 1;">Rajmata Bank</span>
-        </a>
 
-        <!-- Navigation Links -->
-        <nav class="hidden lg:flex gap-gutter h-full items-center">
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="index.html">Home</a>
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="about.html">About Us</a>
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="security.html">Security &amp; Compliance</a>
-            
-            <!-- Services Dropdown -->
-            <div class="dropdown relative h-full flex items-center group">
-                <a href="documentation.html" class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md flex items-center gap-1 relative hover:-translate-y-0.5">
-                    Services
-                    <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">expand_more</span>
-                </a>
-                <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl border-t-2 border-secondary ring-1 ring-black ring-opacity-5 z-50 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#savings-account">Saving Account</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#current-account">Current Account</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#term-deposits">Term Deposit Rates</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#cumulative">Cumulative &amp; RD</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#yield-calculator">Yield Calculator</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#loan-calculator">Loan Calculator</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#bank-charges">Bank Charges</a>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container/30">
+    <!-- TopNavBar -->
+    <header
+        class="bg-surface sticky top-0 z-50 border-b border-outline-variant h-20 flex items-center shadow-sm transition-all duration-300"
+        id="main-header">
+        <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
+            <!-- Logo -->
+            <a href="index.html"
+                class="flex items-center gap-1 md:gap-2 hover:opacity-80 transition-opacity duration-300 transform hover:scale-105">
+                <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
+                <span
+                    class="font-headline-md font-bold text-primary tracking-tight text-lg md:text-2xl whitespace-nowrap"
+                    style="line-height: 1;">Rajmata Bank</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex gap-gutter h-full items-center">
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="index.html">Home</a>
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="about.html">About Us</a>
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="security.html">Security &amp; Compliance</a>
+
+                <!-- Services Dropdown -->
+                <div class="dropdown relative h-full flex items-center group">
+                    <a href="documentation.html"
+                        class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md flex items-center gap-1 relative hover:-translate-y-0.5">
+                        Services
+                        <span
+                            class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+                    </a>
+                    <div
+                        class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl border-t-2 border-secondary ring-1 ring-black ring-opacity-5 z-50 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#savings-account">Saving Account</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#current-account">Current Account</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#term-deposits">Term Deposit Rates</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#cumulative">Cumulative &amp; RD</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#yield-calculator">Yield Calculator</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#loan-calculator">Loan Calculator</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#bank-charges">Bank Charges</a>
+                    </div>
+                </div>
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="contact.html">Contact Us</a>
+            </nav>
+
+            <!-- Right Buttons -->
+            <div class="flex items-center gap-2 md:gap-4 z-50">
+                <a href="open-account.html"
+                    class="hidden md:inline-block px-4 py-2 md:px-8 md:py-2.5 bg-secondary-container text-on-secondary-container font-label-md text-sm md:text-label-md font-bold rounded-sm hover:opacity-90 active:scale-95 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 shadow-sm whitespace-nowrap">Open
+                    Account</a>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-btn"
+                    class="lg:hidden p-2 text-on-surface-variant hover:text-secondary transition-colors">
+                    <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-surface z-40 flex flex-col hidden lg:hidden pt-24 px-6 border-t border-outline-variant">
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="index.html">Home</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="about.html">About Us</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="security.html">Security &amp; Compliance</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="documentation.html">Services</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm"
+                href="contact.html">Contact Us</a>
+            <a href="open-account.html"
+                class="mt-8 block w-full text-center py-4 bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm font-bold rounded-sm hover:opacity-90 active:scale-95 shadow-md border border-secondary-container">Open
+                Account</a>
+        </div>
+    </header>
+    <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-md md:py-stack-lg">
+        <!-- Hero Section -->
+        <section class="mb-stack-lg">
+            <div class="relative rounded-xl overflow-hidden h-[300px] flex items-center px-4 md:px-stack-lg">
+                <div class="absolute inset-0 z-0">
+                    <div class="w-full h-full bg-cover bg-center"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFlEzeDufVeH-o2mDYnzCjPvSq4yMUVv5TCMH-jGWFjm1NtC33vLBZ8_cbB11RceLgmMFl0YBrYQ4oaYyFSshs06sV3InKy1PtM9Pw8TKL2huWLI_00JTHgJCICbK2gX6AetctYrk1s7-AS67qmQHFNvqbZrJnsPgy4NnMtqcdzHvv5HZYjCNlSZupynxQFGXlJlGwHO2CC8ZLVsQuGs8SdNSym64phJjBdSs18gByvsCDLWqnVn4FbQ");'>
+                    </div>
+                    <div class="absolute inset-0 bg-primary/60 backdrop-blur-[2px]"></div>
+                </div>
+                <div class="relative z-10 max-w-2xl">
+                    <h1 class="text-4xl md:text-headline-xl font-headline-xl break-words text-on-primary mb-4">
+                        Documentation &amp; Eligibility Guide</h1>
+                    <p class="font-body-lg text-body-lg text-primary-fixed">Your journey to prosperity begins with the
+                        right paperwork. Explore our comprehensive guide for opening accounts and availing banking
+                        facilities.</p>
                 </div>
             </div>
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="contact.html">Contact Us</a>
-        </nav>
+        </section>
+        <!-- Tabbed Interface Section -->
+        <section
+            class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden mb-stack-lg"
+            id="documentation-guide">
+            <!-- Tab Headers -->
+            <div class="flex flex-wrap border-b border-outline-variant bg-surface-container-low">
+                <input checked="" class="hidden" id="tab1" name="tabs" type="radio" />
+                <label
+                    class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all"
+                    for="tab1">Savings Account</label>
+                <input class="hidden" id="tab2" name="tabs" type="radio" />
+                <label
+                    class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all"
+                    for="tab2">Current &amp; Business Account</label>
+                <input class="hidden" id="tab3" name="tabs" type="radio" />
+                <label
+                    class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all"
+                    for="tab3">Term Deposits</label>
+                <input class="hidden" id="tab4" name="tabs" type="radio" />
+                <label
+                    class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all"
+                    for="tab4">RD &amp; Cumulative</label>
+                <input class="hidden" id="tab5" name="tabs" type="radio" />
+                <label
+                    class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all"
+                    for="tab5">Yield Calculator</label>
+                <input class="hidden" id="tab6" name="tabs" type="radio" />
+                <label
+                    class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all"
+                    for="tab6">Loan Calculator</label>
+                <input class="hidden" id="tab7" name="tabs" type="radio" />
+                <label
+                    class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all"
+                    for="tab7">Bank Charges</label>
+                <!-- Content Area -->
+                <div class="tab-content w-full p-stack-lg" id="content1">
+                    <div class="flex flex-col lg:flex-row gap-gutter">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-stack-md text-secondary">
+                                <span class="material-symbols-outlined">person</span>
+                                <h2 class="font-headline-lg text-primary">Savings Account Requirements</h2>
+                            </div>
+                            <p class="text-on-surface-variant mb-6">Designed for individuals seeking safety and
+                                liquidity for personal wealth.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-4">
+                                    <div class="flex items-start gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                                        <div>
+                                            <h4 class="font-label-md text-primary">Identity Proof (OVD)</h4>
+                                            <p class="text-body-sm text-on-surface-variant">Aadhaar Card, Voter ID,
+                                                Passport, or Driving License.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                                        <div>
+                                            <h4 class="font-label-md text-primary">Address Proof</h4>
+                                            <p class="text-body-sm text-on-surface-variant">Utility Bills (max 2 months
+                                                old), Property Tax receipt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="flex items-start gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                                        <div>
+                                            <h4 class="font-label-md text-primary">Taxation &amp; Photos</h4>
+                                            <p class="text-body-sm text-on-surface-variant">PAN Card (Mandatory) &amp; 2
+                                                Recent Passport Photos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-80 bg-primary-container p-6 rounded-lg text-on-primary">
+                            <h4 class="font-headline-sm mb-4">Quick Eligibility</h4>
+                            <ul class="space-y-2 text-body-sm opacity-90">
+                                <li>• Resident Individuals</li>
+                                <li>• Minors (through Guardians)</li>
+                                <li>• Hindu Undivided Families</li>
+                                <li>• Minimum Balance: ₹5,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content w-full p-stack-lg" id="content2">
+                    <div class="flex items-center gap-3 mb-stack-md text-secondary">
+                        <span class="material-symbols-outlined">business</span>
+                        <h2 class="font-headline-lg text-primary">Current Account Requirements</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="p-4 bg-surface-container-low rounded border border-outline-variant/30">
+                            <h4 class="font-label-md text-primary mb-2">Business Identity</h4>
+                            <p class="text-body-sm text-on-surface-variant">GST Registration, Trade License, or Shops
+                                &amp; Establishment Act Certificate.</p>
+                        </div>
+                        <div class="p-4 bg-surface-container-low rounded border border-outline-variant/30">
+                            <h4 class="font-label-md text-primary mb-2">Entity Proof</h4>
+                            <p class="text-body-sm text-on-surface-variant">Partnership Deed, MOA/AOA, or Trust Deed as
+                                applicable for the business type.</p>
+                        </div>
+                        <div class="p-4 bg-surface-container-low rounded border border-outline-variant/30">
+                            <h4 class="font-label-md text-primary mb-2">Signatory KYC</h4>
+                            <p class="text-body-sm text-on-surface-variant">KYC of all authorized signatories and
+                                directors as per RBI AML/CFT norms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content w-full p-stack-lg" id="content3">
 
-        <!-- Right Buttons -->
-        <div class="flex items-center gap-2 md:gap-4 z-50">
-            <a href="open-account.html" class="hidden md:inline-block px-4 py-2 md:px-8 md:py-2.5 bg-secondary-container text-on-secondary-container font-label-md text-sm md:text-label-md font-bold rounded-sm hover:opacity-90 active:scale-95 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 shadow-sm whitespace-nowrap">Open Account</a>
-            <!-- Mobile Menu Toggle -->
-            <button id="mobile-menu-btn" class="lg:hidden p-2 text-on-surface-variant hover:text-secondary transition-colors">
-                <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
-            </button>
+                    <div class="flex items-center gap-3 mb-stack-md text-secondary">
+
+                        <div class="mb-stack-lg bg-surface-container-low p-6 rounded-lg border border-outline-variant">
+                            <h3 class="font-headline-sm text-primary mb-4">Products &amp; Services Overview</h3>
+                            <ul class="space-y-3 text-body-md text-on-surface-variant">
+                                <li><strong>1. Account Types:</strong> Savings, Current, or Business accounts.</li>
+                                <li><strong>2. Deposits:</strong> Schemes for Fixed Deposits (FD) and Recurring Deposits
+                                    (RD).</li>
+                                <li><strong>3. Loans Offered:</strong> Gold, Term, Home, Vehicle, Business, Ware House
+                                    Receipt, Machinery, Clean loan, Nominal member, Household purchases, Personal loan.
+                                </li>
+                                <li><strong>4. Required Documents:</strong> Check List provided per product for
+                                    hassle-free processing.</li>
+                                <li><strong>5. Terms &amp; Conditions:</strong> Standard banking terms and conditions
+                                    apply to all products.</li>
+                            </ul>
+                        </div>
+
+                        <span class="material-symbols-outlined">account_balance</span>
+                        <h2 class="font-headline-lg text-primary">Fixed Deposit (FD) Rates</h2>
+                    </div>
+                    <div class="overflow-x-auto border border-outline-variant rounded-lg">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-surface-container-high border-b border-outline-variant">
+                                    <th class="p-4 font-label-md text-primary">Tenure</th>
+                                    <th class="p-4 font-label-md text-primary">Interest Rate (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-body-sm divide-y divide-outline-variant">
+                                <tr>
+                                    <td class="p-4">30 days to 90 days</td>
+                                    <td class="p-4">5.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">91 days to 180 days</td>
+                                    <td class="p-4">5.50%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">181 days to 12 months</td>
+                                    <td class="p-4">6.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">13 months and above</td>
+                                    <td class="p-4">6.50%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Institutional Depositor (13 months+)</td>
+                                    <td class="p-4">7.50%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Dam Duppat Deposit (DDD)</td>
+                                    <td class="p-4">9 Years</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Recurring Deposit</td>
+                                    <td class="p-4">7 Years</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="tab-content w-full p-stack-lg" id="content4">
+                    <div class="flex items-center gap-3 mb-stack-md text-secondary">
+                        <span class="material-symbols-outlined">payments</span>
+                        <h2 class="font-headline-lg text-primary">Cumulative &amp; Recurring Deposits</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                        <div class="border border-outline-variant p-6 rounded-lg">
+                            <h3 class="font-label-md text-secondary mb-3 uppercase tracking-wider">RD Installment Rules
+                            </h3>
+                            <ul class="space-y-2 text-body-md">
+                                <li>Minimum monthly installment: ₹500</li>
+                                <li>Standing Instruction (SI) from Savings Account is mandatory</li>
+                                <li>Late payment penalty: ₹1.50 per ₹100 per month</li>
+                            </ul>
+                        </div>
+                        <div class="border border-outline-variant p-6 rounded-lg">
+                            <h3 class="font-label-md text-secondary mb-3 uppercase tracking-wider">Minor Accounts &amp;
+                                Maturity</h3>
+                            <ul class="space-y-2 text-body-md">
+                                <li>Accounts for minors aged 10+ can be self-operated</li>
+                                <li>Maturity proceeds credited only to linked Savings Account</li>
+                                <li>Nomination facility is mandatory for all deposit accounts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content w-full p-stack-lg" id="content5">
+                    <div class="max-w-3xl">
+                        <div class="flex items-center gap-3 mb-stack-md text-secondary">
+                            <span class="material-symbols-outlined">calculate</span>
+                            <h2 class="font-headline-lg text-primary">Yield &amp; Interest Calculator</h2>
+                        </div>
+                        <p class="text-body-lg text-on-surface-variant mb-8">Plan your future wealth with precision. Use
+                            our interactive tool to calculate interest on your savings and term deposits.</p>
+                        <div class="bg-surface-container rounded-xl p-8 border border-outline-variant">
+                            <div class="flex items-center justify-between mb-6">
+                                <h4 class="font-headline-sm">Calculate Your Gains</h4>
+                                <span class="bg-secondary text-white px-3 py-1 rounded text-xs font-bold">LIVE
+                                    TOOL</span>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <label class="block text-label-md mb-2">Deposit Amount (₹)</label>
+                                    <input id="yield-deposit"
+                                        class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary"
+                                        placeholder="e.g. 100,000" type="number" />
+                                </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-label-md mb-2">Interest Rate (%)</label>
+                                        <input id="yield-rate" class="w-full border-outline-variant rounded p-3"
+                                            readonly="" type="text" value="7.15" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-label-md mb-2">Tenure (Months)</label>
+                                        <input id="yield-tenure" class="w-full border-outline-variant rounded p-3"
+                                            placeholder="12" type="number" />
+                                    </div>
+                                </div>
+                                <button type="button" id="yield-btn"
+                                    class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:bg-primary/90 transition-all">Calculate
+                                    Maturity Value</button>
+                                <div id="yield-result"
+                                    class="mt-6 p-4 bg-surface-container-high rounded text-center hidden">
+                                    <p class="text-label-md text-on-surface-variant">Estimated Maturity Value</p>
+                                    <h3 class="font-headline-lg text-primary" id="yield-total">₹0</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content w-full p-stack-lg" id="content6">
+                    <div class="max-w-3xl">
+                        <div class="flex items-center gap-3 mb-stack-md text-secondary">
+                            <span class="material-symbols-outlined">real_estate_agent</span>
+                            <h2 class="font-headline-lg text-primary">Loan Calculator</h2>
+                        </div>
+                        <p class="text-body-lg text-on-surface-variant mb-8">Plan your borrowing with our EMI
+                            calculator.</p>
+
+                        <div class="mb-stack-lg p-6 bg-surface-container-low border border-outline-variant rounded-lg">
+                            <h3 class="font-label-lg text-primary mb-3">Reference Loan Rates</h3>
+                            <p class="text-body-sm mb-4">Use these rates to manually enter your interest percentage
+                                below.</p>
+                            <div
+                                class="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-body-sm text-on-surface-variant">
+                                <div><strong>Gold Loan:</strong> 10.50%</div>
+                                <div><strong>Term Loan:</strong> 14.00%</div>
+                                <div><strong>Vehicle Loan:</strong> 13.00%</div>
+                                <div><strong>Home Loan:</strong> 13.00%</div>
+                                <div><strong>CCHY:</strong> 15.00%</div>
+                                <div><strong>Warehouse Receipt:</strong> 12.00%</div>
+                                <div><strong>Machinery Loan:</strong> 15.00%</div>
+                                <div><strong>Clean Loan:</strong> 16.00%</div>
+                                <div><strong>Nominal Member:</strong> 16.00%</div>
+                                <div><strong>Household Purchases:</strong> 15.00%</div>
+                                <div><strong>Personal Loan:</strong> 15.00%</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-surface-container rounded-xl p-8 border border-outline-variant">
+                            <div class="flex items-center justify-between mb-6">
+                                <h4 class="font-headline-sm">Calculate Your EMI</h4>
+                                <span class="bg-secondary text-white px-3 py-1 rounded text-xs font-bold">LIVE
+                                    TOOL</span>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <label class="block text-label-md mb-2">Loan Amount (₹)</label>
+                                    <input id="loan-amount"
+                                        class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary"
+                                        placeholder="e.g. 500000" type="number" />
+                                </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-label-md mb-2">Interest Rate (%)</label>
+                                        <input id="loan-rate"
+                                            class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary"
+                                            type="number" step="0.1" value="10.5" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-label-md mb-2">Tenure (Years)</label>
+                                        <input id="loan-tenure"
+                                            class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary"
+                                            placeholder="5" type="number" />
+                                    </div>
+                                </div>
+                                <button type="button" id="loan-btn"
+                                    class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:bg-primary/90 transition-all">Calculate
+                                    EMI</button>
+
+                                <div id="loan-result"
+                                    class="mt-6 p-4 bg-surface-container-high rounded text-center hidden grid grid-cols-3 gap-4">
+                                    <div>
+                                        <p class="text-label-md text-on-surface-variant">Monthly EMI</p>
+                                        <h3 class="font-headline-md text-primary" id="loan-emi">₹0</h3>
+                                    </div>
+                                    <div>
+                                        <p class="text-label-md text-on-surface-variant">Total Interest</p>
+                                        <h3 class="font-headline-md text-primary" id="loan-total-interest">₹0</h3>
+                                    </div>
+                                    <div>
+                                        <p class="text-label-md text-on-surface-variant">Total Payment</p>
+                                        <h3 class="font-headline-md text-primary" id="loan-total-payment">₹0</h3>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="tab-content w-full p-stack-lg" id="content7">
+
+                    <div class="flex items-center gap-3 mb-stack-md text-secondary">
+                        <span class="material-symbols-outlined">payments</span>
+                        <h2 class="font-headline-lg text-primary">Bank Charges</h2>
+                    </div>
+                    <div class="overflow-x-auto border border-outline-variant rounded-lg">
+                        <table class="w-full text-left border-collapse mb-8">
+                            <thead>
+                                <tr class="bg-surface-container-high border-b border-outline-variant">
+                                    <th class="p-4 font-label-md text-primary">Loan Type</th>
+                                    <th class="p-4 font-label-md text-primary">Interest Rate (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-body-sm divide-y divide-outline-variant">
+                                <tr>
+                                    <td class="p-4">Gold Loan</td>
+                                    <td class="p-4">10.50%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Term Loan</td>
+                                    <td class="p-4">14.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Vehicle Loan</td>
+                                    <td class="p-4">13.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Home Loan</td>
+                                    <td class="p-4">13.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">CCHY</td>
+                                    <td class="p-4">15.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Warehouse Receipt</td>
+                                    <td class="p-4">12.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Machinery Loan</td>
+                                    <td class="p-4">15.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Clean Loan</td>
+                                    <td class="p-4">16.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Nominal Member</td>
+                                    <td class="p-4">16.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Household Purchases</td>
+                                    <td class="p-4">15.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Personal Loan</td>
+                                    <td class="p-4">15.00%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+        </section>
+        <!-- Interest Rates Summary Card -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-gutter mb-stack-lg">
+            <div class="lg:col-span-1 bg-tertiary-container text-on-tertiary p-stack-lg rounded-xl doc-card">
+                <div class="flex items-center gap-3 mb-stack-md">
+                    <span class="material-symbols-outlined text-secondary-container">trending_up</span>
+                    <h2 class="font-headline-sm">Current Interest Rates</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center border-b border-outline/30 pb-2">
+                        <span class="text-body-md">Savings</span>
+                        <span class="font-headline-sm text-secondary-container">3%</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-outline/30 pb-2">
+                        <span class="text-body-md">Fixed (1 yr)</span>
+                        <span class="font-headline-sm text-secondary-container">7%</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-outline/30 pb-2">
+                        <span class="text-body-md">Inst. Depositor</span>
+                        <span class="font-headline-sm text-secondary-container">8%</span>
+                    </div>
+                </div>
+                <p class="mt-6 text-[12px] opacity-60 italic">*Rates effective July 2026</p>
+            </div>
+            <div
+                class="lg:col-span-2 bg-white border border-outline-variant rounded-xl p-stack-lg flex flex-col md:flex-row items-center gap-gutter">
+                <div
+                    class="w-16 h-16 rounded-full bg-secondary-container/20 flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-secondary text-3xl">support_agent</span>
+                </div>
+                <div class="flex-1">
+                    <h3 class="font-headline-sm text-primary">Need Assistance?</h3>
+                    <p class="text-body-sm text-on-surface-variant">Our relationship managers are ready to guide you
+                        through the process of selecting the right account for your needs.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <button
+                        class="px-6 py-2 border border-primary text-primary font-label-md rounded hover:bg-primary hover:text-white transition-colors whitespace-nowrap">Download
+                        Checklist</button>
+                    <button
+                        class="px-6 py-2 bg-primary text-white font-label-md rounded hover:bg-primary/90 transition-colors whitespace-nowrap">Find
+                        a Branch</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-tertiary-container text-on-tertiary-container py-stack-lg border-t border-outline-variant">
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg">
+            <div class="lg:col-span-2">
+                <div class="flex items-center gap-2 mb-stack-md opacity-80">
+                    <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
+                    <span class="font-headline-md font-bold tracking-tight text-white"
+                        style="line-height: 1; font-size: 1.5rem;">Rajmata Bank</span>
+                </div>
+                <p class="font-body-sm text-body-sm opacity-80 max-w-sm mb-stack-md">Empowering financial growth through
+                    secure, innovative, and accessible banking solutions since 1996.</p>
+                <div class="flex gap-4 mt-2">
+                    <a href="https://www.facebook.com/share/1NdZTVKQKG/" target="_blank"
+                        class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
+                        <span class="material-symbols-outlined text-sm">thumb_up</span> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/rajmatabank_mangalwedha?igsh=d2VuM3ZkNGloczM1" target="_blank"
+                        class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
+                        <span class="material-symbols-outlined text-sm">photo_camera</span> Instagram
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Quick Links</h6>
+                <ul class="space-y-2">
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="index.html">Home</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="documentation.html">Services</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="about.html">About Us</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Regulatory</h6>
+                <ul class="space-y-2">
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="security.html">Compliance</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="security.html">Privacy Policy</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="security.html">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Contact</h6>
+                <p class="font-body-sm text-body-sm mb-2"><a href="https://share.google/PEMGoE1Nk0lGnpYa0"
+                        target="_blank"
+                        class="hover:text-secondary opacity-80 hover:opacity-100 hover:underline transition-colors flex items-start gap-1"><span
+                            class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>NEAR ST STAND
+                            DAMAJI CHOWK, MANGALWEDHA, TAL- MANGALWEDHA, DIST-SOLAPUR. PIN-413305</span></a></p>
+                <p class="font-body-sm text-body-sm opacity-80">Helpline: 02188-220244</p>
+                <p class="font-body-sm text-body-sm opacity-80">Email: helpdesk@rajmata.bank.in</p>
+            </div>
         </div>
-    </div>
-    
-    <!-- Mobile Navigation Menu (Hidden by default) -->
-    <div id="mobile-menu" class="fixed inset-0 bg-surface z-40 flex flex-col hidden lg:hidden pt-24 px-6 border-t border-outline-variant">
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="index.html">Home</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="about.html">About Us</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="security.html">Security &amp; Compliance</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="documentation.html">Services</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm" href="contact.html">Contact Us</a>
-        <a href="open-account.html" class="mt-8 block w-full text-center py-4 bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm font-bold rounded-sm hover:opacity-90 active:scale-95 shadow-md border border-secondary-container">Open Account</a>
-    </div>
-</header>
-<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-md md:py-stack-lg">
-<!-- Hero Section -->
-<section class="mb-stack-lg">
-<div class="relative rounded-xl overflow-hidden h-[300px] flex items-center px-4 md:px-stack-lg">
-<div class="absolute inset-0 z-0">
-<div class="w-full h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFlEzeDufVeH-o2mDYnzCjPvSq4yMUVv5TCMH-jGWFjm1NtC33vLBZ8_cbB11RceLgmMFl0YBrYQ4oaYyFSshs06sV3InKy1PtM9Pw8TKL2huWLI_00JTHgJCICbK2gX6AetctYrk1s7-AS67qmQHFNvqbZrJnsPgy4NnMtqcdzHvv5HZYjCNlSZupynxQFGXlJlGwHO2CC8ZLVsQuGs8SdNSym64phJjBdSs18gByvsCDLWqnVn4FbQ");'></div>
-<div class="absolute inset-0 bg-primary/60 backdrop-blur-[2px]"></div>
-</div>
-<div class="relative z-10 max-w-2xl">
-<h1 class="text-4xl md:text-headline-xl font-headline-xl break-words text-on-primary mb-4">Documentation &amp; Eligibility Guide</h1>
-<p class="font-body-lg text-body-lg text-primary-fixed">Your journey to prosperity begins with the right paperwork. Explore our comprehensive guide for opening accounts and availing banking facilities.</p>
-</div>
-</div>
-</section>
-<!-- Tabbed Interface Section -->
-<section class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden mb-stack-lg" id="documentation-guide">
-<!-- Tab Headers -->
-<div class="flex flex-wrap border-b border-outline-variant bg-surface-container-low">
-<input checked="" class="hidden" id="tab1" name="tabs" type="radio"/>
-<label class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all" for="tab1">Savings Account</label>
-<input class="hidden" id="tab2" name="tabs" type="radio"/>
-<label class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all" for="tab2">Current &amp; Business Account</label>
-<input class="hidden" id="tab3" name="tabs" type="radio"/>
-<label class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all" for="tab3">Term Deposits</label>
-<input class="hidden" id="tab4" name="tabs" type="radio"/>
-<label class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all" for="tab4">RD &amp; Cumulative</label>
-<input class="hidden" id="tab5" name="tabs" type="radio"/>
-<label class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all" for="tab5">Yield Calculator</label>
-<input class="hidden" id="tab6" name="tabs" type="radio"/>
-<label class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all" for="tab6">Loan Calculator</label>
-<input class="hidden" id="tab7" name="tabs" type="radio"/>
-<label class="px-6 py-4 font-label-md cursor-pointer border-b-2 border-transparent hover:text-secondary transition-all" for="tab7">Bank Charges</label>
-<!-- Content Area -->
-<div class="tab-content w-full p-stack-lg" id="content1">
-<div class="flex flex-col lg:flex-row gap-gutter">
-<div class="flex-1">
-<div class="flex items-center gap-3 mb-stack-md text-secondary">
-<span class="material-symbols-outlined">person</span>
-<h2 class="font-headline-lg text-primary">Savings Account Requirements</h2>
-</div>
-<p class="text-on-surface-variant mb-6">Designed for individuals seeking safety and liquidity for personal wealth.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-4">
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
-<div>
-<h4 class="font-label-md text-primary">Identity Proof (OVD)</h4>
-<p class="text-body-sm text-on-surface-variant">Aadhaar Card, Voter ID, Passport, or Driving License.</p>
-</div>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
-<div>
-<h4 class="font-label-md text-primary">Address Proof</h4>
-<p class="text-body-sm text-on-surface-variant">Utility Bills (max 2 months old), Property Tax receipt.</p>
-</div>
-</div>
-</div>
-<div class="space-y-4">
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
-<div>
-<h4 class="font-label-md text-primary">Taxation &amp; Photos</h4>
-<p class="text-body-sm text-on-surface-variant">PAN Card (Mandatory) &amp; 2 Recent Passport Photos.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="lg:w-80 bg-primary-container p-6 rounded-lg text-on-primary">
-<h4 class="font-headline-sm mb-4">Quick Eligibility</h4>
-<ul class="space-y-2 text-body-sm opacity-90">
-<li>• Resident Individuals</li>
-<li>• Minors (through Guardians)</li>
-<li>• Hindu Undivided Families</li>
-<li>• Minimum Balance: ₹5,000</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="tab-content w-full p-stack-lg" id="content2">
-<div class="flex items-center gap-3 mb-stack-md text-secondary">
-<span class="material-symbols-outlined">business</span>
-<h2 class="font-headline-lg text-primary">Current Account Requirements</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="p-4 bg-surface-container-low rounded border border-outline-variant/30">
-<h4 class="font-label-md text-primary mb-2">Business Identity</h4>
-<p class="text-body-sm text-on-surface-variant">GST Registration, Trade License, or Shops &amp; Establishment Act Certificate.</p>
-</div>
-<div class="p-4 bg-surface-container-low rounded border border-outline-variant/30">
-<h4 class="font-label-md text-primary mb-2">Entity Proof</h4>
-<p class="text-body-sm text-on-surface-variant">Partnership Deed, MOA/AOA, or Trust Deed as applicable for the business type.</p>
-</div>
-<div class="p-4 bg-surface-container-low rounded border border-outline-variant/30">
-<h4 class="font-label-md text-primary mb-2">Signatory KYC</h4>
-<p class="text-body-sm text-on-surface-variant">KYC of all authorized signatories and directors as per RBI AML/CFT norms.</p>
-</div>
-</div>
-</div>
-<div class="tab-content w-full p-stack-lg" id="content3">
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-body-sm text-body-sm opacity-60">Ã‚Â© 2024 Rajmata Urban Co-Op Bank Ltd., Mangalwedha. All
+                Rights Reserved. Member DICGC.</p>
+            <div class="flex items-center gap-4 grayscale opacity-50">
+                <span class="material-symbols-outlined text-sm">verified</span>
+                <span class="font-label-sm text-label-sm">RBI Regulated (Lic: U.B.D.MAH.1310)</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Handle manual scroll for the dropdown labels to ensure they reach the section after checking the hidden radio
+        document.querySelectorAll('.dropdown-menu label').forEach(label => {
+            label.addEventListener('click', () => {
+                // Short delay to ensure radio is checked before visual update
+                setTimeout(() => {
+                    const target = document.getElementById('documentation-guide');
+                    const offset = 100; // Account for sticky header
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = target.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
 
-<div class="flex items-center gap-3 mb-stack-md text-secondary">
-
-<div class="mb-stack-lg bg-surface-container-low p-6 rounded-lg border border-outline-variant">
-    <h3 class="font-headline-sm text-primary mb-4">Products &amp; Services Overview</h3>
-    <ul class="space-y-3 text-body-md text-on-surface-variant">
-        <li><strong>1. Account Types:</strong> Savings, Current, or Business accounts.</li>
-        <li><strong>2. Deposits:</strong> Schemes for Fixed Deposits (FD) and Recurring Deposits (RD).</li>
-        <li><strong>3. Loans Offered:</strong> Gold, Term, Home, Vehicle, Business, Ware House Receipt, Machinery, Clean loan, Nominal member, Household purchases, Personal loan.</li>
-        <li><strong>4. Required Documents:</strong> Check List provided per product for hassle-free processing.</li>
-        <li><strong>5. Terms &amp; Conditions:</strong> Standard banking terms and conditions apply to all products.</li>
-    </ul>
-</div>
-
-    <span class="material-symbols-outlined">account_balance</span>
-    <h2 class="font-headline-lg text-primary">Fixed Deposit (FD) Rates</h2>
-</div>
-<div class="overflow-x-auto border border-outline-variant rounded-lg">
-    <table class="w-full text-left border-collapse">
-        <thead>
-            <tr class="bg-surface-container-high border-b border-outline-variant">
-                <th class="p-4 font-label-md text-primary">Tenure</th>
-                <th class="p-4 font-label-md text-primary">Interest Rate (%)</th>
-            </tr>
-        </thead>
-        <tbody class="text-body-sm divide-y divide-outline-variant">
-            <tr><td class="p-4">30 days to 90 days</td><td class="p-4">6.00%</td></tr>
-            <tr><td class="p-4">91 days to 180 days</td><td class="p-4">6.50%</td></tr>
-            <tr><td class="p-4">181 days to 12 months</td><td class="p-4">7.00%</td></tr>
-            <tr><td class="p-4">13 months and above</td><td class="p-4">9.50%</td></tr>
-            <tr><td class="p-4">Institutional Depositor (13 months+)</td><td class="p-4">8.50%</td></tr>
-            <tr><td class="p-4">Dam Duppat Deposit (DDD)</td><td class="p-4">8 Years</td></tr>
-            <tr><td class="p-4">Institutional Dam Duppat Deposit</td><td class="p-4">9 Years</td></tr>
-        </tbody>
-    </table>
-</div>
-
-</div>
-<div class="tab-content w-full p-stack-lg" id="content4">
-<div class="flex items-center gap-3 mb-stack-md text-secondary">
-<span class="material-symbols-outlined">payments</span>
-<h2 class="font-headline-lg text-primary">Cumulative &amp; Recurring Deposits</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-<div class="border border-outline-variant p-6 rounded-lg">
-<h3 class="font-label-md text-secondary mb-3 uppercase tracking-wider">RD Installment Rules</h3>
-<ul class="space-y-2 text-body-md">
-<li>Minimum monthly installment: ₹500</li>
-<li>Standing Instruction (SI) from Savings Account is mandatory</li>
-<li>Late payment penalty: ₹1.50 per ₹100 per month</li>
-</ul>
-</div>
-<div class="border border-outline-variant p-6 rounded-lg">
-<h3 class="font-label-md text-secondary mb-3 uppercase tracking-wider">Minor Accounts &amp; Maturity</h3>
-<ul class="space-y-2 text-body-md">
-<li>Accounts for minors aged 10+ can be self-operated</li>
-<li>Maturity proceeds credited only to linked Savings Account</li>
-<li>Nomination facility is mandatory for all deposit accounts</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="tab-content w-full p-stack-lg" id="content5">
-<div class="max-w-3xl">
-<div class="flex items-center gap-3 mb-stack-md text-secondary">
-<span class="material-symbols-outlined">calculate</span>
-<h2 class="font-headline-lg text-primary">Yield &amp; Interest Calculator</h2>
-</div>
-<p class="text-body-lg text-on-surface-variant mb-8">Plan your future wealth with precision. Use our interactive tool to calculate interest on your savings and term deposits.</p>
-<div class="bg-surface-container rounded-xl p-8 border border-outline-variant">
-<div class="flex items-center justify-between mb-6">
-<h4 class="font-headline-sm">Calculate Your Gains</h4>
-<span class="bg-secondary text-white px-3 py-1 rounded text-xs font-bold">LIVE TOOL</span>
-</div>
-<div class="space-y-6">
-<div>
-<label class="block text-label-md mb-2">Deposit Amount (₹)</label>
-<input id="yield-deposit" class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary" placeholder="e.g. 100,000" type="number"/>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div>
-<label class="block text-label-md mb-2">Interest Rate (%)</label>
-<input id="yield-rate" class="w-full border-outline-variant rounded p-3" readonly="" type="text" value="7.15"/>
-</div>
-<div>
-<label class="block text-label-md mb-2">Tenure (Months)</label>
-<input id="yield-tenure" class="w-full border-outline-variant rounded p-3" placeholder="12" type="number"/>
-</div>
-</div>
-<button type="button" id="yield-btn" class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:bg-primary/90 transition-all">Calculate Maturity Value</button>
-<div id="yield-result" class="mt-6 p-4 bg-surface-container-high rounded text-center hidden">
-    <p class="text-label-md text-on-surface-variant">Estimated Maturity Value</p>
-    <h3 class="font-headline-lg text-primary" id="yield-total">₹0</h3>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="tab-content w-full p-stack-lg" id="content6">
-<div class="max-w-3xl">
-<div class="flex items-center gap-3 mb-stack-md text-secondary">
-<span class="material-symbols-outlined">real_estate_agent</span>
-<h2 class="font-headline-lg text-primary">Loan Calculator</h2>
-</div>
-<p class="text-body-lg text-on-surface-variant mb-8">Plan your borrowing with our EMI calculator.</p>
-
-<div class="mb-stack-lg p-6 bg-surface-container-low border border-outline-variant rounded-lg">
-    <h3 class="font-label-lg text-primary mb-3">Reference Loan Rates</h3>
-    <p class="text-body-sm mb-4">Use these rates to manually enter your interest percentage below.</p>
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-body-sm text-on-surface-variant">
-        <div><strong>Gold Loan:</strong> 10.50%</div>
-        <div><strong>Term Loan:</strong> 14.00%</div>
-        <div><strong>Vehicle Loan:</strong> 13.00%</div>
-        <div><strong>Home Loan:</strong> 13.00%</div>
-        <div><strong>CCHY:</strong> 15.00%</div>
-        <div><strong>Warehouse Receipt:</strong> 12.00%</div>
-        <div><strong>Machinery Loan:</strong> 15.00%</div>
-        <div><strong>Clean Loan:</strong> 16.00%</div>
-        <div><strong>Nominal Member:</strong> 16.00%</div>
-        <div><strong>Household Purchases:</strong> 15.00%</div>
-        <div><strong>Personal Loan:</strong> 15.00%</div>
-    </div>
-</div>
-
-<div class="bg-surface-container rounded-xl p-8 border border-outline-variant">
-<div class="flex items-center justify-between mb-6">
-<h4 class="font-headline-sm">Calculate Your EMI</h4>
-<span class="bg-secondary text-white px-3 py-1 rounded text-xs font-bold">LIVE TOOL</span>
-</div>
-<div class="space-y-6">
-<div>
-<label class="block text-label-md mb-2">Loan Amount (₹)</label>
-<input id="loan-amount" class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary" placeholder="e.g. 500000" type="number"/>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div>
-<label class="block text-label-md mb-2">Interest Rate (%)</label>
-<input id="loan-rate" class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary" type="number" step="0.1" value="10.5"/>
-</div>
-<div>
-<label class="block text-label-md mb-2">Tenure (Years)</label>
-<input id="loan-tenure" class="w-full border-outline-variant rounded p-3 focus:ring-secondary focus:border-secondary" placeholder="5" type="number"/>
-</div>
-</div>
-<button type="button" id="loan-btn" class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:bg-primary/90 transition-all">Calculate EMI</button>
-
-<div id="loan-result" class="mt-6 p-4 bg-surface-container-high rounded text-center hidden grid grid-cols-3 gap-4">
-    <div>
-        <p class="text-label-md text-on-surface-variant">Monthly EMI</p>
-        <h3 class="font-headline-md text-primary" id="loan-emi">₹0</h3>
-    </div>
-    <div>
-        <p class="text-label-md text-on-surface-variant">Total Interest</p>
-        <h3 class="font-headline-md text-primary" id="loan-total-interest">₹0</h3>
-    </div>
-    <div>
-        <p class="text-label-md text-on-surface-variant">Total Payment</p>
-        <h3 class="font-headline-md text-primary" id="loan-total-payment">₹0</h3>
-    </div>
-</div>
-
-</div>
-</div>
-
-
-
-</div>
-</div>
-<div class="tab-content w-full p-stack-lg" id="content7">
-
-<div class="flex items-center gap-3 mb-stack-md text-secondary">
-    <span class="material-symbols-outlined">payments</span>
-    <h2 class="font-headline-lg text-primary">Bank Charges</h2>
-</div>
-<div class="overflow-x-auto border border-outline-variant rounded-lg">
-    <table class="w-full text-left border-collapse mb-8">
-        <thead>
-            <tr class="bg-surface-container-high border-b border-outline-variant">
-                <th class="p-4 font-label-md text-primary">Loan Type</th>
-                <th class="p-4 font-label-md text-primary">Interest Rate (%)</th>
-            </tr>
-        </thead>
-        <tbody class="text-body-sm divide-y divide-outline-variant">
-            <tr><td class="p-4">Gold Loan</td><td class="p-4">10.50%</td></tr>
-            <tr><td class="p-4">Term Loan</td><td class="p-4">14.00%</td></tr>
-            <tr><td class="p-4">Vehicle Loan</td><td class="p-4">13.00%</td></tr>
-            <tr><td class="p-4">Home Loan</td><td class="p-4">13.00%</td></tr>
-            <tr><td class="p-4">CCHY</td><td class="p-4">15.00%</td></tr>
-            <tr><td class="p-4">Warehouse Receipt</td><td class="p-4">12.00%</td></tr>
-            <tr><td class="p-4">Machinery Loan</td><td class="p-4">15.00%</td></tr>
-            <tr><td class="p-4">Clean Loan</td><td class="p-4">16.00%</td></tr>
-            <tr><td class="p-4">Nominal Member</td><td class="p-4">16.00%</td></tr>
-            <tr><td class="p-4">Household Purchases</td><td class="p-4">15.00%</td></tr>
-            <tr><td class="p-4">Personal Loan</td><td class="p-4">15.00%</td></tr>
-        </tbody>
-    </table>
-</div>
-
-</div>
-</section>
-<!-- Interest Rates Summary Card -->
-<section class="grid grid-cols-1 lg:grid-cols-3 gap-gutter mb-stack-lg">
-<div class="lg:col-span-1 bg-tertiary-container text-on-tertiary p-stack-lg rounded-xl doc-card">
-<div class="flex items-center gap-3 mb-stack-md">
-<span class="material-symbols-outlined text-secondary-container">trending_up</span>
-<h2 class="font-headline-sm">Current Interest Rates</h2>
-</div>
-<div class="space-y-4">
-<div class="flex justify-between items-center border-b border-outline/30 pb-2">
-<span class="text-body-md">Savings</span>
-<span class="font-headline-sm text-secondary-container">3%</span>
-</div>
-<div class="flex justify-between items-center border-b border-outline/30 pb-2">
-<span class="text-body-md">Fixed (1 yr)</span>
-<span class="font-headline-sm text-secondary-container">7%</span>
-</div>
-<div class="flex justify-between items-center border-b border-outline/30 pb-2">
-<span class="text-body-md">Inst. Depositor</span>
-<span class="font-headline-sm text-secondary-container">8%</span>
-</div>
-</div>
-<p class="mt-6 text-[12px] opacity-60 italic">*Rates effective Oct 2024</p>
-</div>
-<div class="lg:col-span-2 bg-white border border-outline-variant rounded-xl p-stack-lg flex flex-col md:flex-row items-center gap-gutter">
-<div class="w-16 h-16 rounded-full bg-secondary-container/20 flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-secondary text-3xl">support_agent</span>
-</div>
-<div class="flex-1">
-<h3 class="font-headline-sm text-primary">Need Assistance?</h3>
-<p class="text-body-sm text-on-surface-variant">Our relationship managers are ready to guide you through the process of selecting the right account for your needs.</p>
-</div>
-<div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-<button class="px-6 py-2 border border-primary text-primary font-label-md rounded hover:bg-primary hover:text-white transition-colors whitespace-nowrap">Download Checklist</button>
-<button class="px-6 py-2 bg-primary text-white font-label-md rounded hover:bg-primary/90 transition-colors whitespace-nowrap">Find a Branch</button>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-tertiary-container text-on-tertiary-container py-stack-lg border-t border-outline-variant">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg">
-<div class="lg:col-span-2">
-<div class="flex items-center gap-2 mb-stack-md opacity-80">
-    <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
-    <span class="font-headline-md font-bold tracking-tight text-white" style="line-height: 1; font-size: 1.5rem;">Rajmata Bank</span>
-</div>
-<p class="font-body-sm text-body-sm opacity-80 max-w-sm mb-stack-md">Empowering financial growth through secure, innovative, and accessible banking solutions since 1996.</p>
-<div class="flex gap-4 mt-2">
-    <a href="https://www.facebook.com/share/1NdZTVKQKG/" target="_blank" class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
-        <span class="material-symbols-outlined text-sm">thumb_up</span> Facebook
-    </a>
-    <a href="https://www.instagram.com/rajmatabank_mangalwedha?igsh=d2VuM3ZkNGloczM1" target="_blank" class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
-        <span class="material-symbols-outlined text-sm">photo_camera</span> Instagram
-    </a>
-</div>
-</div>
-<div>
-<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Quick Links</h6>
-<ul class="space-y-2">
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="index.html">Home</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="documentation.html">Services</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="about.html">About Us</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="contact.html">Contact Us</a></li>
-</ul>
-</div>
-<div>
-<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Regulatory</h6>
-<ul class="space-y-2">
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Compliance</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Privacy Policy</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Terms &amp; Conditions</a></li>
-</ul>
-</div>
-<div>
-<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Contact</h6>
-<p class="font-body-sm text-body-sm mb-2"><a href="https://share.google/PEMGoE1Nk0lGnpYa0" target="_blank" class="hover:text-secondary opacity-80 hover:opacity-100 hover:underline transition-colors flex items-start gap-1"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>NEAR ST STAND DAMAJI CHOWK, MANGALWEDHA, TAL- MANGALWEDHA, DIST-SOLAPUR. PIN-413305</span></a></p>
-<p class="font-body-sm text-body-sm opacity-80">Helpline: 02188-220244</p>
-<p class="font-body-sm text-body-sm opacity-80">Email: helpdesk@rajmata.bank.in</p>
-</div>
-</div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-body-sm text-body-sm opacity-60">Ã‚Â© 2024 Rajmata Urban Co-Op Bank Ltd., Mangalwedha. All Rights Reserved. Member DICGC.</p>
-<div class="flex items-center gap-4 grayscale opacity-50">
-<span class="material-symbols-outlined text-sm">verified</span>
-<span class="font-label-sm text-label-sm">RBI Regulated (Lic: U.B.D.MAH.1310)</span>
-</div>
-</div>
-</footer>
-<script>
-    // Handle manual scroll for the dropdown labels to ensure they reach the section after checking the hidden radio
-    document.querySelectorAll('.dropdown-menu label').forEach(label => {
-        label.addEventListener('click', () => {
-            // Short delay to ensure radio is checked before visual update
-            setTimeout(() => {
-                const target = document.getElementById('documentation-guide');
-                const offset = 100; // Account for sticky header
-                const bodyRect = document.body.getBoundingClientRect().top;
-                const elementRect = target.getBoundingClientRect().top;
-                const elementPosition = elementRect - bodyRect;
-                const offsetPosition = elementPosition - offset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }, 10);
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }, 10);
+            });
         });
-    });
 
-    // Add visual feedback for buttons
-    const buttons = document.querySelectorAll('button');
-    buttons.forEach(btn => {
-        btn.addEventListener('mousedown', () => {
-            btn.style.transform = 'scale(0.98)';
+        // Add visual feedback for buttons
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(btn => {
+            btn.addEventListener('mousedown', () => {
+                btn.style.transform = 'scale(0.98)';
+            });
+            btn.addEventListener('mouseup', () => {
+                btn.style.transform = 'scale(1)';
+            });
         });
-        btn.addEventListener('mouseup', () => {
-            btn.style.transform = 'scale(1)';
-        });
-    });
 
-    // Logic for Yield Calculator
-    const yieldBtn = document.getElementById('yield-btn');
-    if(yieldBtn) {
-        yieldBtn.addEventListener('click', () => {
-            const P = parseFloat(document.getElementById('yield-deposit').value) || 0;
-            const R = parseFloat(document.getElementById('yield-rate').value) || 7.15;
-            const T = parseFloat(document.getElementById('yield-tenure').value) || 0;
-            if(P > 0 && T > 0) {
-                const A = P * Math.pow((1 + (R / 100) / 12), T);
-                document.getElementById('yield-total').textContent = '₹' + Math.round(A).toLocaleString('en-IN');
-                document.getElementById('yield-result').classList.remove('hidden');
-            }
-        });
-    }
+        // Logic for Yield Calculator
+        const yieldBtn = document.getElementById('yield-btn');
+        if (yieldBtn) {
+            yieldBtn.addEventListener('click', () => {
+                const P = parseFloat(document.getElementById('yield-deposit').value) || 0;
+                const R = parseFloat(document.getElementById('yield-rate').value) || 7.15;
+                const T = parseFloat(document.getElementById('yield-tenure').value) || 0;
+                if (P > 0 && T > 0) {
+                    const A = P * Math.pow((1 + (R / 100) / 12), T);
+                    document.getElementById('yield-total').textContent = '₹' + Math.round(A).toLocaleString('en-IN');
+                    document.getElementById('yield-result').classList.remove('hidden');
+                }
+            });
+        }
 
-    // Logic for Loan Calculator
-    const loanBtn = document.getElementById('loan-btn');
-    if(loanBtn) {
-        loanBtn.addEventListener('click', () => {
-            const P = parseFloat(document.getElementById('loan-amount').value) || 0;
-            const R = parseFloat(document.getElementById('loan-rate').value) || 0;
-            const N = (parseFloat(document.getElementById('loan-tenure').value) || 0) * 12;
-            
-            if(P > 0 && N > 0 && R > 0) {
-                const r = R / 12 / 100;
-                const EMI = (P * r * Math.pow(1 + r, N)) / (Math.pow(1 + r, N) - 1);
-                const totalPayment = EMI * N;
-                const totalInterest = totalPayment - P;
-                
-                document.getElementById('loan-emi').textContent = '₹' + Math.round(EMI).toLocaleString('en-IN');
-                document.getElementById('loan-total-interest').textContent = '₹' + Math.round(totalInterest).toLocaleString('en-IN');
-                document.getElementById('loan-total-payment').textContent = '₹' + Math.round(totalPayment).toLocaleString('en-IN');
-                document.getElementById('loan-result').classList.remove('hidden');
-            }
-        });
-    }
+        // Logic for Loan Calculator
+        const loanBtn = document.getElementById('loan-btn');
+        if (loanBtn) {
+            loanBtn.addEventListener('click', () => {
+                const P = parseFloat(document.getElementById('loan-amount').value) || 0;
+                const R = parseFloat(document.getElementById('loan-rate').value) || 0;
+                const N = (parseFloat(document.getElementById('loan-tenure').value) || 0) * 12;
 
-    // Hash-based Tab Routing
-    function activateTabFromHash() {
-        const hash = window.location.hash;
-        if(hash) {
-            const tabMap = {
-                '#savings-account': 'tab1',
-                '#current-account': 'tab2',
-                '#term-deposits': 'tab3',
-                '#cumulative': 'tab4',
-                '#yield-calculator': 'tab5',
-                '#loan-calculator': 'tab6',
-                '#bank-charges': 'tab7'
-            };
-            const tabId = tabMap[hash];
-            if(tabId) {
-                const tabEl = document.getElementById(tabId);
-                if(tabEl) {
-                    tabEl.checked = true;
-                    setTimeout(() => {
-                        const target = document.getElementById('documentation-guide');
-                        const headerOffset = 120;
-                        const elementPosition = target.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.scrollY - headerOffset;
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-                    }, 100);
+                if (P > 0 && N > 0 && R > 0) {
+                    const r = R / 12 / 100;
+                    const EMI = (P * r * Math.pow(1 + r, N)) / (Math.pow(1 + r, N) - 1);
+                    const totalPayment = EMI * N;
+                    const totalInterest = totalPayment - P;
+
+                    document.getElementById('loan-emi').textContent = '₹' + Math.round(EMI).toLocaleString('en-IN');
+                    document.getElementById('loan-total-interest').textContent = '₹' + Math.round(totalInterest).toLocaleString('en-IN');
+                    document.getElementById('loan-total-payment').textContent = '₹' + Math.round(totalPayment).toLocaleString('en-IN');
+                    document.getElementById('loan-result').classList.remove('hidden');
+                }
+            });
+        }
+
+        // Hash-based Tab Routing
+        function activateTabFromHash() {
+            const hash = window.location.hash;
+            if (hash) {
+                const tabMap = {
+                    '#savings-account': 'tab1',
+                    '#current-account': 'tab2',
+                    '#term-deposits': 'tab3',
+                    '#cumulative': 'tab4',
+                    '#yield-calculator': 'tab5',
+                    '#loan-calculator': 'tab6',
+                    '#bank-charges': 'tab7'
+                };
+                const tabId = tabMap[hash];
+                if (tabId) {
+                    const tabEl = document.getElementById(tabId);
+                    if (tabEl) {
+                        tabEl.checked = true;
+                        setTimeout(() => {
+                            const target = document.getElementById('documentation-guide');
+                            const headerOffset = 120;
+                            const elementPosition = target.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.scrollY - headerOffset;
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }, 100);
+                    }
                 }
             }
         }
-    }
 
-    window.addEventListener('load', activateTabFromHash);
-    window.addEventListener('hashchange', activateTabFromHash);
-    document.addEventListener('turbo:load', activateTabFromHash);
-</script>
-<script src="js/main.js"></script>
-
+        window.addEventListener('load', activateTabFromHash);
+        window.addEventListener('hashchange', activateTabFromHash);
+        document.addEventListener('turbo:load', activateTabFromHash);
+    </script>
+    <script src="js/main.js"></script>
 
 
 
-<script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.js"></script>
-<script>
-    function initNav() {
-        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-        const navLinks = document.querySelectorAll('nav a.nav-link');
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPath) {
-                link.classList.add('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
-                link.classList.remove('text-on-surface-variant');
-            } else {
-                link.classList.remove('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
-                link.classList.add('text-on-surface-variant');
-            }
-        });
 
-        // Mobile menu toggle logic
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        if (mobileMenuBtn && mobileMenu) {
-            // Remove existing listener if any
-            const newBtn = mobileMenuBtn.cloneNode(true);
-            mobileMenuBtn.parentNode.replaceChild(newBtn, mobileMenuBtn);
-            newBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                const icon = newBtn.querySelector('span');
-                if(mobileMenu.classList.contains('hidden')) {
-                    icon.textContent = 'menu';
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.js"></script>
+    <script>
+        function initNav() {
+            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('nav a.nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
+                    link.classList.remove('text-on-surface-variant');
                 } else {
-                    icon.textContent = 'close';
+                    link.classList.remove('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
+                    link.classList.add('text-on-surface-variant');
                 }
             });
+
+            // Mobile menu toggle logic
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuBtn && mobileMenu) {
+                // Remove existing listener if any
+                const newBtn = mobileMenuBtn.cloneNode(true);
+                mobileMenuBtn.parentNode.replaceChild(newBtn, mobileMenuBtn);
+                newBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = newBtn.querySelector('span');
+                    if (mobileMenu.classList.contains('hidden')) {
+                        icon.textContent = 'menu';
+                    } else {
+                        icon.textContent = 'close';
+                    }
+                });
+            }
         }
-    }
-    document.addEventListener("turbo:load", initNav);
-    document.addEventListener("DOMContentLoaded", initNav);
-</script>
+        document.addEventListener("turbo:load", initNav);
+        document.addEventListener("DOMContentLoaded", initNav);
+    </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const rdBtn = document.getElementById('rd-btn');
-        if (rdBtn) {
-            rdBtn.addEventListener('click', () => {
-                const P = parseFloat(document.getElementById('rd-amount').value);
-                const r = parseFloat(document.getElementById('rd-rate').value);
-                const n = parseFloat(document.getElementById('rd-tenure').value);
-                
-                if (P && r && n) {
-                    // Formula for RD maturity: M = P * n + P * n * (n+1) * r / (2400)
-                    const totalInvestment = P * n;
-                    const interest = (P * n * (n + 1) * r) / 2400;
-                    const maturity = totalInvestment + interest;
-                    
-                    document.getElementById('rd-total-investment').innerText = '₹' + Math.round(totalInvestment).toLocaleString('en-IN');
-                    document.getElementById('rd-total-interest').innerText = '₹' + Math.round(interest).toLocaleString('en-IN');
-                    document.getElementById('rd-maturity-value').innerText = '₹' + Math.round(maturity).toLocaleString('en-IN');
-                    document.getElementById('rd-result').classList.remove('hidden');
-                }
-            });
-        }
-    });
-</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const rdBtn = document.getElementById('rd-btn');
+            if (rdBtn) {
+                rdBtn.addEventListener('click', () => {
+                    const P = parseFloat(document.getElementById('rd-amount').value);
+                    const r = parseFloat(document.getElementById('rd-rate').value);
+                    const n = parseFloat(document.getElementById('rd-tenure').value);
 
-</body></html>
+                    if (P && r && n) {
+                        // Formula for RD maturity: M = P * n + P * n * (n+1) * r / (2400)
+                        const totalInvestment = P * n;
+                        const interest = (P * n * (n + 1) * r) / 2400;
+                        const maturity = totalInvestment + interest;
 
+                        document.getElementById('rd-total-investment').innerText = '₹' + Math.round(totalInvestment).toLocaleString('en-IN');
+                        document.getElementById('rd-total-interest').innerText = '₹' + Math.round(interest).toLocaleString('en-IN');
+                        document.getElementById('rd-maturity-value').innerText = '₹' + Math.round(maturity).toLocaleString('en-IN');
+                        document.getElementById('rd-result').classList.remove('hidden');
+                    }
+                });
+            }
+        });
+    </script>
 
+</body>
 
-
-
-
-
+</html>
