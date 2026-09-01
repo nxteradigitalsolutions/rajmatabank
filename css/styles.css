@@ -1,4 +1,4 @@
-﻿/* Rajmata Bank - Exact Design System Variables */
+/* Rajmata Bank - Exact Design System Variables */
 :root {
   /* Colors */
   --surface: #f8f9fa;
@@ -21,10 +21,10 @@
   --primary-container: #002147;
   --on-primary-container: #708ab5;
   --inverse-primary: #aec7f6;
-  --secondary: #e31837;
+  --secondary: #a93c28;
   --on-secondary: #ffffff;
   --secondary-container: #ffffff;
-  --on-secondary-container: #e31837;
+  --on-secondary-container: #a93c28;
   --tertiary: #000a1d;
   --on-tertiary: #ffffff;
   --tertiary-container: #052142;

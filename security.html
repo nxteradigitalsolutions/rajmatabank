@@ -1,381 +1,471 @@
-﻿<!DOCTYPE html><html class="light" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Security &amp; Compliance | Raj Mata Bank</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<!-- Tailwind Config -->
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface-dim": "#d9dadb",
-                    "secondary": "#e31837",
-                    "on-error-container": "#93000a",
-                    "surface-container-low": "#f3f4f5",
-                    "tertiary": "#000a1d",
-                    "on-primary-container": "#708ab5",
-                    "secondary-container": "#ffffff",
-                    "tertiary-container": "#052142",
-                    "on-tertiary": "#ffffff",
-                    "on-primary": "#ffffff",
-                    "inverse-surface": "#2e3132",
-                    "surface-bright": "#f8f9fa",
-                    "surface-container-high": "#e7e8e9",
-                    "on-secondary-container": "#e31837",
-                    "tertiary-fixed": "#d5e3ff",
-                    "error-container": "#ffdad6",
-                    "surface-variant": "#e1e3e4",
-                    "on-tertiary-container": "#7389b0",
-                    "on-surface-variant": "#44474e",
-                    "on-tertiary-fixed-variant": "#30476a",
-                    "outline-variant": "#c4c6cf",
-                    "on-tertiary-fixed": "#001b3c",
-                    "surface-container-highest": "#e1e3e4",
-                    "primary": "#000a1e",
-                    "error": "#ba1a1a",
-                    "on-secondary-fixed": "#2b1700",
-                    "on-secondary-fixed-variant": "#673d00",
-                    "on-secondary": "#ffffff",
-                    "primary-fixed-dim": "#aec7f6",
-                    "surface-tint": "#465f88",
-                    "inverse-on-surface": "#f0f1f2",
-                    "outline": "#74777f",
-                    "on-error": "#ffffff",
-                    "background": "#f8f9fa",
-                    "primary-fixed": "#d6e3ff",
-                    "on-primary-fixed": "#001b3d",
-                    "secondary-fixed-dim": "#ffb869",
-                    "on-primary-fixed-variant": "#2d476f",
-                    "tertiary-fixed-dim": "#b0c7f1",
-                    "surface": "#f8f9fa",
-                    "on-background": "#191c1d",
-                    "surface-container": "#edeeef",
-                    "on-surface": "#191c1d",
-                    "secondary-fixed": "#ffdcbb",
-                    "inverse-primary": "#aec7f6",
-                    "surface-container-lowest": "#ffffff",
-                    "primary-container": "#002147"
+﻿<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Security &amp; Compliance | Raj Mata Bank</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d9dadb",
+                        "secondary": "#e31837",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary": "#000a1d",
+                        "on-primary-container": "#708ab5",
+                        "secondary-container": "#ffffff",
+                        "tertiary-container": "#052142",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-high": "#e7e8e9",
+                        "on-secondary-container": "#e31837",
+                        "tertiary-fixed": "#d5e3ff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-container": "#7389b0",
+                        "on-surface-variant": "#44474e",
+                        "on-tertiary-fixed-variant": "#30476a",
+                        "outline-variant": "#c4c6cf",
+                        "on-tertiary-fixed": "#001b3c",
+                        "surface-container-highest": "#e1e3e4",
+                        "primary": "#000a1e",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#2b1700",
+                        "on-secondary-fixed-variant": "#673d00",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#aec7f6",
+                        "surface-tint": "#465f88",
+                        "inverse-on-surface": "#f0f1f2",
+                        "outline": "#74777f",
+                        "on-error": "#ffffff",
+                        "background": "#f8f9fa",
+                        "primary-fixed": "#d6e3ff",
+                        "on-primary-fixed": "#001b3d",
+                        "secondary-fixed-dim": "#ffb869",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "tertiary-fixed-dim": "#b0c7f1",
+                        "surface": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "surface-container": "#edeeef",
+                        "on-surface": "#191c1d",
+                        "secondary-fixed": "#ffdcbb",
+                        "inverse-primary": "#aec7f6",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#002147"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "container-max": "1200px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "headline-xl": ["\"Source Serif 4\""],
+                        "headline-lg-mobile": ["\"Source Serif 4\""],
+                        "headline-sm": ["\"Source Serif 4\""],
+                        "body-sm": ["Public Sans"],
+                        "headline-lg": ["\"Source Serif 4\""],
+                        "body-lg": ["Public Sans"],
+                        "headline-md": ["\"Source Serif 4\""]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "stack-md": "16px",
-                    "stack-lg": "32px",
-                    "margin-mobile": "20px",
-                    "margin-desktop": "64px",
-                    "gutter": "24px",
-                    "stack-sm": "8px",
-                    "container-max": "1200px",
-                    "unit": "8px"
-            },
-            "fontFamily": {
-                    "label-md": ["Public Sans"],
-                    "label-sm": ["Public Sans"],
-                    "body-md": ["Public Sans"],
-                    "headline-xl": ["\"Source Serif 4\""],
-                    "headline-lg-mobile": ["\"Source Serif 4\""],
-                    "headline-sm": ["\"Source Serif 4\""],
-                    "body-sm": ["Public Sans"],
-                    "headline-lg": ["\"Source Serif 4\""],
-                    "body-lg": ["Public Sans"],
-                    "headline-md": ["\"Source Serif 4\""]
-            },
-            "fontSize": {
-                    "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
-                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
-                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
-                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
-            }
-          },
-        },
-      }
+        }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .bento-grid {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             gap: 24px;
         }
+
         .security-pattern {
             background-image: radial-gradient(rgba(0, 33, 71, 0.05) 1px, transparent 0);
             background-size: 20px 20px;
         }
+
         .nav-dropdown:hover .dropdown-content {
             display: block;
         }
     </style>
-<link rel='stylesheet' href='css/styles.css'>
+    <link rel='stylesheet' href='css/styles.css'>
 </head>
+
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
-<!-- Top Navigation Shell -->
-<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant h-20 flex items-center shadow-sm transition-all duration-300" id="main-header">
-    <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center gap-1 md:gap-2 hover:opacity-80 transition-opacity duration-300 transform hover:scale-105">
-            <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
-            <span class="font-headline-md font-bold text-primary tracking-tight text-lg md:text-2xl whitespace-nowrap" style="line-height: 1;">Rajmata Bank</span>
-        </a>
+    <!-- Top Navigation Shell -->
+    <header class="bg-surface border-b border-outline-variant py-2 md:py-4 flex items-center shadow-sm transition-all duration-300" id="main-header">
+        <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
+            <!-- Logo -->
+            <a href="index.html"
+                class="flex items-center gap-1 md:gap-2 hover:opacity-80 transition-opacity duration-300 transform hover:scale-105">
+                <img src="images/logo.png" alt="Rajmata Bank Logo" class="h-24 md:h-32 w-auto object-contain">
+            </a>
 
-        <!-- Navigation Links -->
-        <nav class="hidden lg:flex gap-gutter h-full items-center">
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="index.html">Home</a>
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="about.html">About Us</a>
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="security.html">Security &amp; Compliance</a>
-            
-            <!-- Services Dropdown -->
-            <div class="dropdown relative h-full flex items-center group">
-                <a href="documentation.html" class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md flex items-center gap-1 relative hover:-translate-y-0.5">
-                    Services
-                    <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">expand_more</span>
-                </a>
-                <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl border-t-2 border-secondary ring-1 ring-black ring-opacity-5 z-50 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#savings-account">Saving Account</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#current-account">Current Account</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#term-deposits">Term Deposit Rates</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#cumulative">Cumulative &amp; RD</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#yield-calculator">Yield Calculator</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#loan-calculator">Loan Calculator</a>
-                    <a data-turbo="false" class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md" href="documentation.html#bank-charges">Bank Charges</a>
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex gap-gutter h-full items-center">
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="index.html">Home</a>
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="about.html">About Us</a>
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="security.html">Security &amp; Compliance</a>
+
+                <!-- Services Dropdown -->
+                <div class="dropdown relative h-full flex items-center group">
+                    <a href="documentation.html"
+                        class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md flex items-center gap-1 relative hover:-translate-y-0.5">
+                        Services
+                        <span
+                            class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+                    </a>
+                    <div
+                        class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl border-t-2 border-secondary ring-1 ring-black ring-opacity-5 z-50 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#savings-account">Saving Account</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#current-account">Current Account</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#term-deposits">Term Deposit Rates</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#cumulative">Cumulative &amp; RD</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#yield-calculator">Yield Calculator</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#loan-calculator">Loan Calculator</a>
+                        <a data-turbo="false"
+                            class="block px-6 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-secondary transition-colors font-body-md text-body-md"
+                            href="documentation.html#bank-charges">Bank Charges</a>
+                    </div>
                 </div>
-            </div>
-            <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5" href="contact.html">Contact Us</a>
-        </nav>
+                <a class="nav-link text-on-surface-variant hover:text-secondary transition-all duration-300 font-body-md text-body-md relative hover:-translate-y-0.5"
+                    href="contact.html">Contact Us</a>
+            </nav>
 
-        <!-- Right Buttons -->
-        <div class="flex items-center gap-2 md:gap-4 z-50">
-            <a href="open-account.html" class="hidden md:inline-block px-4 py-2 md:px-8 md:py-2.5 bg-secondary-container text-on-secondary-container font-label-md text-sm md:text-label-md font-bold rounded-sm hover:opacity-90 active:scale-95 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 shadow-sm whitespace-nowrap">Open Account</a>
-            <!-- Mobile Menu Toggle -->
-            <button id="mobile-menu-btn" class="lg:hidden p-2 text-on-surface-variant hover:text-secondary transition-colors">
-                <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
-            </button>
+            <!-- Right Buttons -->
+            <div class="flex items-center gap-2 md:gap-4 z-50">
+                <a href="open-account.html"
+                    class="hidden md:inline-block px-4 py-2 md:px-8 md:py-2.5 bg-secondary-container text-on-secondary-container font-label-md text-sm md:text-label-md font-bold rounded-sm hover:opacity-90 active:scale-95 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 shadow-sm whitespace-nowrap">Open
+                    Account</a>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-btn"
+                    class="lg:hidden p-2 text-on-surface-variant hover:text-secondary transition-colors">
+                    <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+                </button>
+            </div>
         </div>
-    </div>
-    
-    <!-- Mobile Navigation Menu (Hidden by default) -->
-    <div id="mobile-menu" class="fixed inset-0 bg-surface z-40 flex flex-col hidden lg:hidden pt-24 px-6 border-t border-outline-variant">
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="index.html">Home</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="about.html">About Us</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="security.html">Security &amp; Compliance</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30" href="documentation.html">Services</a>
-        <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm" href="contact.html">Contact Us</a>
-        <a href="open-account.html" class="mt-8 block w-full text-center py-4 bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm font-bold rounded-sm hover:opacity-90 active:scale-95 shadow-md border border-secondary-container">Open Account</a>
-    </div>
-</header>
-<main class="min-h-screen">
-<!-- Hero Section: Security Identity -->
-<section class="relative py-20 overflow-hidden bg-primary-container text-white">
-<div class="absolute inset-0 opacity-10"></div>
-<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
-<div class="max-w-2xl">
-<span class="inline-block px-3 py-1 bg-secondary text-on-primary text-label-sm font-label-sm rounded-sm mb-4">RBI COMPLIANT</span>
-<h1 class="font-headline-xl text-headline-xl mb-6">Security &amp; Strategic Compliance</h1>
-<p class="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed mb-8">
-                        Our commitment to your financial safety goes beyond standard banking. We operate with radical transparency, adhering to the highest global security standards and RBI mandatory disclosures.
+
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-surface z-40 flex flex-col hidden lg:hidden pt-24 px-6 border-t border-outline-variant">
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="index.html">Home</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="about.html">About Us</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="security.html">Security &amp; Compliance</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm border-b border-outline-variant/30"
+                href="documentation.html">Services</a>
+            <a class="nav-link block py-4 text-on-surface-variant hover:text-secondary font-headline-sm text-headline-sm"
+                href="contact.html">Contact Us</a>
+            <a href="open-account.html"
+                class="mt-8 block w-full text-center py-4 bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm font-bold rounded-sm hover:opacity-90 active:scale-95 shadow-md border border-secondary-container">Open
+                Account</a>
+        </div>
+    </header>
+    <main class="min-h-screen">
+        <!-- Hero Section: Security Identity -->
+        <section class="relative py-20 overflow-hidden bg-primary-container text-white">
+            <div class="absolute inset-0 opacity-10"></div>
+            <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+                <div class="max-w-2xl">
+                    <span
+                        class="inline-block px-3 py-1 bg-secondary text-on-primary text-label-sm font-label-sm rounded-sm mb-4">RBI
+                        COMPLIANT</span>
+                    <h1 class="font-headline-xl text-headline-xl mb-6">Security &amp; Strategic Compliance</h1>
+                    <p class="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed mb-8">
+                        Our commitment to your financial safety goes beyond standard banking. We operate with radical
+                        transparency, adhering to the highest global security standards and RBI mandatory disclosures.
                     </p>
-<div class="flex flex-wrap gap-4">
-<button class="flex items-center gap-2 px-8 py-3 bg-white text-primary font-label-md text-label-md rounded-sm hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined">description</span>
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="flex items-center gap-2 px-8 py-3 bg-white text-primary font-label-md text-label-md rounded-sm hover:bg-surface-container-high transition-colors">
+                            <span class="material-symbols-outlined">description</span>
                             View Basel III Pillar 3
                         </button>
-<button class="flex items-center gap-2 px-8 py-3 border border-primary-fixed-dim text-primary-fixed font-label-md text-label-md rounded-sm hover:bg-white/10 transition-colors">
-<span class="material-symbols-outlined">verified_user</span>
+                        <button
+                            class="flex items-center gap-2 px-8 py-3 border border-primary-fixed-dim text-primary-fixed font-label-md text-label-md rounded-sm hover:bg-white/10 transition-colors">
+                            <span class="material-symbols-outlined">verified_user</span>
                             KYC Guidelines
                         </button>
-</div>
-</div>
-</div>
-</section>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- DICGC Registration Banner -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-md">
-    <img src="images/dicgc-banner.png" alt="DICGC Registration Banner" class="w-full max-w-5xl mx-auto shadow-sm rounded-sm border border-outline-variant">
-</section>
+        <!-- DICGC Registration Banner -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-md">
+            <img src="images/dicgc-banner.png" alt="DICGC Registration Banner"
+                class="w-full max-w-5xl mx-auto shadow-sm rounded-sm border border-outline-variant">
+        </section>
 
-<!-- Compliance & Reports: Bento Grid -->
-<section class="py-stack-lg px-margin-desktop max-w-container-max mx-auto">
-<div class="flex items-end justify-between mb-stack-lg">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-primary">Statutory Disclosures</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">Mandatory regulatory reporting and audited financial records.</p>
-</div>
-<button class="text-secondary font-label-md text-label-md underline">Download All Reports (PDF)</button>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<!-- Basel III Mini Card -->
-<div class="md:col-span-4 bg-white border border-outline-variant p-stack-md rounded-sm">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary">analytics</span>
-<h4 class="font-label-md text-label-md">Basel III Pillar 3</h4>
-</div>
-<p class="text-body-sm text-on-surface-variant mb-4">Capital adequacy and market discipline disclosures.</p>
-<a class="text-secondary font-label-sm text-label-sm flex items-center gap-1 group" href="#">
+        <!-- Compliance & Reports: Bento Grid -->
+        <section class="py-stack-lg px-margin-desktop max-w-container-max mx-auto">
+            <div class="flex flex-col items-center justify-center text-center mb-stack-lg">
+                <h2 class="font-headline-lg text-headline-lg text-primary">Statutory Disclosures</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">Mandatory regulatory reporting and audited financial records.</p>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center gap-gutter max-w-4xl mx-auto">
+                <!-- Basel III Mini Card -->
+                <div class="flex-1 bg-white border border-outline-variant p-stack-md rounded-sm hover:shadow-md hover:-translate-y-1 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="material-symbols-outlined text-primary text-3xl">analytics</span>
+                        <h4 class="font-label-md text-label-md text-primary">Basel III Pillar 3</h4>
+                    </div>
+                    <p class="text-body-sm text-on-surface-variant mb-6">Capital adequacy and market discipline disclosures.</p>
+                    <a class="text-secondary font-label-sm text-label-sm flex items-center gap-1 group font-bold" href="#">
                         Explore Reports
                         <span class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-<!-- Fraud Prevention Mini Card -->
-<div class="md:col-span-4 bg-secondary-container p-stack-md rounded-sm border border-secondary">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-on-secondary-container">gpp_maybe</span>
-<h4 class="font-label-md text-label-md text-on-secondary-container">Fraud Prevention</h4>
-</div>
-<p class="text-body-sm text-on-secondary-container/80 mb-4">Stay alert against phishing, vishing, and online scams.</p>
-<a class="text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1 group" href="#">
+                    </a>
+                </div>
+                <!-- Fraud Prevention Mini Card -->
+                <div class="flex-1 bg-white p-stack-md rounded-sm border border-secondary hover:shadow-md hover:-translate-y-1 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="material-symbols-outlined text-secondary text-3xl">gpp_maybe</span>
+                        <h4 class="font-label-md text-label-md text-secondary">Fraud Prevention</h4>
+                    </div>
+                    <p class="text-body-sm text-secondary/80 mb-6">Stay alert against phishing, vishing, and online scams.</p>
+                    <a class="text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1 group" href="#">
                         Security Tips
                         <span class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-<!-- Unclaimed Deposits Mini Card -->
-<div class="md:col-span-4 bg-white border border-outline-variant p-stack-md rounded-sm">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary">savings</span>
-<h4 class="font-label-md text-label-md">Unclaimed Deposits</h4>
-</div>
-<p class="text-body-sm text-on-surface-variant mb-4">Search for funds in accounts inactive for 10+ years.</p>
-<a class="text-secondary font-label-sm text-label-sm flex items-center gap-1 group" href="#">
+                    </a>
+                </div>
+                <!-- Unclaimed Deposits Mini Card -->
+                <!-- <div class="flex-1 bg-white border border-outline-variant p-stack-md rounded-sm hover:shadow-md hover:-translate-y-1 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="material-symbols-outlined text-primary text-3xl">savings</span>
+                        <h4 class="font-label-md text-label-md text-primary">Unclaimed Deposits</h4>
+                    </div>
+                    <p class="text-body-sm text-on-surface-variant mb-6">Search for funds in accounts inactive for 10+ years.</p>
+                    <a class="text-secondary font-label-sm text-label-sm flex items-center gap-1 group font-bold" href="#">
                         Search Portal
                         <span class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Security UX: Visual Trust Section -->
-<section class="bg-surface-bright py-20 security-pattern border-y border-outline-variant">
-<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
-<div class="relative rounded-sm overflow-hidden shadow-2xl h-[400px]">
-<div class="bg-cover bg-center w-full h-full" data-alt="A sophisticated close-up of a high-tech biometric security interface with glowing navy blue circuit lines on a clean white glass surface. The lighting is bright and professional, suggesting a corporate modern banking environment. Abstract symbols of data encryption and protection float in a shallow depth of field, emphasizing high-level digital security and trust." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpZzbiL_s3RQFReU62GhlbeCv1wYTbTGRQjM0ZZfn1SYpG2K5VNH2MoaZsBUau_DA3EPRu9FZ5G17a__-Qy3kvZ0Ltzxjo4m3-St5fhBvrHFEK9uI8e_Z0RdUbmTRwnjI5xeAiRgU5Vm3LUwkIn4XGxLr5RNPfsQtZR2g2c09UlV2cc9Vlq7oQnjjzdh1Xabvd4ZEQFDU0HOiybH3g8OIxCnYN09owZyYj0gpjB1_VUjdtvZBQVPAerQ')"></div>
-<div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
-<div class="bg-white/90 backdrop-blur-md p-6 rounded-sm border border-white/40 max-w-xs text-center">
-<span class="material-symbols-outlined text-primary mb-2" style="font-size: 48px;">lock</span>
-<p class="font-headline-sm text-headline-sm text-primary">AES-256 Bit Encryption</p>
-<p class="text-body-sm text-on-surface-variant">Bank-grade encryption for every transaction.</p>
-</div>
-</div>
-</div>
-<div>
-<h2 class="font-headline-lg text-headline-lg text-primary mb-6">How We Protect Your Data</h2>
-<div class="space-y-8">
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">shield_lock</span>
-<div>
-<h4 class="font-label-md text-label-md text-primary mb-1">Multi-Factor Authentication</h4>
-<p class="text-body-sm text-on-surface-variant">Your account access is layered with OTP, biometric, and hardware-token support to prevent unauthorized entry.</p>
-</div>
-</div>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">radar</span>
-<div>
-<h4 class="font-label-md text-label-md text-primary mb-1">Real-time Fraud Monitoring</h4>
-<p class="text-body-sm text-on-surface-variant">Our AI engines scan 24/7 for unusual transaction patterns, instantly flagging and halting suspicious activity.</p>
-</div>
-</div>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">encrypted</span>
-<div>
-<h4 class="font-label-md text-label-md text-primary mb-1">Zero-Trust Architecture</h4>
-<p class="text-body-sm text-on-surface-variant">Internal systems operate on a 'never trust, always verify' protocol, ensuring even internal data access is strictly gated.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Redressal & Support -->
-<section class="py-20 max-w-container-max mx-auto px-margin-desktop text-center">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Grievance Redressal</h2>
-<p class="max-w-2xl mx-auto text-body-md text-on-surface-variant mb-12">We value your feedback. If you have any concerns regarding our services or security, our nodal officers are here to help.</p>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<div class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
-<span class="material-symbols-outlined text-secondary mb-4">support_agent</span>
-<h4 class="font-label-md text-label-md text-primary mb-2">Banking Ombudsman</h4>
-<p class="text-body-sm text-on-surface-variant">Resolution for complaints not settled within 30 days.</p>
-</div>
-<div class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
-<span class="material-symbols-outlined text-secondary mb-4">record_voice_over</span>
-<h4 class="font-label-md text-label-md text-primary mb-2">Nodal Officers</h4>
-<div class="text-body-sm text-on-surface-variant">
-<p class="font-bold">Navnath Ananda Diwase</p>
-<p class="">Phone: 02188-220244</p>
-<p class="">Email: admin@rajmata.bank.in</p>
-<p class="mt-2 text-[12px]">Direct contact details for our regional compliance leads.</p>
-</div>
-</div>
-<div class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
-<span class="material-symbols-outlined text-secondary mb-4">live_help</span>
-<h4 class="font-label-md text-label-md text-primary mb-2">Internal Ombudsman</h4>
-<p class="text-body-sm text-on-surface-variant">Independent oversight for all internal banking grievances.</p>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-tertiary-container text-on-tertiary-container py-stack-lg border-t border-outline-variant">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg">
-<div class="lg:col-span-2">
-<div class="flex items-center gap-2 mb-stack-md opacity-80">
-    <img src="images/logo.jpeg" alt="Rajmata Bank Logo" class="h-12 md:h-16 w-auto object-contain">
-    <span class="font-headline-md font-bold tracking-tight text-white" style="line-height: 1; font-size: 1.5rem;">Rajmata Bank</span>
-</div>
-<p class="font-body-sm text-body-sm opacity-80 max-w-sm mb-stack-md">Empowering financial growth through secure, innovative, and accessible banking solutions since 1996.</p>
-<div class="flex gap-4 mt-2">
-    <a href="https://www.facebook.com/share/1NdZTVKQKG/" target="_blank" class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
-        <span class="material-symbols-outlined text-sm">thumb_up</span> Facebook
-    </a>
-    <a href="https://www.instagram.com/rajmatabank_mangalwedha?igsh=d2VuM3ZkNGloczM1" target="_blank" class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
-        <span class="material-symbols-outlined text-sm">photo_camera</span> Instagram
-    </a>
-</div>
-</div>
-<div>
-<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Quick Links</h6>
-<ul class="space-y-2">
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="index.html">Home</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="documentation.html">Services</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="about.html">About Us</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="contact.html">Contact Us</a></li>
-</ul>
-</div>
-<div>
-<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Regulatory</h6>
-<ul class="space-y-2">
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Compliance</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Privacy Policy</a></li>
-<li class=""><a class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all" href="security.html">Terms &amp; Conditions</a></li>
-</ul>
-</div>
-<div>
-<h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Contact</h6>
-<p class="font-body-sm text-body-sm mb-2"><a href="https://share.google/PEMGoE1Nk0lGnpYa0" target="_blank" class="hover:text-secondary opacity-80 hover:opacity-100 hover:underline transition-colors flex items-start gap-1"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>NEAR ST STAND DAMAJI CHOWK, MANGALWEDHA, TAL- MANGALWEDHA, DIST-SOLAPUR. PIN-413305</span></a></p>
-<p class="font-body-sm text-body-sm opacity-80">Helpline: 02188-220244</p>
-<p class="font-body-sm text-body-sm opacity-80">Email: helpdesk@rajmata.bank.in</p>
-</div>
-</div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-body-sm text-body-sm opacity-60">Â© 2024 Rajmata Urban Co-Op Bank Ltd., Mangalwedha. All Rights Reserved. Member DICGC.</p>
-<div class="flex items-center gap-4 grayscale opacity-50">
-<span class="material-symbols-outlined text-sm">verified</span>
-<span class="font-label-sm text-label-sm">RBI Regulated (Lic: U.B.D.MAH.1310)</span>
-</div>
-</div>
-</footer>
-<script>
+                    </a>
+                </div> -->
+            </div>
+        </section>
+        <!-- Security UX: Visual Trust Section -->
+        <section class="bg-surface-bright py-20 security-pattern border-y border-outline-variant">
+            <div
+                class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+                <div class="relative rounded-sm overflow-hidden shadow-2xl h-[400px]">
+                    <div class="bg-cover bg-center w-full h-full"
+                        data-alt="A sophisticated close-up of a high-tech biometric security interface with glowing navy blue circuit lines on a clean white glass surface. The lighting is bright and professional, suggesting a corporate modern banking environment. Abstract symbols of data encryption and protection float in a shallow depth of field, emphasizing high-level digital security and trust."
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpZzbiL_s3RQFReU62GhlbeCv1wYTbTGRQjM0ZZfn1SYpG2K5VNH2MoaZsBUau_DA3EPRu9FZ5G17a__-Qy3kvZ0Ltzxjo4m3-St5fhBvrHFEK9uI8e_Z0RdUbmTRwnjI5xeAiRgU5Vm3LUwkIn4XGxLr5RNPfsQtZR2g2c09UlV2cc9Vlq7oQnjjzdh1Xabvd4ZEQFDU0HOiybH3g8OIxCnYN09owZyYj0gpjB1_VUjdtvZBQVPAerQ')">
+                    </div>
+                    <div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+                        <div
+                            class="bg-white/90 backdrop-blur-md p-6 rounded-sm border border-white/40 max-w-xs text-center">
+                            <span class="material-symbols-outlined text-primary mb-2"
+                                style="font-size: 48px;">lock</span>
+                            <p class="font-headline-sm text-headline-sm text-primary">AES-256 Bit Encryption</p>
+                            <p class="text-body-sm text-on-surface-variant">Bank-grade encryption for every transaction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-6">How We Protect Your Data</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-size: 32px;">shield_lock</span>
+                            <div>
+                                <h4 class="font-label-md text-label-md text-primary mb-1">Multi-Factor Authentication
+                                </h4>
+                                <p class="text-body-sm text-on-surface-variant">Your account access is layered with OTP,
+                                    biometric, and hardware-token support to prevent unauthorized entry.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-secondary" style="font-size: 32px;">radar</span>
+                            <div>
+                                <h4 class="font-label-md text-label-md text-primary mb-1">Real-time Fraud Monitoring
+                                </h4>
+                                <p class="text-body-sm text-on-surface-variant">Our AI engines scan 24/7 for unusual
+                                    transaction patterns, instantly flagging and halting suspicious activity.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-size: 32px;">encrypted</span>
+                            <div>
+                                <h4 class="font-label-md text-label-md text-primary mb-1">Zero-Trust Architecture</h4>
+                                <p class="text-body-sm text-on-surface-variant">Internal systems operate on a 'never
+                                    trust, always verify' protocol, ensuring even internal data access is strictly
+                                    gated.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Redressal & Support -->
+        <section class="py-20 max-w-container-max mx-auto px-margin-desktop text-center">
+            <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Grievance Redressal</h2>
+            <p class="max-w-2xl mx-auto text-body-md text-on-surface-variant mb-12">We value your feedback. If you have
+                any concerns regarding our services or security, our nodal officers are here to help.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <div
+                    class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
+                    <span class="material-symbols-outlined text-secondary mb-4">support_agent</span>
+                    <h4 class="font-label-md text-label-md text-primary mb-2">Banking Ombudsman</h4>
+                    <p class="text-body-sm text-on-surface-variant">Resolution for complaints not settled within 30
+                        days.</p>
+                </div>
+                <div
+                    class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
+                    <span class="material-symbols-outlined text-secondary mb-4">record_voice_over</span>
+                    <h4 class="font-label-md text-label-md text-primary mb-2">Nodal Officers</h4>
+                    <div class="text-body-sm text-on-surface-variant">
+                        <p class="font-bold">Navnath Ananda Diwase</p>
+                        <p class="">Phone: 02188-220244</p>
+                        <p class="">Email: admin@rajmata.bank.in</p>
+                        <p class="mt-2 text-[12px]">Direct contact details for our regional compliance leads.</p>
+                    </div>
+                </div>
+                <div
+                    class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
+                    <span class="material-symbols-outlined text-secondary mb-4">live_help</span>
+                    <h4 class="font-label-md text-label-md text-primary mb-2">Internal Ombudsman</h4>
+                    <p class="text-body-sm text-on-surface-variant">Independent oversight for all internal banking
+                        grievances.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-tertiary-container text-on-tertiary-container py-stack-lg border-t border-outline-variant">
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-lg">
+            <div class="lg:col-span-2">
+                <div class="flex items-center gap-2 mb-stack-md opacity-80">
+                    <img src="images/logo.png" alt="Rajmata Bank Logo" class="h-24 md:h-32 w-auto object-contain">
+                </div>
+                <p class="font-body-sm text-body-sm opacity-80 max-w-sm mb-stack-md">Empowering financial growth through
+                    secure, innovative, and accessible banking solutions since 1996.</p>
+                <div class="flex gap-4 mt-2">
+                    <a href="https://www.facebook.com/share/1NdZTVKQKG/" target="_blank"
+                        class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/rajmatabank_mangalwedha?igsh=d2VuM3ZkNGloczM1" target="_blank"
+                        class="text-white hover:text-secondary transition-colors text-sm font-bold flex items-center gap-1">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.07m0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> Instagram
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Quick Links</h6>
+                <ul class="space-y-2">
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="index.html">Home</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="documentation.html">Services</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="about.html">About Us</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Regulatory</h6>
+                <ul class="space-y-2">
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="security.html">Compliance</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="security.html">Privacy Policy</a></li>
+                    <li class=""><a
+                            class="font-body-sm text-body-sm hover:text-secondary underline decoration-transparent hover:decoration-secondary transition-all"
+                            href="security.html">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Contact</h6>
+                <p class="font-body-sm text-body-sm mb-2"><a href="https://share.google/PEMGoE1Nk0lGnpYa0"
+                        target="_blank"
+                        class="hover:text-secondary opacity-80 hover:opacity-100 hover:underline transition-colors flex items-start gap-1"><span
+                            class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>NEAR ST STAND
+                            DAMAJI CHOWK, MANGALWEDHA, TAL- MANGALWEDHA, DIST-SOLAPUR. PIN-413305</span></a></p>
+                <p class="font-body-sm text-body-sm opacity-80 flex items-center gap-1"><span class="material-symbols-outlined text-sm">call</span><span>02188-220244</span></p>
+                <p class="font-body-sm text-body-sm opacity-80 flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span><span>helpdesk@rajmata.bank.in</span></p>
+            </div>
+        </div>
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-body-sm text-body-sm opacity-60">© 2026 Rajmata Urban Co-Op Bank Ltd., Mangalwedha. All
+                Rights Reserved. Member DICGC.</p>
+            <div class="flex items-center gap-4 grayscale opacity-50">
+                <span class="material-symbols-outlined text-sm">verified</span>
+                <span class="font-label-sm text-label-sm">RBI Regulated (Lic: U.B.D.MAH.1310 P)</span>
+            </div>
+        </div>
+    </footer>
+    <script>
         // Micro-interactions for document rows
         document.querySelectorAll('.group.cursor-pointer').forEach(row => {
             row.addEventListener('click', () => {
@@ -395,48 +485,52 @@
     </script>
 
 
-<script src='js/main.js'></script>
+    <script src='js/main.js'></script>
 
 
 
 
-<script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.js"></script>
-<script>
-    function initNav() {
-        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-        const navLinks = document.querySelectorAll('nav a.nav-link');
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPath) {
-                link.classList.add('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
-                link.classList.remove('text-on-surface-variant');
-            } else {
-                link.classList.remove('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
-                link.classList.add('text-on-surface-variant');
-            }
-        });
-
-        // Mobile menu toggle logic
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        if (mobileMenuBtn && mobileMenu) {
-            // Remove existing listener if any
-            const newBtn = mobileMenuBtn.cloneNode(true);
-            mobileMenuBtn.parentNode.replaceChild(newBtn, mobileMenuBtn);
-            newBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                const icon = newBtn.querySelector('span');
-                if(mobileMenu.classList.contains('hidden')) {
-                    icon.textContent = 'menu';
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.js"></script>
+    <script>
+        function initNav() {
+            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('nav a.nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
+                    link.classList.remove('text-on-surface-variant');
                 } else {
-                    icon.textContent = 'close';
+                    link.classList.remove('text-[#E31837]', 'font-bold', 'border-b-2', 'border-[#E31837]');
+                    link.classList.add('text-on-surface-variant');
                 }
             });
+
+            // Mobile menu toggle logic
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuBtn && mobileMenu) {
+                // Remove existing listener if any
+                const newBtn = mobileMenuBtn.cloneNode(true);
+                mobileMenuBtn.parentNode.replaceChild(newBtn, mobileMenuBtn);
+                newBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = newBtn.querySelector('span');
+                    if (mobileMenu.classList.contains('hidden')) {
+                        icon.textContent = 'menu';
+                    } else {
+                        icon.textContent = 'close';
+                    }
+                });
+            }
         }
-    }
-    document.addEventListener("turbo:load", initNav);
-    document.addEventListener("DOMContentLoaded", initNav);
-</script>
-</body></html>
+        document.addEventListener("turbo:load", initNav);
+        document.addEventListener("DOMContentLoaded", initNav);
+    </script>
+</body>
+
+</html>
+
+
 
 
 
