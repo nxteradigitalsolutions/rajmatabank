@@ -190,12 +190,17 @@
             </a>
         </div>
 
-        <!-- Bottom Bar (Nav) -->
+                <!-- Bottom Bar (Nav) -->
         <div class="w-full bg-[#002147]">
             <div class="max-w-[1200px] mx-auto px-4 md:px-8 flex justify-between items-center h-14 md:h-16">
 
+                <!-- Mobile Menu Toggle (Left) -->
+                <button id="mobile-menu-btn" class="lg:hidden p-1 text-white hover:text-gray-300 transition-colors mr-4">
+                    <span class="material-symbols-outlined text-[28px]">menu</span>
+                </button>
+
                 <!-- Desktop Nav -->
-                <nav class="hidden lg:flex items-center gap-8 h-full">
+                <nav class="hidden lg:flex items-center gap-8 h-full mr-auto">
                     <a class="nav-link text-white hover:text-[#e31837] font-bold transition-colors h-full flex items-center"
                         href="index.html">Home</a>
                     <a class="nav-link text-white hover:text-[#e31837] font-bold transition-colors h-full flex items-center"
@@ -240,18 +245,14 @@
                         href="contact.html">Contact Us</a>
                 </nav>
 
-                <!-- Right Buttons & Mobile Toggle -->
-                <div class="flex items-center gap-3 md:gap-4 z-50">
+                <!-- Right Buttons -->
+                <div class="flex items-center gap-2 md:gap-4 z-50 ml-auto">
                     <a href="open-account.html"
-                        class="bg-[#e31837] text-white px-4 py-1.5 md:px-6 md:py-2 text-xs md:text-sm rounded-md font-bold hover:bg-[#b3132b] transition-colors shadow-sm whitespace-nowrap">Open
+                        class="bg-[#e31837] text-white px-3 py-1.5 md:px-6 md:py-2 text-[11px] sm:text-xs md:text-sm rounded-md font-bold hover:bg-[#b3132b] transition-colors shadow-sm whitespace-nowrap">Open
                         Account</a>
                     <a href="contact.html"
-                        class="bg-[#387c2b] text-white px-4 py-1.5 md:px-6 md:py-2 text-xs md:text-sm rounded-full font-bold hover:bg-[#2d6322] transition-colors shadow-sm whitespace-nowrap hidden sm:block">Lodge
-                        A Complaint</a>
-                    <!-- Mobile Menu Toggle -->
-                    <button id="mobile-menu-btn" class="lg:hidden p-1 text-white hover:text-gray-300 transition-colors">
-                        <span class="material-symbols-outlined text-[28px]">menu</span>
-                    </button>
+                        class="bg-[#387c2b] text-white px-3 py-1.5 md:px-6 md:py-2 text-[11px] sm:text-xs md:text-sm rounded-full font-bold hover:bg-[#2d6322] transition-colors shadow-sm whitespace-nowrap block">Lodge
+                        Complaint</a>
                 </div>
             </div>
         </div>
@@ -269,8 +270,7 @@
                 href="documentation.html">Services</a>
             <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
                 href="contact.html">Contact Us</a>
-            <a class="block py-4 text-[#387c2b] hover:text-[#2d6322] font-bold text-lg border-b border-gray-200"
-                href="contact.html">Lodge A Complaint</a>
+            
         </div>
     </header>
     <main>
