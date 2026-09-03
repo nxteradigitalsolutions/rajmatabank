@@ -1,7 +1,7 @@
-﻿// Rajmata Bank Main JavaScript
+// Rajmata Bank Main JavaScript
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Rajmata Bank website initialized.');
-    
+
     // Add interactive animations if necessary
     // Mobile menu toggle example
     const menuBtn = document.querySelector('[data-mobile-menu]');

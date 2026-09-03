@@ -51,7 +51,7 @@
   /* Typography */
   --font-headline: 'Source Serif 4', serif;
   --font-body: 'Public Sans', sans-serif;
-  
+
   --spacing-unit: 8px;
   --border-radius-sm: 0.125rem;
   --border-radius-DEFAULT: 0.25rem;
@@ -66,6 +66,11 @@ body {
   color: var(--on-background);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-headline);
 }
