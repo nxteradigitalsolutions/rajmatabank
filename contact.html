@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html class="light" lang="en">
 
@@ -501,7 +501,7 @@
         const contactForm = document.querySelector('form');
         if (contactForm) {
             contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
+                // Allow the default mailto behavior
                 const btn = e.target.querySelector('button');
                 const originalText = btn.innerText;
                 btn.innerText = 'Message Sent!';
