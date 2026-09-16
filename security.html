@@ -45,12 +45,12 @@
             <div class="bg-[#e31837] text-white flex items-center px-4 md:px-8 gap-4 md:gap-8 h-full z-10 shrink-0"
                 style="clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%); padding-right: 3rem;">
                 <div class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-[18px]">mail</span>
+                    <span class="material-symbols-outlined text-[18px]" translate="no">mail</span>
                     <a href="mailto:helpdesk@rajmata.bank.in"
                         class="hover:underline text-sm font-medium">helpdesk@rajmata.bank.in</a>
                 </div>
                 <div class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-[18px]">call</span>
+                    <span class="material-symbols-outlined text-[18px]" translate="no">call</span>
                     <a href="tel:02188-220244" class="hover:underline text-sm font-medium">02188-220244</a>
                 </div>
             </div>
@@ -67,19 +67,20 @@
         </div>
 
         <!-- Middle Bar (Logo) -->
-        <div class="w-full bg-white py-3 px-4 md:px-8 flex justify-center items-center max-w-[1200px] mx-auto">
+        <div class="w-full bg-white py-3 px-4 md:px-8 flex justify-center items-center max-w-[1200px] mx-auto relative z-50">
             <a href="index.html" class="flex items-center gap-4 hover:opacity-90 transition-opacity">
                 <img src="images/logo.png" alt="Rajmata Bank Logo" class="h-16 md:h-20 w-auto object-contain">
             </a>
         </div>
 
-                <!-- Bottom Bar (Nav) -->
-        <div class="w-full bg-[#002147]">
+        <!-- Bottom Bar (Nav) -->
+        <div class="w-full bg-[#002147] relative z-50">
             <div class="max-w-[1200px] mx-auto px-4 md:px-8 flex justify-between items-center h-14 md:h-16">
 
                 <!-- Mobile Menu Toggle (Left) -->
-                <button id="mobile-menu-btn" class="lg:hidden p-1 text-white hover:text-gray-300 transition-colors mr-4">
-                    <span class="material-symbols-outlined text-[28px]">menu</span>
+                <button id="mobile-menu-btn"
+                    class="lg:hidden p-1 text-white hover:text-gray-300 transition-colors mr-4">
+                    <span class="material-symbols-outlined text-[28px]" translate="no">menu</span>
                 </button>
 
                 <!-- Desktop Nav -->
@@ -97,7 +98,7 @@
                             class="nav-link text-white hover:text-[#e31837] font-bold transition-colors h-full flex items-center gap-1">
                             Services
                             <span
-                                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+                                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform" translate="no">expand_more</span>
                         </a>
                         <div
                             class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl border-t-4 border-[#e31837] z-50 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -136,13 +137,17 @@
                     <a href="contact.html"
                         class="bg-[#387c2b] text-white px-3 py-1.5 md:px-6 md:py-2 text-[11px] sm:text-xs md:text-sm rounded-full font-bold hover:bg-[#2d6322] transition-colors shadow-sm whitespace-nowrap block">Lodge
                         Complaint</a>
+                    <!-- GTranslate Widget -->
+                    <div class="gtranslate_wrapper"></div>
+                    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","mr"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"inline","float_switcher_open_direction":"bottom","flag_style":"3d"}</script>
+                    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
                 </div>
             </div>
         </div>
 
         <!-- Mobile Navigation Menu (Hidden by default) -->
         <div id="mobile-menu"
-            class="fixed inset-0 bg-white z-40 flex flex-col hidden lg:hidden pt-32 px-6 overflow-y-auto">
+            class="fixed inset-0 bg-white z-40 flex flex-col hidden lg:hidden px-6 overflow-y-auto" style="padding-top: 145px;">
             <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
                 href="index.html">Home</a>
             <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
@@ -153,7 +158,7 @@
                 href="documentation.html">Services</a>
             <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
                 href="contact.html">Contact Us</a>
-            
+
         </div>
     </header>
     <main class="min-h-screen">
@@ -172,14 +177,14 @@
                         transparency, adhering to the highest global security standards and RBI mandatory disclosures.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <button
+                        <a href="financial-report.html"
                             class="flex items-center gap-2 px-8 py-3 bg-white text-primary font-label-md text-label-md rounded-sm hover:bg-surface-container-high transition-colors">
-                            <span class="material-symbols-outlined">description</span>
-                            View Basel III Pillar 3
-                        </button>
+                            <span class="material-symbols-outlined" translate="no">description</span>
+                            View Annual reports
+                        </a>
                         <button
                             class="flex items-center gap-2 px-8 py-3 border border-primary-fixed-dim text-primary-fixed font-label-md text-label-md rounded-sm hover:bg-white/10 transition-colors">
-                            <span class="material-symbols-outlined">verified_user</span>
+                            <span class="material-symbols-outlined" translate="no">verified_user</span>
                             KYC Guidelines
                         </button>
                     </div>
@@ -205,7 +210,7 @@
                 <div
                     class="flex-1 bg-white border border-outline-variant p-stack-md rounded-sm hover:shadow-md hover:-translate-y-1 transition-all">
                     <div class="flex items-center gap-3 mb-4">
-                        <span class="material-symbols-outlined text-primary text-3xl">analytics</span>
+                        <span class="material-symbols-outlined text-primary text-3xl" translate="no">analytics</span>
                         <h4 class="font-label-md text-label-md text-primary">Basel III Pillar 3</h4>
                     </div>
                     <p class="text-body-sm text-on-surface-variant mb-6">Capital adequacy and market discipline
@@ -214,14 +219,14 @@
                         href="#">
                         Explore Reports
                         <span
-                            class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform" translate="no">arrow_forward</span>
                     </a>
                 </div>
                 <!-- Fraud Prevention Mini Card -->
                 <div
                     class="flex-1 bg-white p-stack-md rounded-sm border border-secondary hover:shadow-md hover:-translate-y-1 transition-all">
                     <div class="flex items-center gap-3 mb-4">
-                        <span class="material-symbols-outlined text-secondary text-3xl">gpp_maybe</span>
+                        <span class="material-symbols-outlined text-secondary text-3xl" translate="no">gpp_maybe</span>
                         <h4 class="font-label-md text-label-md text-secondary">Fraud Prevention</h4>
                     </div>
                     <p class="text-body-sm text-secondary/80 mb-6">Stay alert against phishing, vishing, and online
@@ -230,19 +235,19 @@
                         href="#">
                         Security Tips
                         <span
-                            class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform" translate="no">arrow_forward</span>
                     </a>
                 </div>
                 <!-- Unclaimed Deposits Mini Card -->
                 <!-- <div class="flex-1 bg-white border border-outline-variant p-stack-md rounded-sm hover:shadow-md hover:-translate-y-1 transition-all">
                     <div class="flex items-center gap-3 mb-4">
-                        <span class="material-symbols-outlined text-primary text-3xl">savings</span>
+                        <span class="material-symbols-outlined text-primary text-3xl" translate="no">savings</span>
                         <h4 class="font-label-md text-label-md text-primary">Unclaimed Deposits</h4>
                     </div>
                     <p class="text-body-sm text-on-surface-variant mb-6">Search for funds in accounts inactive for 10+ years.</p>
                     <a class="text-secondary font-label-sm text-label-sm flex items-center gap-1 group font-bold" href="#">
                         Search Portal
-                        <span class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform" translate="no">arrow_forward</span>
                     </a>
                 </div> -->
             </div>
@@ -260,7 +265,7 @@
                         <div
                             class="bg-white/90 backdrop-blur-md p-6 rounded-sm border border-white/40 max-w-xs text-center">
                             <span class="material-symbols-outlined text-primary mb-2"
-                                style="font-size: 48px;">lock</span>
+                                style="font-size: 48px;" translate="no">lock</span>
                             <p class="font-headline-sm text-headline-sm text-primary">AES-256 Bit Encryption</p>
                             <p class="text-body-sm text-on-surface-variant">Bank-grade encryption for every transaction.
                             </p>
@@ -272,7 +277,7 @@
                     <div class="space-y-8">
                         <div class="flex gap-4">
                             <span class="material-symbols-outlined text-secondary"
-                                style="font-size: 32px;">shield_lock</span>
+                                style="font-size: 32px;" translate="no">shield_lock</span>
                             <div>
                                 <h4 class="font-label-md text-label-md text-primary mb-1">Multi-Factor Authentication
                                 </h4>
@@ -281,7 +286,7 @@
                             </div>
                         </div>
                         <div class="flex gap-4">
-                            <span class="material-symbols-outlined text-secondary" style="font-size: 32px;">radar</span>
+                            <span class="material-symbols-outlined text-secondary" style="font-size: 32px;" translate="no">radar</span>
                             <div>
                                 <h4 class="font-label-md text-label-md text-primary mb-1">Real-time Fraud Monitoring
                                 </h4>
@@ -291,7 +296,7 @@
                         </div>
                         <div class="flex gap-4">
                             <span class="material-symbols-outlined text-secondary"
-                                style="font-size: 32px;">encrypted</span>
+                                style="font-size: 32px;" translate="no">encrypted</span>
                             <div>
                                 <h4 class="font-label-md text-label-md text-primary mb-1">Zero-Trust Architecture</h4>
                                 <p class="text-body-sm text-on-surface-variant">Internal systems operate on a 'never
@@ -311,14 +316,14 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
                 <div
                     class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
-                    <span class="material-symbols-outlined text-secondary mb-4">support_agent</span>
+                    <span class="material-symbols-outlined text-secondary mb-4" translate="no">support_agent</span>
                     <h4 class="font-label-md text-label-md text-primary mb-2">Banking Ombudsman</h4>
                     <p class="text-body-sm text-on-surface-variant">Resolution for complaints not settled within 30
                         days.</p>
                 </div>
                 <div
                     class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
-                    <span class="material-symbols-outlined text-secondary mb-4">record_voice_over</span>
+                    <span class="material-symbols-outlined text-secondary mb-4" translate="no">record_voice_over</span>
                     <h4 class="font-label-md text-label-md text-primary mb-2">Nodal Officers</h4>
                     <div class="text-body-sm text-on-surface-variant">
                         <p class="font-bold">Navnath Ananda Diwase</p>
@@ -329,7 +334,7 @@
                 </div>
                 <div
                     class="p-stack-lg border border-outline-variant bg-white hover:border-primary transition-colors cursor-pointer rounded-sm">
-                    <span class="material-symbols-outlined text-secondary mb-4">live_help</span>
+                    <span class="material-symbols-outlined text-secondary mb-4" translate="no">live_help</span>
                     <h4 class="font-label-md text-label-md text-primary mb-2">Internal Ombudsman</h4>
                     <p class="text-body-sm text-on-surface-variant">Independent oversight for all internal banking
                         grievances.</p>
@@ -338,7 +343,7 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="bg-[#2f3b69] text-white py-12 border-t border-[#1e2749] text-sm">
+    <footer class="bg-[#2f3b69] text-white py-12 border-t border-[#1e2749] text-sm" id="main-footer">
         <div class="max-w-[1200px] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
             <!-- About Us -->
@@ -347,9 +352,9 @@
                 <p class="mb-4 text-gray-300 leading-relaxed">NEAR ST STAND DAMAJI CHOWK, MANGALWEDHA, TAL- MANGALWEDHA,
                     DIST-SOLAPUR. PIN-413305</p>
                 <p class="mb-2 flex items-center gap-2 text-gray-300"><span
-                        class="material-symbols-outlined text-[18px]">call</span> 02188-220244</p>
+                        class="material-symbols-outlined text-[18px]" translate="no">call</span> 02188-220244</p>
                 <p class="mb-6 flex items-center gap-2 text-gray-300"><span
-                        class="material-symbols-outlined text-[18px]">mail</span> helpdesk@rajmata.bank.in</p>
+                        class="material-symbols-outlined text-[18px]" translate="no">mail</span> helpdesk@rajmata.bank.in</p>
 
                 <div class="flex gap-3 mb-6">
                     <!-- Facebook Icon -->
@@ -460,11 +465,6 @@
 
 
     <script src='js/main.js'></script>
-
-
-
-
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.js"></script>
     <script>
         function initNav() {
             const currentPath = window.location.pathname.split('/').pop() || 'index.html';
@@ -503,3 +503,4 @@
 </body>
 
 </html>
+

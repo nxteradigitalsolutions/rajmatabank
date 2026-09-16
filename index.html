@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Raj Mata Bank | Trusting Tradition, Powering Progress</title>
-        <link
+    <link
         href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
     <style>
         body {
             font-family: 'Public Sans', sans-serif;
@@ -52,41 +53,47 @@
 <body class="overflow-x-hidden">
     <!-- Top Navigation Bar -->
     <header class="w-full shadow-sm flex flex-col z-50 relative" id="main-header">
-    <!-- Top Bar with Marquee -->
-    <div class="w-full bg-[#002147] flex h-10 hidden md:flex overflow-hidden">
-        <div class="bg-[#e31837] text-white flex items-center px-4 md:px-8 gap-4 md:gap-8 h-full z-10 shrink-0" style="clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%); padding-right: 3rem;">
-            <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-[18px]">mail</span>
-                <a href="mailto:helpdesk@rajmata.bank.in" class="hover:underline text-sm font-medium">helpdesk@rajmata.bank.in</a>
+        <!-- Top Bar with Marquee -->
+        <div class="w-full bg-[#002147] flex h-10 hidden md:flex overflow-hidden">
+            <div class="bg-[#e31837] text-white flex items-center px-4 md:px-8 gap-4 md:gap-8 h-full z-10 shrink-0"
+                style="clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%); padding-right: 3rem;">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]" translate="no">mail</span>
+                    <a href="mailto:helpdesk@rajmata.bank.in"
+                        class="hover:underline text-sm font-medium">helpdesk@rajmata.bank.in</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]" translate="no">call</span>
+                    <a href="tel:02188-220244" class="hover:underline text-sm font-medium">02188-220244</a>
+                </div>
             </div>
-            <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-[18px]">call</span>
-                <a href="tel:02188-220244" class="hover:underline text-sm font-medium">02188-220244</a>
+            <div class="flex-1 bg-[#002147] flex items-center pr-4 overflow-hidden">
+                <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();"
+                    onmouseout="this.start();"
+                    class="text-[#ffdcbb] font-medium text-xs md:text-sm tracking-wide w-full">
+                    <span class="mr-16">Welcome to Rajmata Urban Co-Op Bank Ltd., Mangalwedha.</span>
+                    <span class="mr-16 text-white">⚠️ Important Notice: Protect yourself from cyber fraud. Never share
+                        your OTP, PIN, or CVV with anyone.</span>
+                    <span class="mr-16">Please update your KYC details at your nearest branch.</span>
+                </marquee>
             </div>
         </div>
-        <div class="flex-1 bg-[#002147] flex items-center pr-4 overflow-hidden">
-            <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();" class="text-[#ffdcbb] font-medium text-xs md:text-sm tracking-wide w-full">
-                <span class="mr-16">Welcome to Rajmata Urban Co-Op Bank Ltd., Mangalwedha.</span>
-                <span class="mr-16 text-white">⚠️ Important Notice: Protect yourself from cyber fraud. Never share your OTP, PIN, or CVV with anyone.</span>
-                <span class="mr-16">Please update your KYC details at your nearest branch.</span>
-            </marquee>
+
+        <!-- Middle Bar (Logo) -->
+        <div class="w-full bg-white py-3 px-4 md:px-8 flex justify-center items-center max-w-[1200px] mx-auto relative z-50">
+            <a href="index.html" class="flex items-center gap-4 hover:opacity-90 transition-opacity">
+                <img src="images/logo.png" alt="Rajmata Bank Logo" class="h-16 md:h-20 w-auto object-contain">
+            </a>
         </div>
-    </div>
 
-    <!-- Middle Bar (Logo) -->
-    <div class="w-full bg-white py-3 px-4 md:px-8 flex justify-center items-center max-w-[1200px] mx-auto">
-        <a href="index.html" class="flex items-center gap-4 hover:opacity-90 transition-opacity">
-            <img src="images/logo.png" alt="Rajmata Bank Logo" class="h-16 md:h-20 w-auto object-contain">
-        </a>
-    </div>
-
-            <!-- Bottom Bar (Nav) -->
-        <div class="w-full bg-[#002147]">
+        <!-- Bottom Bar (Nav) -->
+        <div class="w-full bg-[#002147] relative z-50">
             <div class="max-w-[1200px] mx-auto px-4 md:px-8 flex justify-between items-center h-14 md:h-16">
 
                 <!-- Mobile Menu Toggle (Left) -->
-                <button id="mobile-menu-btn" class="lg:hidden p-1 text-white hover:text-gray-300 transition-colors mr-4">
-                    <span class="material-symbols-outlined text-[28px]">menu</span>
+                <button id="mobile-menu-btn"
+                    class="lg:hidden p-1 text-white hover:text-gray-300 transition-colors mr-4">
+                    <span class="material-symbols-outlined text-[28px]" translate="no">menu</span>
                 </button>
 
                 <!-- Desktop Nav -->
@@ -104,7 +111,7 @@
                             class="nav-link text-white hover:text-[#e31837] font-bold transition-colors h-full flex items-center gap-1">
                             Services
                             <span
-                                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+                                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform" translate="no">expand_more</span>
                         </a>
                         <div
                             class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl border-t-4 border-[#e31837] z-50 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -143,27 +150,38 @@
                     <a href="contact.html"
                         class="bg-[#387c2b] text-white px-3 py-1.5 md:px-6 md:py-2 text-[11px] sm:text-xs md:text-sm rounded-full font-bold hover:bg-[#2d6322] transition-colors shadow-sm whitespace-nowrap block">Lodge
                         Complaint</a>
+                    <!-- GTranslate Widget -->
+                    <div class="gtranslate_wrapper"></div>
+                    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","mr"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"inline","float_switcher_open_direction":"bottom","flag_style":"3d"}</script>
+                    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
                 </div>
             </div>
         </div>
-    
-    <!-- Mobile Navigation Menu (Hidden by default) -->
-    <div id="mobile-menu" class="fixed inset-0 bg-white z-40 flex flex-col hidden lg:hidden pt-32 px-6 overflow-y-auto">
-        <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200" href="index.html">Home</a>
-        <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200" href="about.html">About</a>
-        <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200" href="security.html">Security &amp; Compliance</a>
-        <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200" href="documentation.html">Services</a>
-        <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200" href="contact.html">Contact Us</a>
-        
-    </div>
-</header>
+
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-white z-40 flex flex-col hidden lg:hidden px-6 overflow-y-auto" style="padding-top: 145px;">
+            <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
+                href="index.html">Home</a>
+            <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
+                href="about.html">About</a>
+            <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
+                href="security.html">Security &amp; Compliance</a>
+            <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
+                href="documentation.html">Services</a>
+            <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
+                href="contact.html">Contact Us</a>
+
+        </div>
+    </header>
     <!-- Hero Section -->
     <section
         class="relative w-full lg:h-[600px] flex items-center overflow-hidden bg-surface-container-lowest border-b border-outline-variant pb-16 lg:pb-0">
         <div class="relative w-full px-margin-desktop max-w-container-max mx-auto pt-12 lg:pt-0">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="max-w-2xl reveal active z-10">
-                    <h1 class="font-headline-xl text-headline-xl mb-stack-md leading-tight text-primary typewriter">Trusting
+                    <h1 class="font-headline-xl text-headline-xl mb-stack-md leading-tight text-primary typewriter">
+                        Trusting
                         Tradition,<br><span class="text-secondary">Powering Progress</span></h1>
                     <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Experience a legacy of
                         secure banking built on institutional trust, redefined for the modern digital era with
@@ -175,7 +193,7 @@
                         </a>
                         <a data-turbo="false" href="documentation.html#loan-calculator"
                             class="flex items-center gap-2 px-8 py-3 bg-surface border border-outline-variant text-primary font-label-md text-label-md rounded-sm hover:bg-surface-container-low transition-all shadow-sm">
-                            <span class="material-symbols-outlined">calculate</span>
+                            <span class="material-symbols-outlined" translate="no">calculate</span>
                             Loan Calculator
                         </a>
                     </div>
@@ -196,7 +214,7 @@
                     class="bg-white p-stack-md border border-outline-variant shadow-sm hover:shadow-lg transition-all group reveal active">
                     <div
                         class="w-12 h-12 bg-primary-container flex items-center justify-center text-secondary-container mb-stack-md group-hover:scale-110 transition-transform">
-                        <span class="material-symbols-outlined text-3xl">add_card</span>
+                        <span class="material-symbols-outlined text-3xl" translate="no">add_card</span>
                     </div>
                     <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Apply Online</h3>
                     <p class="font-body-sm text-body-sm text-on-surface-variant">Instant digital account opening with
@@ -207,7 +225,7 @@
                     style="transition-delay: 100ms;">
                     <div
                         class="w-12 h-12 bg-primary-container flex items-center justify-center text-secondary-container mb-stack-md group-hover:scale-110 transition-transform">
-                        <span class="material-symbols-outlined text-3xl">payments</span>
+                        <span class="material-symbols-outlined text-3xl" translate="no">payments</span>
                     </div>
                     <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Transfer Funds</h3>
                     <p class="font-body-sm text-body-sm text-on-surface-variant">Seamless domestic and international
@@ -218,7 +236,7 @@
                     style="transition-delay: 200ms;">
                     <div
                         class="w-12 h-12 bg-primary-container flex items-center justify-center text-secondary-container mb-stack-md group-hover:scale-110 transition-transform">
-                        <span class="material-symbols-outlined text-3xl">trending_up</span>
+                        <span class="material-symbols-outlined text-3xl" translate="no">trending_up</span>
                     </div>
                     <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Investments</h3>
                     <p class="font-body-sm text-body-sm text-on-surface-variant">Fixed deposits and mutual fund
@@ -229,7 +247,7 @@
                     style="transition-delay: 300ms;">
                     <div
                         class="w-12 h-12 bg-primary-container flex items-center justify-center text-secondary-container mb-stack-md group-hover:scale-110 transition-transform">
-                        <span class="material-symbols-outlined text-3xl">support_agent</span>
+                        <span class="material-symbols-outlined text-3xl" translate="no">support_agent</span>
                     </div>
                     <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Support</h3>
                     <p class="font-body-sm text-body-sm text-on-surface-variant">Direct access to dedicated wealth
@@ -249,7 +267,7 @@
                 </div>
                 <a class="text-primary font-label-md text-label-md flex items-center gap-1 hover:underline group"
                     href="documentation.html">View All Services <span
-                        class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+                        class="material-symbols-outlined group-hover:translate-x-1 transition-transform" translate="no">arrow_forward</span></a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
                 <!-- Service 1 -->
@@ -313,10 +331,45 @@
             </div>
         </div>
     </section>
+
+    <!-- About Us Section -->
+    <section class="py-20 md:py-32 bg-white relative my-12 border-t border-gray-100">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+                <div class="relative reveal active">
+                    <img src="images/Bank-Image.jpeg" alt="Rajmata Bank"
+                        class="w-full h-auto rounded-lg shadow-xl object-cover hover:scale-[1.02] transition-transform duration-500">
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-secondary text-white p-6 rounded-lg shadow-lg hidden md:block z-10">
+                        <p class="font-headline-md text-headline-md font-bold">Since 1996</p>
+                        <p class="font-label-sm text-label-sm opacity-90">Empowering Your Growth</p>
+                    </div>
+                </div>
+                <div class="reveal active" style="transition-delay: 200ms;">
+                    <span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-2">About
+                        Us</span>
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-6 leading-tight">Your Trusted Financial
+                        Partner for Generations</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                        At Rajmata Urban Co-Op Bank, we are committed to providing secure, modern, and customer-centric
+                        banking solutions. Rooted in tradition but driven by innovation, we empower our community to
+                        achieve their financial goals with confidence and ease.
+                    </p>
+                    <a href="about.html"
+                        class="inline-flex items-center gap-2 px-8 py-3 bg-primary text-white font-label-md text-label-md rounded-sm hover:brightness-110 transition-all shadow-md group">
+                        Discover Our Story
+                        <span
+                            class="material-symbols-outlined group-hover:translate-x-1 transition-transform" translate="no">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Why Choose Us -->
     <section class="py-24 bg-primary text-white overflow-hidden relative">
         <div class="absolute right-0 top-0 w-1/3 h-full opacity-10">
-            <span class="material-symbols-outlined text-[400px] absolute -right-20 -top-20">verified_user</span>
+            <span class="material-symbols-outlined text-[400px] absolute -right-20 -top-20" translate="no">verified_user</span>
         </div>
         <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
@@ -328,7 +381,7 @@
                         traditional banking with state-of-the-art digital infrastructure.</p>
                     <ul class="space-y-stack-md">
                         <li class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-secondary-container mt-1">security</span>
+                            <span class="material-symbols-outlined text-secondary-container mt-1" translate="no">security</span>
                             <div>
                                 <h5 class="font-headline-sm text-headline-sm mb-1">State-of-the-Art Security</h5>
                                 <p class="font-body-sm text-body-sm opacity-70">Multi-factor authentication and advanced
@@ -336,7 +389,7 @@
                             </div>
                         </li>
                         <li class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-secondary-container mt-1">rocket_launch</span>
+                            <span class="material-symbols-outlined text-secondary-container mt-1" translate="no">rocket_launch</span>
                             <div>
                                 <h5 class="font-headline-sm text-headline-sm mb-1">Instant Digital Solutions</h5>
                                 <p class="font-body-sm text-body-sm opacity-70">Our mobile app provides 99% of bank
@@ -344,7 +397,7 @@
                             </div>
                         </li>
                         <li class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-secondary-container mt-1">history_edu</span>
+                            <span class="material-symbols-outlined text-secondary-container mt-1" translate="no">history_edu</span>
                             <div>
                                 <h5 class="font-headline-sm text-headline-sm mb-1">Legacy of Trust</h5>
                                 <p class="font-body-sm text-body-sm opacity-70">Voted most trusted bank for five
@@ -391,77 +444,107 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-[#2f3b69] text-white py-12 border-t border-[#1e2749] text-sm">
-    <div class="max-w-[1200px] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        
-        <!-- About Us -->
-        <div>
-            <h3 class="font-bold text-lg mb-6 text-white border-b border-[#e31837] pb-2 inline-block">About Us</h3>
-            <p class="mb-4 text-gray-300 leading-relaxed">NEAR ST STAND DAMAJI CHOWK, MANGALWEDHA, TAL- MANGALWEDHA, DIST-SOLAPUR. PIN-413305</p>
-            <p class="mb-2 flex items-center gap-2 text-gray-300"><span class="material-symbols-outlined text-[18px]">call</span> 02188-220244</p>
-            <p class="mb-6 flex items-center gap-2 text-gray-300"><span class="material-symbols-outlined text-[18px]">mail</span> helpdesk@rajmata.bank.in</p>
-            
-            <div class="flex gap-3 mb-6">
-                <!-- Facebook Icon -->
-                <a href="https://www.facebook.com/share/1NdZTVKQKG/" target="_blank" class="w-9 h-9 rounded-full border border-gray-400 flex items-center justify-center hover:bg-[#e31837] hover:border-[#e31837] transition-all duration-300">
-                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
-                </a>
-                <!-- Instagram Icon -->
-                <a href="https://www.instagram.com/rajmatabank_mangalwedha?igsh=d2VuM3ZkNGloczM1" target="_blank" class="w-9 h-9 rounded-full border border-gray-400 flex items-center justify-center hover:bg-[#e31837] hover:border-[#e31837] transition-all duration-300">
-                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.07m0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                </a>
+    <footer class="bg-[#2f3b69] text-white py-12 border-t border-[#1e2749] text-sm" id="main-footer">
+        <div class="max-w-[1200px] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- About Us -->
+            <div>
+                <h3 class="font-bold text-lg mb-6 text-white border-b border-[#e31837] pb-2 inline-block">About Us</h3>
+                <p class="mb-4 text-gray-300 leading-relaxed">NEAR ST STAND DAMAJI CHOWK, MANGALWEDHA, TAL- MANGALWEDHA,
+                    DIST-SOLAPUR. PIN-413305</p>
+                <p class="mb-2 flex items-center gap-2 text-gray-300"><span
+                        class="material-symbols-outlined text-[18px]" translate="no">call</span> 02188-220244</p>
+                <p class="mb-6 flex items-center gap-2 text-gray-300"><span
+                        class="material-symbols-outlined text-[18px]" translate="no">mail</span> helpdesk@rajmata.bank.in</p>
+
+                <div class="flex gap-3 mb-6">
+                    <!-- Facebook Icon -->
+                    <a href="https://www.facebook.com/share/1NdZTVKQKG/" target="_blank"
+                        class="w-9 h-9 rounded-full border border-gray-400 flex items-center justify-center hover:bg-[#e31837] hover:border-[#e31837] transition-all duration-300">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                        </svg>
+                    </a>
+                    <!-- Instagram Icon -->
+                    <a href="https://www.instagram.com/rajmatabank_mangalwedha?igsh=d2VuM3ZkNGloczM1" target="_blank"
+                        class="w-9 h-9 rounded-full border border-gray-400 flex items-center justify-center hover:bg-[#e31837] hover:border-[#e31837] transition-all duration-300">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.07m0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div>
+                <h3 class="font-bold text-lg mb-6 text-white border-b border-[#e31837] pb-2 inline-block">Resources</h3>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a
+                            href="documentation.html#loan-calculator" class="hover:text-[#e31837] transition-colors">EMI
+                            Calculator</a></li>
+                    <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400 mt-2"></span>
+                        <a href="https://www.npci.org.in/" target="_blank"
+                            class="hover:text-[#e31837] transition-colors leading-tight">Download
+                            Aadhaar<br>Seeding/Deseeding</a></li>
+                    <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a
+                            href="https://cybercrime.gov.in/" target="_blank"
+                            class="hover:text-[#e31837] transition-colors">Cyber Crime</a></li>
+                    <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a
+                            href="https://rbikehtahai.rbi.org.in/" target="_blank"
+                            class="hover:text-[#e31837] transition-colors">RBI Kehta Hai!</a></li>
+                    <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a
+                            href="https://www.ckycindia.in/ckyc/index.php" target="_blank"
+                            class="hover:text-[#e31837] transition-colors">CKYC</a></li>
+                    <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a
+                            href="#" class="hover:text-[#e31837] transition-colors">RBI Is Saying..</a></li>
+                    <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a
+                            href="https://www.rbi.org.in/" target="_blank"
+                            class="hover:text-[#e31837] transition-colors">Reserve Bank of India</a></li>
+                </ul>
+            </div>
+
+            <!-- Banking Details -->
+            <div>
+                <h3 class="font-bold text-lg mb-6 text-white border-b border-[#e31837] pb-2 inline-block">Banking
+                    Details</h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li><span class="font-bold text-white">Registration No.</span> - <br>S.U.R./B.N.K.(O)/118</li>
+                    <li><span class="font-bold text-white">RBI License No.</span> - <br>U.B.D.MAH.1310 P</li>
+                    <li><span class="font-bold text-white">Bank's IFSC</span> - UTIB0SRJUCB</li>
+                    <li><span class="font-bold text-white">PAN No.</span> - AAAAR1900K</li>
+                    <li><span class="font-bold text-white">GST No.</span> - <br>27AAAAR1900K2ZO</li>
+                </ul>
+            </div>
+
+            <!-- DICGC Assurance -->
+            <div>
+                <h3 class="font-bold text-lg mb-6 text-white border-b border-[#e31837] pb-2 inline-block">DICGC
+                    Assurance</h3>
+                <p class="mb-4 text-gray-300 leading-relaxed">Rajmata Urban Co-Op Bank Ltd., Mangalwedha Is Registered
+                    With <span class="font-bold text-white">DICGC.</span></p>
+                <div class="bg-white p-2 inline-block rounded border border-gray-200">
+                    <img src="images/digc logo.jpg" alt="DICGC Assurance" class="h-16 w-auto mix-blend-multiply">
+                </div>
+                <!-- Extra info from old footer -->
+                <div class="mt-8 pt-6 border-t border-[#465f88] opacity-80">
+                    <img src="images/logo.png" alt="Rajmata Bank Logo" class="h-16 w-auto bg-white p-2 rounded mb-3">
+                    <p class="text-xs leading-relaxed">Empowering financial growth through secure, innovative, and
+                        accessible banking solutions since 1996.</p>
+                </div>
             </div>
         </div>
 
-        <!-- Resources -->
-        <div>
-            <h3 class="font-bold text-lg mb-6 text-white border-b border-[#e31837] pb-2 inline-block">Resources</h3>
-            <ul class="space-y-3 text-gray-300">
-                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a href="documentation.html#loan-calculator" class="hover:text-[#e31837] transition-colors">EMI Calculator</a></li>
-                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400 mt-2"></span> <a href="https://www.npci.org.in/" target="_blank" class="hover:text-[#e31837] transition-colors leading-tight">Download Aadhaar<br>Seeding/Deseeding</a></li>
-                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a href="https://cybercrime.gov.in/" target="_blank" class="hover:text-[#e31837] transition-colors">Cyber Crime</a></li>
-                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a href="https://rbikehtahai.rbi.org.in/" target="_blank" class="hover:text-[#e31837] transition-colors">RBI Kehta Hai!</a></li>
-                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a href="https://www.ckycindia.in/ckyc/index.php" target="_blank" class="hover:text-[#e31837] transition-colors">CKYC</a></li>
-                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a href="#" class="hover:text-[#e31837] transition-colors">RBI Is Saying..</a></li>
-                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a href="https://www.rbi.org.in/" target="_blank" class="hover:text-[#e31837] transition-colors">Reserve Bank of India</a></li>
-            </ul>
-        </div>
-
-        <!-- Banking Details -->
-        <div>
-            <h3 class="font-bold text-lg mb-6 text-white border-b border-[#e31837] pb-2 inline-block">Banking Details</h3>
-            <ul class="space-y-4 text-gray-300">
-                <li><span class="font-bold text-white">Registration No.</span> - <br>S.U.R./B.N.K.(O)/118</li>
-                <li><span class="font-bold text-white">RBI License No.</span> - <br>U.B.D.MAH.1310 P</li>
-                <li><span class="font-bold text-white">Bank's IFSC</span> - UTIB0SRJUCB</li>
-                <li><span class="font-bold text-white">PAN No.</span> - AAAAR1900K</li>
-                <li><span class="font-bold text-white">GST No.</span> - <br>27AAAAR1900K2ZO</li>
-            </ul>
-        </div>
-
-        <!-- DICGC Assurance -->
-        <div>
-            <h3 class="font-bold text-lg mb-6 text-white border-b border-[#e31837] pb-2 inline-block">DICGC Assurance</h3>
-            <p class="mb-4 text-gray-300 leading-relaxed">Rajmata Urban Co-Op Bank Ltd., Mangalwedha Is Registered With <span class="font-bold text-white">DICGC.</span></p>
-            <div class="bg-white p-2 inline-block rounded border border-gray-200">
-                <img src="images/digc logo.jpg" alt="DICGC Assurance" class="h-16 w-auto mix-blend-multiply">
-            </div>
-            <!-- Extra info from old footer -->
-            <div class="mt-8 pt-6 border-t border-[#465f88] opacity-80">
-                 <img src="images/logo.png" alt="Rajmata Bank Logo" class="h-16 w-auto bg-white p-2 rounded mb-3">
-                 <p class="text-xs leading-relaxed">Empowering financial growth through secure, innovative, and accessible banking solutions since 1996.</p>
+        <!-- Bottom Copyright -->
+        <div class="w-full bg-[#1e2749] mt-8 py-4">
+            <div
+                class="max-w-[1200px] mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-xs">
+                <p>© 2026 Rajmata Urban Co-Op Bank Ltd., Mangalwedha. All Rights Reserved.</p>
+                <p>Designed by NxtEra Digital Solutions</p>
             </div>
         </div>
-    </div>
-    
-    <!-- Bottom Copyright -->
-    <div class="w-full bg-[#1e2749] mt-8 py-4">
-        <div class="max-w-[1200px] mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-xs">
-            <p>© 2026 Rajmata Urban Co-Op Bank Ltd., Mangalwedha. All Rights Reserved.</p>
-            <p>Designed by NxtEra Digital Solutions</p>
-        </div>
-    </div>
-</footer>
+    </footer>
     <script>
         // Simple Intersection Observer for scroll animations
         const observerOptions = {
@@ -481,11 +564,6 @@
 
 
     <script src='js/main.js'></script>
-
-
-
-
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.js"></script>
     <script>
         function initNav() {
             const currentPath = window.location.pathname.split('/').pop() || 'index.html';
@@ -521,14 +599,57 @@
         document.addEventListener("turbo:load", initNav);
         document.addEventListener("DOMContentLoaded", initNav);
     </script>
+    <!-- Desktop Pop-up Modal -->
+    <div id="desktop-popup" class="fixed inset-0 flex items-center justify-center hidden" style="z-index: 9999;">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black bg-opacity-70" id="desktop-popup-backdrop"></div>
+        <!-- Modal Content -->
+        <div class="relative bg-white rounded-lg shadow-2xl p-2 z-10 animate-[zoomIn_0.3s_ease-out] mx-4 max-w-[90vw] inline-block text-center">
+            <!-- Close Button (Top Right) -->
+            <button id="close-desktop-popup" class="absolute w-10 h-10 rounded-full bg-[#e31837] border-2 border-white flex items-center justify-center text-white hover:bg-[#b3132b] transition-colors shadow-xl cursor-pointer z-50" style="top: -15px; right: -15px;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <!-- Image -->
+            <img src="images/Pop-Up.jpeg" alt="Rajmata Bank Announcement" class="w-auto h-auto max-h-[40vh] rounded-sm object-contain mx-auto block">
+        </div>
+    </div>
+
+    <style>
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+
+    <script>
+        function initPopup() {
+            const popup = document.getElementById('desktop-popup');
+            const closeBtn = document.getElementById('close-desktop-popup');
+            const backdrop = document.getElementById('desktop-popup-backdrop');
+
+            if (!popup) return;
+
+            // Check if desktop (>768px) and not already shown in this session
+            if (window.innerWidth > 768 && !sessionStorage.getItem('popupShown')) {
+                // Show after 1 second
+                setTimeout(() => {
+                    popup.classList.remove('hidden');
+                    sessionStorage.setItem('popupShown', 'true');
+                }, 1000);
+            }
+
+            const closePopup = () => {
+                popup.classList.add('hidden');
+            };
+
+            closeBtn.addEventListener('click', closePopup);
+            backdrop.addEventListener('click', closePopup);
+        }
+
+        document.addEventListener("turbo:load", initPopup);
+        document.addEventListener("DOMContentLoaded", initPopup);
+    </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-

@@ -1,0 +1,3 @@
+@echo off
+echo Starting Live Server...
+npx --yes live-server

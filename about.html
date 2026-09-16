@@ -63,12 +63,12 @@
             <div class="bg-[#e31837] text-white flex items-center px-4 md:px-8 gap-4 md:gap-8 h-full z-10 shrink-0"
                 style="clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%); padding-right: 3rem;">
                 <div class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-[18px]">mail</span>
+                    <span class="material-symbols-outlined text-[18px]" translate="no">mail</span>
                     <a href="mailto:helpdesk@rajmata.bank.in"
                         class="hover:underline text-sm font-medium">helpdesk@rajmata.bank.in</a>
                 </div>
                 <div class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-[18px]">call</span>
+                    <span class="material-symbols-outlined text-[18px]" translate="no">call</span>
                     <a href="tel:02188-220244" class="hover:underline text-sm font-medium">02188-220244</a>
                 </div>
             </div>
@@ -85,19 +85,20 @@
         </div>
 
         <!-- Middle Bar (Logo) -->
-        <div class="w-full bg-white py-3 px-4 md:px-8 flex justify-center items-center max-w-[1200px] mx-auto">
+        <div class="w-full bg-white py-3 px-4 md:px-8 flex justify-center items-center max-w-[1200px] mx-auto relative z-50">
             <a href="index.html" class="flex items-center gap-4 hover:opacity-90 transition-opacity">
                 <img src="images/logo.png" alt="Rajmata Bank Logo" class="h-16 md:h-20 w-auto object-contain">
             </a>
         </div>
 
-                <!-- Bottom Bar (Nav) -->
-        <div class="w-full bg-[#002147]">
+        <!-- Bottom Bar (Nav) -->
+        <div class="w-full bg-[#002147] relative z-50">
             <div class="max-w-[1200px] mx-auto px-4 md:px-8 flex justify-between items-center h-14 md:h-16">
 
                 <!-- Mobile Menu Toggle (Left) -->
-                <button id="mobile-menu-btn" class="lg:hidden p-1 text-white hover:text-gray-300 transition-colors mr-4">
-                    <span class="material-symbols-outlined text-[28px]">menu</span>
+                <button id="mobile-menu-btn"
+                    class="lg:hidden p-1 text-white hover:text-gray-300 transition-colors mr-4">
+                    <span class="material-symbols-outlined text-[28px]" translate="no">menu</span>
                 </button>
 
                 <!-- Desktop Nav -->
@@ -115,7 +116,7 @@
                             class="nav-link text-white hover:text-[#e31837] font-bold transition-colors h-full flex items-center gap-1">
                             Services
                             <span
-                                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+                                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform" translate="no">expand_more</span>
                         </a>
                         <div
                             class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl border-t-4 border-[#e31837] z-50 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -154,13 +155,17 @@
                     <a href="contact.html"
                         class="bg-[#387c2b] text-white px-3 py-1.5 md:px-6 md:py-2 text-[11px] sm:text-xs md:text-sm rounded-full font-bold hover:bg-[#2d6322] transition-colors shadow-sm whitespace-nowrap block">Lodge
                         Complaint</a>
+                    <!-- GTranslate Widget -->
+                    <div class="gtranslate_wrapper"></div>
+                    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","mr"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"inline","float_switcher_open_direction":"bottom","flag_style":"3d"}</script>
+                    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
                 </div>
             </div>
         </div>
 
         <!-- Mobile Navigation Menu (Hidden by default) -->
         <div id="mobile-menu"
-            class="fixed inset-0 bg-white z-40 flex flex-col hidden lg:hidden pt-32 px-6 overflow-y-auto">
+            class="fixed inset-0 bg-white z-40 flex flex-col hidden lg:hidden px-6 overflow-y-auto" style="padding-top: 145px;">
             <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
                 href="index.html">Home</a>
             <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
@@ -171,7 +176,7 @@
                 href="documentation.html">Services</a>
             <a class="nav-link block py-4 text-gray-800 hover:text-[#e31837] font-bold text-lg border-b border-gray-200"
                 href="contact.html">Contact Us</a>
-            
+
         </div>
     </header>
     <main>
@@ -192,11 +197,11 @@
                     </p>
                     <div class="flex flex-wrap gap-4 pt-4">
                         <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-secondary-container">shield</span>
+                            <span class="material-symbols-outlined text-secondary-container" translate="no">shield</span>
                             <span class="font-label-md text-label-md">30+ Years of Stability</span>
                         </div>
                         <!-- <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary-container">verified_user</span>
+<span class="material-symbols-outlined text-secondary-container" translate="no">verified_user</span>
 <span class="font-label-md text-label-md">25M+ Trusted Users</span>
 </div> -->
                     </div>
@@ -250,7 +255,7 @@
                 <div class="bento-grid">
                     <div class="bento-item col-span-12 md:col-span-8 p-stack-md flex flex-col justify-between">
                         <div>
-                            <span class="material-symbols-outlined text-secondary text-4xl mb-4">handshake</span>
+                            <span class="material-symbols-outlined text-secondary text-4xl mb-4" translate="no">handshake</span>
                             <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Integrity Above All</h3>
                             <p class="font-body-md text-body-md text-on-surface-variant">Transparency is the bedrock of
                                 our operations. We ensure every transaction is governed by the highest ethical
@@ -270,14 +275,14 @@
                     <div
                         class="bento-item col-span-12 md:col-span-4 p-stack-md bg-tertiary-container text-white border-none">
                         <span
-                            class="material-symbols-outlined text-secondary-container text-4xl mb-4">rocket_launch</span>
+                            class="material-symbols-outlined text-secondary-container text-4xl mb-4" translate="no">rocket_launch</span>
                         <h3 class="font-headline-sm text-headline-sm mb-2">Modern Innovation</h3>
                         <p class="font-body-sm text-body-sm text-on-tertiary-container">We leverage AI and real-time
                             security protocols to deliver a seamless banking experience that fits in your pocket,
                             without compromising on security.</p>
                     </div>
                     <div class="bento-item col-span-12 md:col-span-4 p-stack-md">
-                        <span class="material-symbols-outlined text-secondary text-4xl mb-4">diversity_3</span>
+                        <span class="material-symbols-outlined text-secondary text-4xl mb-4" translate="no">diversity_3</span>
                         <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Customer Centricity</h3>
                         <p class="font-body-sm text-body-sm text-on-surface-variant">Our branches and digital interfaces
                             are designed with empathy, ensuring accessibility for both digital natives and
@@ -285,7 +290,7 @@
                     </div>
                     <div class="bento-item col-span-12 md:col-span-8 p-stack-md relative overflow-hidden group">
                         <div class="relative z-10">
-                            <span class="material-symbols-outlined text-secondary text-4xl mb-4">public</span>
+                            <span class="material-symbols-outlined text-secondary text-4xl mb-4" translate="no">public</span>
                             <h3 class="font-headline-sm text-headline-sm text-primary mb-2">National Reach, Local Trust
                             </h3>
                             <p class="font-body-md text-body-md text-on-surface-variant max-w-md">With 1
@@ -293,7 +298,7 @@
                         </div>
                         <!-- Abstract Map Pattern -->
                         <div class="absolute right-0 bottom-0 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <span class="material-symbols-outlined text-[120px]">map</span>
+                            <span class="material-symbols-outlined text-[120px]" translate="no">map</span>
                         </div>
                     </div>
                 </div>
@@ -358,7 +363,7 @@
 
 
     <!-- Footer -->
-    <footer class="bg-[#2f3b69] text-white py-12 border-t border-[#1e2749] text-sm">
+    <footer class="bg-[#2f3b69] text-white py-12 border-t border-[#1e2749] text-sm" id="main-footer">
         <div class="max-w-[1200px] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
             <!-- About Us -->
@@ -367,9 +372,9 @@
                 <p class="mb-4 text-gray-300 leading-relaxed">NEAR ST STAND DAMAJI CHOWK, MANGALWEDHA, TAL- MANGALWEDHA,
                     DIST-SOLAPUR. PIN-413305</p>
                 <p class="mb-2 flex items-center gap-2 text-gray-300"><span
-                        class="material-symbols-outlined text-[18px]">call</span> 02188-220244</p>
+                        class="material-symbols-outlined text-[18px]" translate="no">call</span> 02188-220244</p>
                 <p class="mb-6 flex items-center gap-2 text-gray-300"><span
-                        class="material-symbols-outlined text-[18px]">mail</span> helpdesk@rajmata.bank.in</p>
+                        class="material-symbols-outlined text-[18px]" translate="no">mail</span> helpdesk@rajmata.bank.in</p>
 
                 <div class="flex gap-3 mb-6">
                     <!-- Facebook Icon -->
@@ -401,8 +406,7 @@
                     <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400 mt-2"></span>
                         <a href="https://www.npci.org.in/" target="_blank"
                             class="hover:text-[#e31837] transition-colors leading-tight">Download
-                            Aadhaar<br>Seeding/Deseeding</a>
-                    </li>
+                            Aadhaar<br>Seeding/Deseeding</a></li>
                     <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> <a
                             href="https://cybercrime.gov.in/" target="_blank"
                             class="hover:text-[#e31837] transition-colors">Cyber Crime</a></li>
@@ -486,11 +490,6 @@
 
 
     <script src='js/main.js'></script>
-
-
-
-
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.js"></script>
     <script>
         function initNav() {
             const currentPath = window.location.pathname.split('/').pop() || 'index.html';
@@ -529,3 +528,4 @@
 </body>
 
 </html>
+
